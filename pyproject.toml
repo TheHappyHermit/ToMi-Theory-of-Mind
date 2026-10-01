@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-brain"
+version = "2.6.0"
+description = "Cognitive architecture for the Hermes Agent: thalamic gating, hippocampal memory, basal-ganglia action arbitration, and a corpus-driven working memory"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "TheHappyHermit" }]
+keywords = ["hermes", "agent", "cognition", "memory", "thalamus", "basal-ganglia"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Kept in sync with requirements.txt deliberately, not automatically.
+#
+# brain/ is the stdlib-only core and has NO third-party imports, which is
+# what lets the hooks load it in-process on a host with no venv and no
+# dashboard. Nothing in the dependency list below is required to import
+# brain.hermes_brain. If you find yourself wanting to add brain/ to
+# install_requires, that is a signal the core is no longer portable --
+# fix the import instead.
+#
+# The dashboard extras are the only thing that needs FastAPI/uvicorn.
+dependencies = []
+
+[project.optional-dependencies]
+dashboard = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "python-multipart>=0.0.9",
+]
+# Honcho, LLM providers, and the graph stack are deliberately NOT listed
+# here. They are deployment choices, not library requirements, and adding
+# them would make `pip install hermes-brain` pull in a database driver and
+# an inference client that a minimal user has no use for. See
+# requirements.txt, which remains the supported full-environment install
+# path used by install.py.
+
+# No [project.scripts] entry on purpose. verify_stack.py runs under
+# `if __name__ == "__main__"` and takes its flags from argparse there, so
+# there is no importable main() to point a console script at. Declaring
+# one anyway would produce an entry point that dies with ImportError on
+# first run. `python3 scripts/verify_stack.py --local` is the supported
+# invocation; the scripts/ directory is not packaged (see [tool.setuptools]
+# below), so an entry point could not import it anyway.
+
+[project.urls]
+Homepage = "https://github.com/TheHappyHermit/ToMi-Theory-of-Mind"
+Source = "https://github.com/TheHappyHermit/ToMi-Theory-of-Mind"
+
+[tool.setuptools]
+# brain/ is a real importable package and is the thing worth installing.
+# scripts/ and hooks/ are operational tooling invoked by path, not import
+# targets, and packaging them would put hyphenated, non-importable
+# directories on the import path.
+packages = ["brain"]
+
+[tool.setuptools.package-data]
+brain = ["**/*.sql", "**/*.json", "**/*.yaml"]

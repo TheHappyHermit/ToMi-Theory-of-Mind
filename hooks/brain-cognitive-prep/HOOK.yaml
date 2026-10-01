@@ -1,0 +1,10 @@
+name: brain-cognitive-prep
+description: >
+  Pre-turn cognition. Feeds the user message into the thalamic buffer and runs
+  the Basal Ganglia action gate BEFORE the agent composes its reply, so ToM,
+  pragmatics, somatic risk appraisal and prospective-memory checks inform the
+  current turn instead of the next one. Caches the verdict for the post-turn
+  consolidator to reuse. Fails open.
+
+events:
+    - agent:start

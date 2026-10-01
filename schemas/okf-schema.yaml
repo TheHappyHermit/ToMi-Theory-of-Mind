@@ -1,0 +1,773 @@
+# --------------------------------------------------------------------------
+# CONFIDENCE DERIVATION - researched rubric, owner-ruled 2026-09-28.
+# Full argument and citations: docs/CONFIDENCE-RUBRIC.md
+# This YAML is now machine-generated from a dict; comments inside the
+# derivation block are in that file, not here. Everything else below
+# retains its original hand-written commentary.
+# --------------------------------------------------------------------------
+
+okf_version: '0.2'
+schema_id: okf-canonical
+schema_status: stable
+updated: '2026-09-26'
+required:
+- okf_version
+- id
+- type
+- status
+- description
+- generated
+- tags
+- sources
+- confidence
+recommended:
+- title
+- resource
+- epistemic
+- verified
+- stale_after
+optional:
+- related
+- aliases
+- review_after
+- supersedes
+- superseded_by
+- provenance
+- arxiv_id
+- url
+sources_shape:
+  required_in_entry:
+  - resource
+  # `title` is REQUIRED for any source carrying a resolvable identifier
+  # (DOI, arXiv id, or a peer-reviewed venue). It was optional until
+  # 2026-09-30, and the T2 verifier needs a title to match the resolved
+  # document against -- so an entry that satisfied the old schema exactly
+  # was still recorded `untitled_citation` and could not be promoted.
+  #
+  # Measured before this change: 1,605 of 2,661 identifier-bearing source
+  # entries corpus-wide had no title (60%), affecting 1,605 files. The
+  # schema and the verifier disagreed, so every writer that followed the
+  # schema faithfully produced a file that could not pass. A schema that
+  # permits a shape the verifier rejects is a bug in the schema.
+  #
+  # Bare strings remain accepted for untiered pointers (a repo URL, a
+  # session id) -- but NOT for a citable claim.
+  conditional_required:
+    title: 'required when the entry carries a DOI, arXiv id, or other
+      resolvable identifier for a peer-reviewed or preprint source'
+  optional_in_entry:
+  - id
+  - author
+  - usage_count
+  - last_modified
+  sibling:
+  - usage_window
+  accepts_bare_string: true
+  bare_string_maps_to:
+    resource: <the string>
+citation_placement:
+  canonical_location: sources
+  body_reference_list: legacy_v0_1
+  in_body_marker_form: keyed_footnote
+  positional_markers_allowed: false
+  footnote_label_joins_to: sources[].id
+  id_required_when: body_cites_the_source
+  id_need_be_globally_canonical: false
+  migration_target: 'Body bibliography entry -> sources[] item with a stable derived id
+
+    (author-year-slug, e.g. howard-kahana-2002).
+
+    In-body [[n]] or [n] -> [^that-id].
+
+    Verify: every footnote label must join to a real sources[].id.
+
+    '
+types:
+- profile
+- person
+- project
+- decision
+- system
+- asset
+- purchase
+- trip
+- routine
+- idea
+- question
+- lesson
+- reference
+- incident
+- index
+- research-report
+- paper
+- preprint
+- conference
+- journal
+- technical-spec
+- presentation
+- model-card
+- comparison
+- entity
+- code
+- log
+- evergreen
+- temporal
+statuses:
+- draft
+- stable
+- deprecated
+- active
+- current
+- waiting
+- blocked
+- completed
+- cancelled
+- disputed
+- superseded
+- stale
+- unverified
+- archived
+confidences:
+  - high
+  - medium
+  - low
+  # `ungraded` means evidence is present but has not been classified by
+  # confidence_derivation yet. It exists because 222 files carried
+  # self-reported FLOATS (0.85, 0.92) that are not in the enum, and
+  # converting those to high/medium/low would fabricate a judgement the
+  # rubric has not made. The original float is preserved alongside as
+  # `confidence_reported` so Phase 5 has something to derive from and no
+  # information is destroyed.
+  - ungraded
+  # `not_applicable` means confidence does not apply to this kind of
+  # page at all -- it is a wrong question, not a missing answer. Added
+  # 2026-09-28 for 167 files that are tables of contents. A TOC
+  # asserts nothing load-bearing, so per page_level_formula it has no
+  # claim to grade. Marking such a page `low` would be a DOWNGRADE of
+  # something that was never making a claim, which is a different and
+  # wrong assertion. Distinct from `ungraded`, which means evidence is
+  # present but not yet classified.
+  - not_applicable
+confidence_derivation:
+  source_tiers:
+    T1:
+      base: high
+      test: 'Source is (a) a published Internet Standard, Proposed Standard, or BCP; OR (b)
+        a published specification of a recognised standards body (IETF RFC, W3C/WHATWG Recommendation,
+        ISO/IEC, NIST SP 800-series, IEEE standard, IANA registry entry); OR (c) a primary
+        legal instrument (statute, regulation, court ruling, contract, licence text).
+
+        '
+      decidability: Check the host plus the document status line. No reading required.
+      why: 'A published standards-track document has completed a documented consensus process
+        with named authors and an errata process. RFC 2026 (BCP 9) defines the maturity levels,
+        and also warns that the content of Proposed Standards may be changed if problems are
+        found or better solutions are identified, which is why T1 is a CEILING and T1b exists.
+
+        '
+      tier_down:
+        T1b:
+          base: medium
+          test: 'Host is datatracker.ietf.org, ietf.org, or the IETF archive, AND the document
+            is an Internet-Draft (draft-* name, has an Expires date, or has no assigned RFC
+            number).
+
+            '
+          why: 'The IETF''s own boilerplate: Internet-Drafts are working documents, valid
+            for a maximum of six months, may be updated, replaced, or obsoleted at any time,
+            and it is inappropriate to use them as reference material other than as work in
+            progress.
+
+            '
+          note: Applies to the packed-CBOR / CBOR family in this corpus.
+    T2:
+      base: high
+      test: 'Peer-reviewed article, conference paper, systematic review, or meta-analysis,
+        in a venue indexed by a recognised index (DOI, Crossref, PubMed, DBLP, OpenReview,
+        PMLR, ACL Anthology), AND the DOI or identifier resolves to a document whose title
+        and authors match the citation as written.
+
+        '
+      why: 'Peer review is the closest thing in a general corpus to a published, adversarial
+        pre-check. GRADE treats design as the STARTING rating, not the final one.
+
+        '
+      ceiling_rule: 'T2 sets the CEILING at high, never the floor. A peer-reviewed paper alone
+        does not yield high; it yields high MINUS any applicable modifier in the modifiers
+        section.
+
+        '
+      ceiling_qualifier: 'Peer-reviewed must be VERIFIED, not asserted. Wikipedia:RS is the
+        citation for the guard: a claim of peer review is not an indication that the journal
+        is respected, or that any meaningful peer review occurs. Presence in a recognised
+        index is the decidable proxy.
+
+        '
+    T3:
+      base: medium
+      test: 'Any ONE of: (a) preprint or technical report (arXiv, bioRxiv, SSRN, Zenodo, PhilArchive)
+        with no linked peer-reviewed version; (b) textbook or scholarly monograph from an
+        academic press; (c) doctoral thesis; (d) reputable journalism, being a named byline
+        at a wire service or a national/international outlet with a corrections policy, cited
+        for a fact of record rather than for analysis; (e) government or non-SDI statistical
+        publication.
+
+        '
+      why: 'Each is checkable by a human with access to the artifact but has not been adversarially
+        pre-checked the way peer review is, or is secondary reporting rather than primary
+        measurement. Preprints: arXiv states plainly that the arXiv moderation process is
+        not a peer-review process, and Wikipedia:RS says preprint-repository material are
+        seldom reliable sources. Monographs and theses sit here rather than in T2 because
+        Wikipedia:RS rates masters theses reliable only if they can be shown to have had significant
+        scholarly influence, which is not decidable from the page alone.
+
+        '
+      upgrade_note: 'If a preprint page also cites the peer-reviewed version of the same work,
+        cite the peer-reviewed DOI and treat as T2.
+
+        '
+    T4:
+      base: low
+      test: 'Vendor or first-party source with no independent corroboration: vendor documentation,
+        API reference, README, changelog, release note, blog post, marketing page, product
+        page, conference talk, slide deck, press release, or a vendor-authored announcement
+        of its own results.
+
+        '
+      why: 'Wikipedia:RS places official websites, brochures and other promotional materials
+        in Tier 4 limited use, and says press releases should not be treated differently than
+        the underlying press release (churnalism). The publisher is an interested party in
+        the claim being made.
+
+        '
+      never_cited_for: 'The vendor''s own performance, security, or superiority claims. Those
+        require independent corroboration (T2 or T3) or they are T4.
+
+        '
+      this_corpus: pypi.org, docs.npmjs.com, neo4j.com, langchain.com, getzep.com, dev.to
+    T5:
+      base: low
+      test: 'User-generated or crowd-sourced content: forum thread, Reddit, Hacker News, Stack
+        Overflow answer, YouTube video, wiki page including Wikipedia, social post, or an
+        LLM-generated summary.
+
+        '
+      why: 'Wikipedia:RS: websites whose content is largely user-generated are generally unacceptable
+        as sources, and specifically that a wikilink is not a reliable source. Causal link:
+        no editorial accountability.
+
+        '
+      pointer_only: 'May be cited as a pointer to a primary source, never as support for the
+        claim. Record with role: pointer.
+
+        '
+      aggregate_caveat: 'A majority of anonymous users asserting X is still not evidence of
+        X. See modifier M5, not a raw vote count.
+
+        '
+    T6:
+      base: low
+      test: 'Direct first-person experience, anecdote, or unrecorded observation by the wiki
+        owner, a colleague, or an agent.
+
+        '
+      why: 'Highest relevance, zero external corroboration, unbounded recall and motivated
+        reasoning. It is evidence OF AN EVENT, not evidence of a GENERAL CLAIM. Wikipedia:RS
+        classes personal pages as self-published media.
+
+        '
+      scope_limit: 'May support a claim about a specific observed instance at epistemic: observation.
+        May NOT support a generalisation, a rate, or a causal claim at any confidence above
+        low.
+
+        '
+    T7:
+      base: ungraded
+      test: Source is unreachable, paywalled, dead, or unclassifiable.
+      rule: 'confidence: ungraded; set status: unverified. See edge case E1.'
+  aggregation:
+    unit: claim
+    rule: 'Grade each LOAD-BEARING claim separately, not the page. Page-level confidence is
+      the MINIMUM over load-bearing claims (weakest link). A page that correctly cites a paper
+      for one claim and asserts another with no source is not a high-confidence page. Precedent:
+      Cochrane requires a per-outcome certainty assessment that may vary by outcome within
+      one review; GRADE explicitly rates the body of evidence for an outcome, not for the
+      document.
+
+      '
+    load_bearing_definition: 'A claim the page description asserts, or one a downstream reader
+      would act on. Background, definitions of terms, and navigational metadata are not load-bearing.
+
+      '
+    page_level_formula: page_confidence = min(claim_confidences); ungraded if no load-bearing
+      claim
+    minimum_source_rule: 'A claim is capped at low unless it carries at least one T1 or T2
+      source, OR at least two independent T3+ sources. Wikipedia:RS makes the same point for
+      journalism: multiple sources should not be asserted for any wire service article, because
+      such sources are essentially a single source.
+
+      '
+    independence_definition: 'Two sources are INDEPENDENT only if they do not share a primary
+      source, a funder, an author, or a press release. A blog post, a news story, and a vendor
+      page all citing one arXiv paper are ONE source. Trace to the primary artifact before
+      counting.
+
+      '
+    no_primary_rule: 'If every source resolves to the same upstream primary artifact, count
+      as ONE source at that artifact''s tier regardless of N. Wikipedia:RS news aggregators:
+      reliability should be judged based on the original source.
+
+      '
+  modifiers:
+    M0_decision_record:
+      effect: grade_at_high
+      applies_when: 'The page is a record of a ruling or decision by the corpus owner
+        (type: decision or type: lesson, or the page documents what was explicitly
+        chosen and why). Applies to the RECORD, not to the world-claims the decision
+        was made about.'
+      rationale: 'source_tiers grades how good an EXTERNAL source is, and a decision
+        record has no external source because it is itself the authority. The owner
+        ruled on a date; that the ruling happened is not a claim about the world
+        requiring corroboration. the operator: "High -- its a record of your own ruling, so treat
+        it as authoritative." This is a NULL tier, not a shortcut: it says a decision
+        record is not unevidenced. It does NOT license high confidence in the
+        decision being CORRECT, and it does not apply to a page that merely reports
+        what someone else decided.'
+      test: Check type is decision or lesson, and that the page records a ruling with
+        a date. No reading required.
+      does_not_apply_to: 'A page that cites a decision in order to support a separate
+        claim about the world. That claim is graded on its own sources as usual.'
+      confidence_is_about: whether the ruling was made, NOT whether the ruling was wise
+
+    M1_retrieval_failure:
+      effect: cap_at_low
+      test: A cited source did not resolve, was 404 or paywalled, or is unverifiable at grading
+        time.
+    M2_identifier_mismatch:
+      effect: cap_at_low
+      test: 'A DOI or arXiv id resolves to a document whose title, authors, or venue do not
+        match the citation as written.
+
+        '
+      why: 'A fabrication signature, not a formatting error. Fails the OKF-adopted rule that
+        a source resource names a concrete artifact a consumer can follow (SPEC.md 5.1). Observed
+        live while building this rubric: doi.org/10.1109/ICDM.2013.83 resolves to Non-negative
+        Multiple Tensor Factorization, unrelated to the citation that implied otherwise.
+
+        '
+    M3_source_disagreement:
+      effect: 'no upgrade; record both; set status: disputed if unresolved'
+      test: Two or more retrieved sources make incompatible claims.
+      why: 'Wikipedia:RS on disagreement: material should be attributed in-text where sources
+        disagree; neutral point of view requires giving each side its due weight. Do not silently
+        pick a winner.
+
+        '
+    M4_circular:
+      effect: cap_at_low
+      test: 'The only support for a claim is another page in this wiki with no external root;
+        or the claim''s external sources all descend from a single upstream page that itself
+        cites this wiki.
+
+        '
+      why: 'Wikipedia:RS on the analogous case: some news organizations have used Wikipedia
+        articles as a source for their work, so editors should beware of circular sourcing.
+        OKF 5.1 explicitly permits credibility to propagate through a source graph, which
+        makes a cycle checkable.
+
+        '
+    M5_false_aggregation:
+      effect: no upgrade from volume
+      test: Support is many T5 items (reviews, forum posts, votes) with no independent measurement.
+      why: 'Review volume is purchasable. He, Hollenbeck and Proserpio, The Market for Fake
+        Reviews, Marketing Science (INFORMS): of products observed soliciting fake reviews,
+        roughly half their reviews were eventually deleted, with an average lag of over 100
+        days, and rating manipulation mostly centers on low-quality products. A count of reviews
+        is therefore not a decidable signal of quality.
+
+        '
+    M6_staleness:
+      effect: 'cap_at_medium; set status: stale'
+      test: now >= stale_after, or the only supporting source predates stale_after.
+      why: 'OKF 5.5: a concept is stale when now >= stale_after. Freshness is orthogonal to
+        source quality; a peer-reviewed 2011 paper is still peer-reviewed and still possibly
+        obsolete.
+
+        '
+    M7_domain_mismatch:
+      effect: cap_at_medium
+      test: The source is authoritative for a different domain than the claim.
+      why: 'Caulfield''s SIFT, at the primary source: a small local paper may be a great source
+        for local news, but a lousy source for health advice or international politics. Wikipedia:RS
+        opens with the reliability of a source depending on context.
+
+        '
+    M8_vendor_benchmark:
+      effect: cap_at_low
+      test: A performance or superiority claim sourced to the vendor's own material only.
+    M9_lapsed_document:
+      effect: cap_at_medium
+      test: Claim relies on an Internet-Draft, an expired draft, or a document marked obsolete,
+        superseded, or historic.
+    M10_uncorroborated_negative:
+      effect: cap_at_low
+      test: A claim of absence or non-existence with no documented search.
+      why: Absence of evidence is not evidence of absence; it is unmeasured.
+  epistemic:
+    independence: 'epistemic and confidence are INDEPENDENT fields. Neither is derived from
+      the other. A page MAY be epistemic: fact with confidence: low (true but thinly evidenced)
+      and epistemic: hypothesis with confidence: medium (a well-supported conjecture). The
+      intuition that hypothesis and prediction are low by construction is partly correct and
+      is encoded below as a constraint, not as a rule.
+
+      '
+    constraints:
+    - epistemic: fact
+      max_confidence: high
+      min_confidence: medium
+      rationale: 'An asserted fact resting on T4 or T5 support is a category error, not a
+        low-confidence fact. Demote the page to hypothesis or observation rather than grading
+        it fact plus low.
+
+        '
+    - epistemic: observation
+      max_confidence: high
+      rationale: Direct observation is strong evidence about what happened.
+    - epistemic: verified-inference
+      max_confidence: high
+      rationale: Inference from retrieved primary evidence inherits that evidence's tier.
+    - epistemic: hypothesis
+      max_confidence: medium
+      rationale: 'A hypothesis is falsifiable and pending; strong evidence for it does not
+        make it settled. Cap at medium so a well-supported hypothesis can never be read as
+        an established fact.
+
+        '
+    - epistemic: prediction
+      max_confidence: medium
+      min_confidence: low
+      rationale: 'Predictions about the future are never settled by present evidence; medium
+        is the true ceiling and low the correct floor. GRADE''s structure supports the asymmetry,
+        since high-certainty evidence can still support only a conditional recommendation.
+
+        '
+    - epistemic: decision
+      max_confidence: high
+      note: 'Confidence in a DECISION is not confidence in the world. A recorded decision
+        is a historical fact about what was decided; grade the decision, not its outcome.
+
+        '
+    - epistemic: explicit-preference
+      max_confidence: high
+      note: 'A stated preference needs no external evidence. High is correct and not self-serving,
+        because the claim is only that the owner prefers X.
+
+        '
+    resolution: 'Final confidence = min(aggregated page confidence, the max_confidence allowed
+      by epistemic). If aggregation exceeds the cap, the page RECLASSIFIES (epistemic changes)
+      rather than silently grading lower.
+
+      '
+  procedure:
+  - 1. Extract every load-bearing claim in the body. If none, set ungraded and stop.
+  - 2. For each claim, list its supporting sources. If none, confidence is low; T7 or M10
+    applies.
+  - 3. Classify each source into exactly one source_tier using only that tier's test.
+  - 4. Resolve every DOI and identifier. If a DOI does not resolve to a matching document,
+    apply M2 and cap at low.
+  - 5. Trace sources to their primary artifact. Collapse non-independent sources. Apply M5
+    if only volume remains.
+  - '6. Apply the minimum_source_rule: without one T1 or T2, or two independent T3+, cap at
+    low.'
+  - 7. Apply all modifiers M1 through M10. Each caps; none can raise.
+  - 8. page_confidence = min over load-bearing claims.
+  - 9. Clamp to the epistemic constraint. If clamped down and the claim was asserted as fact,
+    reclassify epistemic.
+  - '10. Write confidence plus confidence_basis: the tier ids used, the modifiers applied,
+    and the date graded. Without a basis the value is an unauditable self-report and MUST
+    be treated as untrusted by consumers.'
+  edge_cases:
+    E1_unretrievable_source: 'M1: cap low; status unverified; record URL and failure mode.
+      Never delete the citation.'
+    E2_doi_resolves_unrelated: 'M2: cap low; report_only defect fabricated_claim; never auto-edit
+      (repair.report_only).'
+    E3_sources_disagree: 'M3: record both with tiers, status disputed, do not pick a winner.
+      Confidence = min of the two.'
+    E4_many_sources_no_primary: Trace to primary. All the same primary = one source at that
+      primary's tier. If the primary is T5 or unclassifiable, cap low.
+    E5_circular_internal_only: 'M4: cap low; flag for a primary-source hunt. A wiki citing
+      only itself has no external evidence.'
+    E6_stale_past_stale_after: 'M6: cap medium, status stale, do not delete. Staleness is
+      not falsity.'
+    E7_mixed_page: 'PER-CLAIM confidence, page-level = weakest link. Do not give the page
+      a single value describing its best-sourced claim. This is the most important rule for
+      a 2700-file corpus where most pages mix a well-sourced summary with an unsourced aside.
+
+      '
+    E8_hypothesised_venue: If a preprint page does not state its venue, T3 applies. Do not
+      infer peer review from a venue-like URL.
+    E9_aggregator: Cite the original, not the aggregator (no_primary_rule; Wikipedia:RS news-aggregators
+      rule).
+    E10_review_volume: 'M5: review count never raises confidence. See the fake-review literature
+      cited in M5.'
+    E11_ai_generated_page: 'All claims are at most T5 until an external source is attached,
+      then re-derive. generated.by alone confers nothing: OKF 5.3 gives a non-human verified
+      actor only machine-confirmed status.
+
+      '
+  owner_ruling_required: false
+  owner_ruled_on: 2026-09-28
+  rulings:
+  - id: C1
+    question: Is a peer-reviewed paper a CEILING of high, or automatically high?
+    ruling: ceiling
+    rationale: Owner delegated to the research position. GRADE treats study design as a starting
+      rating and downgrades routinely for risk of bias, inconsistency, indirectness, imprecision,
+      and publication bias. A peer-reviewed paper whose DOI does not resolve to the expected
+      title is not evidence of its own claim, and a peer-reviewed label is not a guarantee
+      that the journal is respected or that meaningful review occurred (Wikipedia:RS).
+    consequence: EXPECT A LARGE DOWNWARD MOVE. 1,577 files currently read confidence high.
+      Under the ceiling rule many will become medium once their modifiers are evaluated. This
+      is intended, not a regression, and must not be treated as damage by a later run.
+    how_to_reverse: Set rulings[C1].ruling to flat and re-derive. Do not hand-edit the resulting
+      values.
+  - id: C2
+    question: Does a product with many consumer reviews earn medium?
+    ruling: low
+    rationale: 'Owner explicitly accepted the research advice, which DOWNGRADES the owner''s
+      own earlier rule. He, Hollenbeck and Proserpio, The Market for Fake Reviews, Marketing
+      Science (INFORMS, peer-reviewed): of products observed soliciting fake reviews, roughly
+      half of those reviews were eventually deleted with an average lag over 100 days, and
+      manipulation mostly centres on low-quality products. A review COUNT is a purchasable
+      quantity and is therefore not evidence of quality. See also Vaidya, Votipka, Mazurek
+      and Sherr, Does Being Verified Make You More Credible?, CHI 2019, doi 10.1145/3290605.3300755:
+      a verified badge and credible content are distinct, and users do distinguish them.'
+    consequence: Review volume can no longer raise confidence (modifier M5, edge case E10).
+      A product's medium criterion is now INDEPENDENT REVIEW UNDER CONFLICT DISCLOSURE, not
+      popularity. Under the owner's original rule such a product would have outranked a preprint;
+      it no longer does.
+    how_to_reverse: Set rulings[C2].ruling to keep_medium and re-derive. Do not hand-edit
+      the resulting values.
+  expected_effect_of_rulings: Applying C1 and C2 will move a large share of the corpus DOWNWARD.
+    Fewer pages will read confidence high. That is the intended outcome of a derived rubric
+    replacing self-reported values, and it is not regression. WIKI-STANDARDS.md S3 already
+    forbids trusting the existing values as evidence input, so they were never a baseline
+    to preserve.
+epistemic:
+- fact
+- observation
+- explicit-preference
+- verified-inference
+- hypothesis
+- prediction
+- decision
+type_map:
+  research_report: research-report
+  research: research-report
+  researchreport: research-report
+  research-note: research-report
+  Index: index
+  index: index
+  INDEX: index
+  paper: paper
+  arxiv-paper: paper
+  arxiv: paper
+  preprint: preprint
+  conference: conference
+  conference-paper: conference
+  journal: journal
+  rfc: technical-spec
+  ietf_draft: technical-spec
+  ietf-rfc: technical-spec
+  internet-draft: technical-spec
+  iana_registry: technical-spec
+  ietf-slides: presentation
+  slides: presentation
+  model_card: model-card
+  documentation: technical-spec
+  reference: reference
+  person: person
+  profile: profile
+  entity: entity
+  project: project
+  decision: decision
+  system: system
+  idea: idea
+  log: log
+  comparison: comparison
+  code: code
+  evergreen: evergreen
+  temporal: temporal
+  question: question
+  lesson: lesson
+  incident: incident
+  asset: asset
+  purchase: purchase
+  trip: trip
+  routine: routine
+  article: reference
+  note: reference
+  book: reference
+  wiki: reference
+  topic: reference
+  concept: reference
+  overview: reference
+  guide: reference
+  tutorial: reference
+  summary: reference
+  analysis: reference-report
+  review: reference-report
+  blog: reference
+  webpage: reference
+  documentation_page: reference
+status_map:
+  complete: completed
+  completed: completed
+  done: completed
+  finished: completed
+  verified: stable
+  published: stable
+  final: stable
+  paused: blocked
+  draft-v2: draft
+  wip: draft
+  in-progress: draft
+  todo: draft
+  live: active
+  running: active
+  new: draft
+  old: deprecated
+  dead: archived
+  deleted: archived
+  obsolete: deprecated
+  stale: stale
+  unverified: unverified
+shapes:
+  okf_version:
+    type: str
+    const: '0.2'
+  id:
+    type: kebab-id
+    pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+  type:
+    type: enum
+    source: types
+  status:
+    type: enum
+    source: statuses
+  description:
+    type: str
+    min_len: 1
+  confidence:
+    type: enum
+    source: confidences
+  epistemic:
+    type: enum
+    source: epistemic
+  created:
+    type: date
+  updated:
+    type: date
+  tags:
+    type: list
+  sources:
+    type: list
+  related:
+    type: list
+  aliases:
+    type: list
+  verified:
+    type: list
+  stale_after:
+    type: date
+  review_after:
+    type: date
+  generated:
+    type: mapping
+    required_subkeys:
+    - by
+    - at
+    at_format: RFC3339
+conventions:
+  filename: lowercase kebab-case, .md, no spaces
+  fm_delimiters: '---'
+  h1_per_page: 1
+  timestamps: RFC3339 UTC, e.g. 2026-09-26T14:03:00Z
+  wikilinks: '[[kebab-case-target]]'
+  cross_domain_links: use full vault-relative wikilinks to avoid case collisions
+  # ------------------------------------------------------------------------
+  # CITATION SHAPE -- the single highest-value thing a writer can get right.
+  #
+  # Written 2026-09-30 after the confidence pass found 1,605 corpus source
+  # entries with an identifier and no title. The verifier resolves an
+  # identifier, fetches the real document, and compares the real title
+  # against the title you wrote. With no title to compare, the file is
+  # recorded `untitled_citation` and the page is capped at medium forever.
+  #
+  # So: ALWAYS write the title. It is not decoration; it is the evidence.
+  # ------------------------------------------------------------------------
+  citation_shape:
+    rule: 'Every source entry carrying a DOI, arXiv id, or other resolvable
+      identifier MUST carry the title exactly as the source states it.'
+    good:
+    - 'arXiv:2509.20021 (Embodied AI Survey)'
+    - 'doi:10.1109/PROC.1975.9939 (The protection of information in computer systems)'
+    - 'https://www.nature.com/articles/x (Attention Is All You Need)'
+    - resource: doi:10.1038/s41534-025-01078-x
+      title: Entanglement-induced provable and robust quantum learning advantages
+      author: Wang et al.
+    bad:
+    - 'https://arxiv.org/abs/2607.18704'
+    - 'arxiv:2607.18704'
+    - 'see the paper'
+    why_bad: 'The first two are USELESS to the verifier -- it can resolve them
+      but has nothing to compare, so the file is capped at medium. The third
+      is unresolvable and trips M1.'
+    title_source: 'Take the title from the source itself -- the arXiv abstract
+      page, the DOI landing page, the paper PDF. Do NOT paraphrase it and do
+      NOT reconstruct it from memory. A remembered title that differs from
+      the real one is M2_identifier_mismatch, which caps at low.'
+    version_suffix: 'A trailing version (2607.01977v1) is stripped by the
+      verifier, so writing it is harmless; omitting it is also fine.'
+    never_fabricate: 'If you cannot retrieve the title, record the entry as
+      unverified (status) rather than inventing a plausible one. A fabricated
+      title is a fabrication signature, and the verifier will catch it.'
+  provenance_is_not_authority: 'A populated `confidence` or `verified` field is a self-report,
+    not evidence. It MUST NOT be used as an evidence weight. Only executed checks confer authority.
+
+    '
+  live_state: 'Point-in-time assertions (liveness, counts, sync cadence) MUST carry `observed_at`
+    or live in a regenerated snapshot file, never in body prose.
+
+    '
+  deletion: archive or supersede; never silently delete
+scope:
+- /home/operator/.hermes/active-wiki
+- /home/operator/.hermes/oracle/brain
+excluded_dirs:
+- graphify-out
+- .git
+- __pycache__
+- _archive
+- inbox
+- node_modules
+repair:
+  auto:
+  - add_missing_required
+  - map_enum_value
+  - normalise_okf_version
+  - fix_datetime_format
+  - fix_link_case
+  - strip_index_suffix
+  - dedupe_repeated_header
+  - drop_link_to_nonexistent_ref_section
+  report_only:
+  - wrong_attribution
+  - fabricated_claim
+  - stale_live_state
+  - source_truncation
+  - unresolved_citation
+  - missing_index
+  - index_incomplete
+  - body_prose_defect
+  - case_collision_directory

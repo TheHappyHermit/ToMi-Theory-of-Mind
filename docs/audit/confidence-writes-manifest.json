@@ -1,0 +1,1340 @@
+{
+ "writes": [
+  {
+   "vault": "active-wiki",
+   "path": "decisions/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/active-wiki__decisions__index.md"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "system/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/active-wiki__system__index.md"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "entities/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/active-wiki__entities__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "oracle-research.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__oracle-research.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "project-template.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__project-template.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "rebuild-log.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__rebuild-log.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Emotion-Cognition/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Emotion-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Cognitive-Development/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Cognitive-Development__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Temporal-Cognition/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Temporal-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/Agriculture.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__Agriculture.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/Bathymetric.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__Bathymetric.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/CloudType.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__CloudType.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/ConvectionLWIR.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__ConvectionLWIR.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/DayCloudConv.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__DayCloudConv.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/DayMicro.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__DayMicro.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/EC.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__EC.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/Geology.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__Geology.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/LLWV.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__LLWV.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/MB.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__MB.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/MERSIAirmass.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__MERSIAirmass.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/MLWV.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__MLWV.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/MTVZASoilMoisture.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__MTVZASoilMoisture.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/MTVZAVegetation.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__MTVZAVegetation.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/NOAANatColor.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__NOAANatColor.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/Panchromatic.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__Panchromatic.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/Rainfall.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__Rainfall.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/SSEC89GHz.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__SSEC89GHz.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/SST.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__SST.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/ShortwaveIRFC.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__ShortwaveIRFC.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/TA.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__TA.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/ThermalCal.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__ThermalCal.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/ThermalUncal.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__ThermalUncal.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/TrueColor.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__TrueColor.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/VIIRSDNB-ArcticFC.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__VIIRSDNB-ArcticFC.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/ZA.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__ZA.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Software-Defined-Radio/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Software-Defined-Radio__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Breakthroughs-2023-2025/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Breakthroughs-2023-2025__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Global-Workspace-Theory/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Global-Workspace-Theory__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "decisions/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__decisions__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neuroscience-Methods/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neuroscience-Methods__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Diffusion-Models/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Diffusion-Models__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Decision-Making/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Decision-Making__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Predictive-Processing/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Predictive-Processing__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Consciousness/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Consciousness__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neural-Circuits/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neural-Circuits__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Evaluation-and-Benchmarks/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Evaluation-and-Benchmarks__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Population-Coding/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Population-Coding__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Deep-Learning/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Deep-Learning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Seattle-Radio/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Seattle-Radio__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Computational-Neuroscience-Methods/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Computational-Neuroscience-Methods__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neural-Dynamics/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neural-Dynamics__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Psychology/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Psychology__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Cognitive-Architecture/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Cognitive-Architecture__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Training-Dynamics/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Training-Dynamics__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neural-Oscillations/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neural-Oscillations__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "health-and-routines/AGENTS.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__health-and-routines__AGENTS.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "health-and-routines/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__health-and-routines__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Sysadmin/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Sysadmin__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Reinforcement-Learning/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Reinforcement-Learning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Reasoning/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Reasoning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Open-Source-AI/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Open-Source-AI__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Sensory-Systems/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Sensory-Systems__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Metacognition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Metacognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Methods/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Methods__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Executive-Control/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Executive-Control__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "personal-finance/AGENTS.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__personal-finance__AGENTS.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "personal-finance/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__personal-finance__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neurovascular/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neurovascular__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Causal-Reasoning/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Causal-Reasoning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Cellular-Neuroscience/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Cellular-Neuroscience__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Decision-Neuroscience/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Decision-Neuroscience__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Consciousness-Studies/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Consciousness-Studies__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Hermes-Stack/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Hermes-Stack__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Imported-KB/Get-SecurityPackage.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Imported-KB__Get-SecurityPackage.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Imported-KB/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Imported-KB__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/autognosia-repo.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__autognosia-repo.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/coder-profile.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__coder-profile.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/graphify-policy.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__graphify-policy.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/memory-archive/decisions.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__memory-archive__decisions.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/memory-archive/environment.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__memory-archive__environment.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/memory-archive/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__memory-archive__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "system/memory-archive/preferences.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__system__memory-archive__preferences.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neuroplasticity/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neuroplasticity__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Numerical-Cognition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Numerical-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Prospective-Memory/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Prospective-Memory__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Computational-Psychiatry/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Computational-Psychiatry__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "reference/agent-zero-kb.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__reference__agent-zero-kb.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "reference/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__reference__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Glial-Biology/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Glial-Biology__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Motivation-and-Curiosity/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Motivation-and-Curiosity__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "World-Models/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__World-Models__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "purchases/AGENTS.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__purchases__AGENTS.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "purchases/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__purchases__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Perception/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Perception__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neuromodulatory-Gain/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neuromodulatory-Gain__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Reasoning-and-Chain-of-Thought/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Reasoning-and-Chain-of-Thought__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "entities/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__entities__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "entities/agents/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__entities__agents__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Mechanistic-Interpretability/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Mechanistic-Interpretability__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Computation-Theory/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Computation-Theory__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Cognition-Theory/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Cognition-Theory__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Metabolic-Cognition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Metabolic-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Perception-Systems/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Perception-Systems__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Memory-Systems/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Memory-Systems__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Attention/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Attention__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Language-Acquisition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Language-Acquisition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "neuroplasticity/hebbian-weight-update-synaptic-plasticity-rules.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__neuroplasticity__hebbian-weight-update-synaptic-plasticity-rules.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Ethics-and-Moral-Status/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Ethics-and-Moral-Status__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Canonical-Microcircuit/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Canonical-Microcircuit__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Visual-Cortex-Hierarchy/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Visual-Cortex-Hierarchy__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "OSINT/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__OSINT__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Safety-and-Alignment/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Safety-and-Alignment__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Spatial-Cognition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Spatial-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Developmental-Cognition/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Developmental-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Learning/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Learning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Reasoning/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Reasoning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Memory-Architecture/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Memory-Architecture__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Multimodal-Learning/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Multimodal-Learning__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "DragonOS/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__DragonOS__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "raw/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__raw__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "AI-Architecture/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__AI-Architecture__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Philosophy_of_Mind/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Philosophy_of_Mind__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neuroimaging-Methods/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neuroimaging-Methods__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Constitutional-AI/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Constitutional-AI__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Foundation-Models/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Foundation-Models__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/local-ai/DOMAIN.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__local-ai__DOMAIN.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/financial-planning/DOMAIN.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__financial-planning__DOMAIN.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/DOMAIN.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__DOMAIN.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/radio-hardware/HARDWARE_INDEX.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__radio-hardware__HARDWARE_INDEX.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/radio-hardware/README_1.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__radio-hardware__README_1.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/radio-hardware/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__radio-hardware__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/osint/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__osint__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/dragonos/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__dragonos__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/seattle-radio/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__seattle-radio__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/radio-operators/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__radio-operators__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/radio-rf/radio-sdr/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__radio-rf__radio-sdr__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/cybersecurity/DOMAIN.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__cybersecurity__DOMAIN.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/cybersecurity/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__cybersecurity__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/cybersecurity/security-tools/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__cybersecurity__security-tools__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/cybersecurity/defensive-controls/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__cybersecurity__defensive-controls__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "domains/cybersecurity/procedures/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__domains__cybersecurity__procedures__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Hardware-Hacking/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Hardware-Hacking__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "comparisons/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__comparisons__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Knowledge-Representation/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Knowledge-Representation__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Neuromodulation-Systems/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Neuromodulation-Systems__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Attention-Mechanisms/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Attention-Mechanisms__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "cross-domain/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__cross-domain__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Distributed-Cognition/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Distributed-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Agent-Zero/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Agent-Zero__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Social-Cognition/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Social-Cognition__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "homelab/AGENTS.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__homelab__AGENTS.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "homelab/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__homelab__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Consolidation/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Consolidation__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/Get-UnattendedInstallFile.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__Get-UnattendedInstallFile.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/Malware-Analysts.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__Malware-Analysts.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/Nikto.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__Nikto.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/SQLmap.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__SQLmap.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/Tools-By-Function.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__Tools-By-Function.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/Tools-By-Profession.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__Tools-By-Profession.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "Offensive-Security/index.md",
+   "from": "medium",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__Offensive-Security__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "projects/AGENTS.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__projects__AGENTS.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "projects/_template/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__projects___template__index.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "projects/_template/project-template.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__projects___template__project-template.md"
+  },
+  {
+   "vault": "oracle",
+   "path": "personal/index.md",
+   "from": "high",
+   "to": "not_applicable",
+   "work_class": "n_navigational_not_applicable",
+   "backup": "/home/operator/hermes-brain/archive/confidence_backup/20260928T231444Z/oracle__personal__index.md"
+  }
+ ]
+}

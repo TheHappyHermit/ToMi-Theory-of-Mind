@@ -1,0 +1,136 @@
+{
+ "repairs": [
+  {
+   "path": "Neurovascular/Meningeal-Lymphatics-Glymphatic-Clearance.md",
+   "identifier": "doi:10.1126/science.1241224",
+   "old_label": "Xie et al., 2013, Science",
+   "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
+   "old_line": "  - \"https://www.science.org/doi/10.1126/science.1241224 (Xie et al., 2013, Science)\"",
+   "new_line": "  - \"https://www.science.org/doi/10.1126/science.1241224 (Sleep Drives Metabolite Clearance from the Adult Brain)\""
+  },
+  {
+   "path": "Neurovascular/Meningeal-Lymphatics-Glymphatic-Clearance.md",
+   "identifier": "doi:10.1126/scitranslmed.3003748",
+   "old_label": "Iliff et al., 2012, Sci Transl Med",
+   "title": "A Paravascular Pathway Facilitates CSF Flow Through the Brain Parenchyma and the Clearance of Interstitial Solutes, Including Amyloid \u03b2",
+   "old_line": "  - \"https://www.science.org/doi/10.1126/scitranslmed.3003748 (Iliff et al., 2012, Sci Transl Med)\"",
+   "new_line": "  - \"https://www.science.org/doi/10.1126/scitranslmed.3003748 (A Paravascular Pathway Facilitates CSF Flow Through the Brain Parenchyma and the Clearance of Interstitial Solutes, Including Amyloid \u03b2)\""
+  },
+  {
+   "path": "research/drift-strength-adaptive-suppression-policy.md",
+   "identifier": "doi:10.1109/ijcnn64981.2025.11228919",
+   "old_label": "FEDD, IEEE IJCNN 2025",
+   "title": "Fuzzy-Based Ensemble Method for Robust Concept Drift Detection in Multivariate Time Series",
+   "old_line": "  - https://doi.org/10.1109/ijcnn64981.2025.11228919 (FEDD, IEEE IJCNN 2025)",
+   "new_line": "  - https://doi.org/10.1109/ijcnn64981.2025.11228919 (Fuzzy-Based Ensemble Method for Robust Concept Drift Detection in Multivariate Time Series)"
+  },
+  {
+   "path": "research/hierarchical-empirical-bayes-preference-rates.md",
+   "identifier": "doi:10.1093/biostatistics/kxl008",
+   "old_label": "Wakefield 2006, Small area estimation for count data with covariates",
+   "title": "Disease mapping and spatial regression with count data",
+   "old_line": "  - \"https://doi.org/10.1093/biostatistics/kxl008 (Wakefield 2006, Small area estimation for count data with covariates)\"",
+   "new_line": "  - \"https://doi.org/10.1093/biostatistics/kxl008 (Disease mapping and spatial regression with count data)\""
+  },
+  {
+   "path": "research/hierarchical-empirical-bayes-preference-rates.md",
+   "identifier": "doi:10.1145/3511808.3557066",
+   "old_label": "Empirical Bayes for Cold-Start Product Search, CIKM 2022",
+   "title": "Addressing Cold Start in Product Search via Empirical Bayes",
+   "old_line": "  - \"https://doi.org/10.1145/3511808.3557066 (Empirical Bayes for Cold-Start Product Search, CIKM 2022)\"",
+   "new_line": "  - \"https://doi.org/10.1145/3511808.3557066 (Addressing Cold Start in Product Search via Empirical Bayes)\""
+  },
+  {
+   "path": "research/seasonal-decomposition-burstiness-interaction.md",
+   "identifier": "doi:10.1103/PhysRevE.94.032311",
+   "old_label": "Kim & Jo 2016 \u2014 Phys. Rev. E",
+   "title": "Measuring burstiness for finite event sequences",
+   "old_line": "  - \"https://doi.org/10.1103/PhysRevE.94.032311 (Kim & Jo 2016 \u2014 Phys. Rev. E)\"",
+   "new_line": "  - \"https://doi.org/10.1103/PhysRevE.94.032311 (Measuring burstiness for finite event sequences)\""
+  },
+  {
+   "path": "research/calibrate-absence-model-on-real-sessions.md",
+   "identifier": "doi:10.1111/2041-210x.12333",
+   "old_label": "Zero-inflated models for abundance data",
+   "title": "Estimating abundance of unmarked animal populations: accounting for imperfect detection and other sources of zero inflation",
+   "old_line": "  - \"https://doi.org/10.1111/2041-210x.12333 (Zero-inflated models for abundance data)\"",
+   "new_line": "  - \"https://doi.org/10.1111/2041-210x.12333 (Estimating abundance of unmarked animal populations: accounting for imperfect detection and other sources of zero inflation)\""
+  },
+  {
+   "path": "research/calibrate-absence-model-on-real-sessions.md",
+   "identifier": "doi:10.2307/2532959",
+   "old_label": "Van den Broek 1995 score test for zero-inflation",
+   "title": "A Score Test for Zero Inflation in a Poisson Distribution",
+   "old_line": "  - \"https://doi.org/10.2307/2532959 (Van den Broek 1995 score test for zero-inflation)\"",
+   "new_line": "  - \"https://doi.org/10.2307/2532959 (A Score Test for Zero Inflation in a Poisson Distribution)\""
+  },
+  {
+   "path": "research/cbor-tag-6-dependent-type-formalization.md",
+   "identifier": "arxiv:2505.17335",
+   "old_label": "EverCBOR/EverCDDL, Microsoft Research, 2025",
+   "title": "Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE",
+   "old_line": "  - \"arXiv:2505.17335 (EverCBOR/EverCDDL, Microsoft Research, 2025)\"",
+   "new_line": "  - \"arXiv:2505.17335 (Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE)\""
+  },
+  {
+   "path": "research/frontier-research-ontology-llm-reasoning-failures-large-ontology-model-2026-09-03.md",
+   "identifier": "arxiv:2602.06176",
+   "old_label": "LLM Reasoning Failures Comprehensive Survey, Feb 2026",
+   "title": "Large Language Model Reasoning Failures",
+   "old_line": "  - \"arXiv:2602.06176 (LLM Reasoning Failures Comprehensive Survey, Feb 2026)\"",
+   "new_line": "  - \"arXiv:2602.06176 (Large Language Model Reasoning Failures)\""
+  }
+ ],
+ "skipped": [
+  {
+   "path": "research/memory-write-deduplication-amplification-control.md",
+   "identifier": "doi:10.1145/509907.509965",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/hierarchical-empirical-bayes-preference-rates.md",
+   "identifier": "doi:10.1080/01621459.1981.10477731",
+   "reason": "no authoritative title fetched"
+  },
+  {
+   "path": "research/calibrate-absence-model-on-real-sessions.md",
+   "identifier": "doi:10.1103/PhysRevE.73.036127",
+   "reason": "reviewed label 'Vazquez et al. 2005, Phys Rev E \u2014 non-Po' not found"
+  },
+  {
+   "path": "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "identifier": "arxiv:2509.20021",
+   "reason": "no source line carries it"
+  },
+  {
+   "path": "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "identifier": "arxiv:2604.14228",
+   "reason": "no source line carries it"
+  },
+  {
+   "path": "research/signal-weight-calibration-real-data.md",
+   "identifier": "doi:10.1007/978-3-030-86523-8_22",
+   "reason": "reviewed label 'Ensembling Shift Detectors \u2014 dataset-ada' not found"
+  },
+  {
+   "path": "research/band4-phi-regression.md",
+   "identifier": "doi:10.1007/s00521-023-08328-z",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-comprehensive-2026-09-11-supplement-v2.md",
+   "identifier": "arxiv:2501.09136",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-september-2026-supplement-v3.md",
+   "identifier": "arxiv:2505.10468",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-metadata-categorization-linguistic-philosophical-2026-09-10.md",
+   "identifier": "arxiv:2505.10468",
+   "reason": "rewrite produced no change"
+  }
+ ]
+}

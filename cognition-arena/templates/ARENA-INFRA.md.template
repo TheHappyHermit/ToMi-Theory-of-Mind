@@ -1,0 +1,28 @@
+# ARENA-INFRA — corpus-hygiene requirements
+
+<!--
+TEMPLATE. Copy to ../ARENA-INFRA.md on install. Runtime state; not tracked.
+Separate from ARENA.md / ARENA-EVIDENCE.md on purpose: a link resolver and a hippocampus index both
+look like "components" in a list, and only one is a brain part. Infrastructure
+that does not fill a biological or psychological function lives here.
+-->
+
+**Admission test:** can you name the brain function it fills? If not, it belongs
+here. One area = one defect CLASS; individual instances go in VERIFICATION.md.
+
+## Classes
+
+_None yet. Format as:*
+
+    ### C-NNN — <class name>
+    **Definition.** What counts as this defect.
+    **Why it matters.** The design requirement it implies.
+    **Instances.** Filed in VERIFICATION.md, not repeated here.
+    **Repair.** Automatic and schema-safe, or needs a human?
+
+## Binding rules
+
+Standards are defined once, in `standards/okf-schema.yaml` and
+`standards/WIKI-STANDARDS.md`. **Reference them; never restate their contents
+here.** Restating is how the corpus ended up with four conflicting definitions of
+its own frontmatter schema, each tool enforcing a different one.

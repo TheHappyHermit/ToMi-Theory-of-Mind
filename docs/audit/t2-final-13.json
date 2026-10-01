@@ -1,0 +1,98 @@
+{
+ "rewritten": [
+  {
+   "path": "Consolidation/Adaptive-Forgetting.md",
+   "identifier": "10.1038/35066572",
+   "kind": "bare",
+   "title": "Suppressing unwanted memories by executive control",
+   "old": "  - \"https://doi.org/10.1038/35066572\"",
+   "new": "  - \"https://doi.org/10.1038/35066572 (Suppressing unwanted memories by executive control)\""
+  },
+  {
+   "path": "Executive-Control/Dual-Process-Theories.md",
+   "identifier": "10.1016/j.neuron.2011.02.027",
+   "kind": "bare",
+   "title": "Model-Based Influences on Humans' Choices and Striatal Prediction Errors",
+   "old": "  - \"https://www.pnas.org/doi/10.1016/j.neuron.2011.02.027\"",
+   "new": "  - \"https://www.pnas.org/doi/10.1016/j.neuron.2011.02.027 (Model-Based Influences on Humans' Choices and Striatal Prediction Errors)\""
+  },
+  {
+   "path": "Neuroplasticity/Skill-Myelination-Hardware-Acceleration-Paths.md",
+   "identifier": "10.1073/pnas.1916646117",
+   "kind": "bare",
+   "title": "Activity-dependent myelination: A glial mechanism of oscillatory self-organization in late adult life",
+   "old": "  - \"https://doi.org/10.1073/pnas.1916646117\"",
+   "new": "  - \"https://doi.org/10.1073/pnas.1916646117 (Activity-dependent myelination: A glial mechanism of oscillatory self-organization in late adult life)\""
+  },
+  {
+   "path": "Neuroscience/Corollary-Discharge-Efference-Copy-Agency.md",
+   "identifier": "10.1126/science.1069590",
+   "kind": "bare",
+   "title": "A Pathway in Primate Brain for Internal Monitoring of Movements",
+   "old": "  - \"https://doi.org/10.1126/science.1069590\"",
+   "new": "  - \"https://doi.org/10.1126/science.1069590 (A Pathway in Primate Brain for Internal Monitoring of Movements)\""
+  },
+  {
+   "path": "research/batch210-the-evidence-check-verifies-existence-not-support.md",
+   "identifier": "10.1037/0278-7393.19.4.851",
+   "kind": "bare",
+   "title": "The cue-familiarity heuristic in metacognition",
+   "old": "- 'https://doi.org/10.1037/0278-7393.19.4.851'",
+   "new": "- 'https://doi.org/10.1037/0278-7393.19.4.851 (The cue-familiarity heuristic in metacognition)'"
+  },
+  {
+   "path": "research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "identifier": "10.1177/22104968261431521",
+   "kind": "glued_tag",
+   "title": "schema-miner pro: Agentic AI for Ontology Grounding Over Heterogeneous Enterprise Data",
+   "old": "  - 'https://journals.sagepub.com/doi/10.1177/22104968261431521 (schema-minerpro: Agentic AI for Ontology Grounding Over LLM-Discovered Scientific Schemas in a Human-in-the-Loop Workflow)'",
+   "new": "  - 'https://journals.sagepub.com/doi/10.1177/22104968261431521 (schema-miner pro: Agentic AI for Ontology Grounding Over Heterogeneous Enterprise Data)'"
+  },
+  {
+   "path": "research/memory-write-deduplication-amplification-control.md",
+   "identifier": "10.1145/276698.276876",
+   "kind": "acronym_initials",
+   "title": "Approximate nearest neighbors",
+   "old": "  - \"https://dl.acm.org/doi/10.1145/276698.276876 (Indyk & Motwani 1998 LSH)\"",
+   "new": "  - \"https://dl.acm.org/doi/10.1145/276698.276876 (Approximate nearest neighbors)\""
+  }
+ ],
+ "in_text_titles_already_present": [
+  [
+   "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "2509.20021",
+   "Embodied AI: From LLMs to World Models"
+  ],
+  [
+   "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "2604.14228",
+   "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems"
+  ]
+ ],
+ "excluded": [
+  {
+   "path": "AI-Architecture/Neuromorphic-Computing.md",
+   "identifier": "doi:10.1142/10269",
+   "resolves_to": "Real Options in Energy and Commodity Markets",
+   "decision": "not titled",
+   "reason": "a finance paper with no relationship to neuromorphic computing; titling it would make the file assert a source it does not mean. Needs a human decision about what the file intended to cite."
+  }
+ ],
+ "problems": [
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement-v2.md",
+   "identifier": "2602.19320",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement-v2.md",
+   "identifier": "2604.14197",
+   "reason": "rewrite produced no change"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement.md",
+   "identifier": "2606.05339",
+   "reason": "rewrite produced no change"
+  }
+ ]
+}

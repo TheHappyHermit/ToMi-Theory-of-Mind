@@ -1,0 +1,77 @@
+{
+ "control_fired": {
+  "agm": 5,
+  "associative_graph": 30,
+  "chronesthesia": 15,
+  "counterfactual": 5,
+  "defeater_graph": 5,
+  "dialectic": 5
+ },
+ "control_mean_turn_s": 0.001462,
+ "gates": {
+  "agm": {
+   "delta_pct": -2.11,
+   "delta_s": -3.1e-05,
+   "errors": 0,
+   "fired_delta": -5,
+   "mean_turn_s": 0.001432,
+   "times_fired": 0,
+   "times_fired_when_present": 5
+  },
+  "associative_graph": {
+   "delta_pct": 0.54,
+   "delta_s": 8e-06,
+   "errors": 0,
+   "fired_delta": -30,
+   "mean_turn_s": 0.00147,
+   "times_fired": 0,
+   "times_fired_when_present": 30
+  },
+  "chronesthesia": {
+   "delta_pct": -4.65,
+   "delta_s": -6.8e-05,
+   "errors": 0,
+   "fired_delta": -15,
+   "mean_turn_s": 0.001394,
+   "times_fired": 0,
+   "times_fired_when_present": 15
+  },
+  "counterfactual": {
+   "delta_pct": -82.35,
+   "delta_s": -0.001204,
+   "errors": 0,
+   "fired_delta": -5,
+   "mean_turn_s": 0.000258,
+   "times_fired": 0,
+   "times_fired_when_present": 5
+  },
+  "defeater_graph": {
+   "delta_pct": -15.15,
+   "delta_s": -0.000221,
+   "errors": 0,
+   "fired_delta": -5,
+   "mean_turn_s": 0.001241,
+   "times_fired": 0,
+   "times_fired_when_present": 5
+  },
+  "dialectic": {
+   "delta_pct": -4.31,
+   "delta_s": -6.3e-05,
+   "errors": 0,
+   "fired_delta": -5,
+   "mean_turn_s": 0.001399,
+   "times_fired": 0,
+   "times_fired_when_present": 5
+  }
+ },
+ "invalid_reason": null,
+ "known_limits": [
+  "Single-gate ablation measures marginal contribution given the other five present. A subsystem that only matters when another is absent will read as zero here.",
+  "Wall-clock delta is a proxy for cost, not for value. A slow subsystem can be earning its keep; a fast one can be dead weight. Read both columns.",
+  "Per-turn times are sub-millisecond, so they are within range of scheduler noise. Treat any delta under ~5% as unresolved rather than as zero. Raise --trials before believing a small number."
+ ],
+ "load": "stressed",
+ "trials": 6,
+ "turns_per_trial": 30,
+ "valid": true
+}

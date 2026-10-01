@@ -1,0 +1,7 @@
+author: Hermes Cortex
+description: "Cortex control plugin \u2014 action gate, epistemic protocol, experience\
+  \ tracking"
+hooks:
+- pre_tool_call
+name: cortex-control
+version: 1.0.0

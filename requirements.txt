@@ -1,0 +1,82 @@
+# ==============================================================================
+# Hermes Brain — Python Dependencies
+# ==============================================================================
+# Install:  pip install -r requirements.txt        (or: uv pip install -r requirements.txt)
+#
+# Sections:
+#   CORE      — required by brain/, plugins/, hooks/, and the primary scripts
+#   SCRIPTS   — required by cron-job scripts (newsletter, freshrss, telegram)
+#   DASHBOARD — required only by the Command Deck dashboard (dashboard/)
+#
+# System-level tools (sqlite3, jq, rsync, gh) are NOT pip packages — install
+# them with:  bash scripts/install_system_deps.sh
+#
+# Docker is likewise a SYSTEM requirement, not a pip package, and the `docker`
+# PyPI package is deliberately NOT a dependency here. This repo drives the
+# container stack through the `docker` CLI via subprocess (install.py
+# get_docker_compose_cmd(), start_companion_stacks(), run_docker()), so the SDK
+# would be a second, unused way to do the same thing. Install the Engine:
+#     https://docs.docker.com/engine/install/
+# `bash scripts/install_system_deps.sh` checks for it and prints that URL when
+# it is missing. See also:  docker/README.md
+##
+# Browser automation likewise needs a real Chromium BINARY, which no pip package
+# can supply. Two parts, both required:
+#   1. the browser   -- fetched by Playwright into ~/.cache/ms-playwright
+#   2. the flags     -- see the AppArmor note below
+#   npx playwright install chromium      # binary only; do NOT use --with-deps
+#                                     (that shells apt and needs root)
+#   npx playwright install-deps chromium # system libs; run once WITH sudo
+# Hermes also autoinstalls the binary on first local use
+# (browser_tool_install._maybe_autoinstall_chromium), gated by
+# security.allow_lazy_installs, and honours AGENT_BROWSER_EXECUTABLE_PATH.
+#
+# APPARMOR -- READ THIS BEFORE REPORTING A BROWSER BUG.
+# Ubuntu ships kernel.apparmor_restrict_unprivileged_userns=1, which blocks the
+# user namespaces Chrome's zygote sandbox needs. The symptom is NOT a missing
+# browser: Chromium exits with a FATAL zygote_host error, or
+# "Chrome exited early ... without writing DevToolsActivePort". No amount of
+# reinstalling Chromium fixes it. The fix is to pass --no-sandbox:
+#   export AGENT_BROWSER_ARGS="--no-sandbox,--disable-dev-shm-usage"
+# (comma-separated in ONE value, not separate argv entries). Confirm with:
+#   npx agent-browser --args "--no-sandbox" open http://example.com
+# Prefer AGENT_BROWSER_ARGS over patching hermes-agent; the env var is the
+# supported override and survives `hermes update`.
+#
+# Skill-scoped heavy deps (torch, transformers, marker, pymupdf, pptx, docx,
+# openpyxl) are intentionally NOT here — each skill lists its own prerequisites.
+#
+# Google sync (gmail_sync.py / gcal_sync.py) uses its OWN isolated venv so
+# `hermes update` can never break it silently:
+#   bash scripts/setup_google_venv.sh
+# ==============================================================================
+
+# ── CORE ────────────────────────────────────────────────────────────────────
+pg8000>=1.30.0          # brain-postgres access (decision_logger, brain_sync, brain_query)
+requests>=2.31.0        # HTTP for core scripts (_fetch_freshrss, health checks)
+pyyaml>=6.0             # config parsing (audit_wiki, integrations, profile tools)
+psutil>=5.9.0           # process/system checks (verify_stack, health checks)
+
+# ── SCRIPTS (cron jobs) ─────────────────────────────────────────────────────
+openai>=1.30.0          # newsletter_builder(.v2) LLM summarization
+python-telegram-bot>=21.0   # send_newsletter.py delivery
+trafilatura>=1.8.0      # newsletter web-content extraction
+feedparser>=6.0.10      # FreshRSS/feed parsing (newsletter pipeline)
+beautifulsoup4>=4.12.0  # HTML parsing (newsletter, dashboard fallbacks)
+urllib3>=2.0.0          # Retry/urllib3.util.retry — _fetch_freshrss, newsletter_builder(.v2)
+                        # (also arrives transitively via requests, but the three
+                        #  scripts that import it directly should not depend on a
+                        #  transitive dep staying in place)
+
+# ── DASHBOARD (Command Deck) ────────────────────────────────────────────────
+fastapi>=0.100.0        # dashboard API server
+uvicorn[standard]>=0.23.0   # ASGI server
+pydantic>=2.0.0         # request/response models
+websockets>=11.0        # live event stream
+yfinance>=0.2.40        # markets integration
+edge-tts>=7.0.0         # voice fallback TTS
+python-dateutil>=2.8.2  # date handling (dashboard routes)
+
+# NOTE: Google API packages (google-api-python-client, google-auth-httplib2,
+# google-auth-oauthlib) are deliberately NOT in this file. They live in the
+# dedicated google-sync venv — see scripts/setup_google_venv.sh.

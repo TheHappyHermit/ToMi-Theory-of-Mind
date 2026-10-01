@@ -1,0 +1,1746 @@
+{
+ "threshold": 0.82,
+ "summary": {
+  "true_mismatch": 4,
+  "wording": 5,
+  "no_title_written": 118,
+  "not_in_corpus": 66
+ },
+ "items": {
+  "true_mismatch": [
+   {
+    "id": "arxiv:2510.26692",
+    "real_title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+    "evidence": [
+     [
+      0.21212121212121213,
+      "hybrid-cross-encoder-architectures-reranking-2026-09-18.md",
+      ">\u00b9\u2070</a>: Moonshot AI"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.11234",
+    "real_title": "The Semantic Training Gap: Ontology-Grounded Tool Architectures for Industrial AI Agent Systems",
+    "evidence": [
+     [
+      0.3925233644859813,
+      "frontier-research-ontology-structural-shortcuts-faos-semantic-drift-2026-09-03.md",
+      "Semantic Training Gap"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2606.09483",
+    "real_title": "Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents",
+    "evidence": [
+     [
+      0.25688073394495414,
+      "venue-verification-brain-architecture-2026-09-24.md",
+      "Informal and Other Publications"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0033-295X.100.4.609",
+    "real_title": "How do we know that we know? The accessibility model of the feeling of knowing.",
+    "evidence": [
+     [
+      0.2929936305732484,
+      "batch210-the-evidence-check-verifies-existence-not-support.md",
+      "the familiarity of the cue mapped onto the pattern of metacognitive judgments, whereas the retrievability of the correct target did not"
+     ]
+    ]
+   }
+  ],
+  "wording": [
+   {
+    "id": "arxiv:2410.10813",
+    "real_title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "evidence": [
+     [
+      1.0,
+      "batch124-conversational-reference-resolution-anchors.md",
+      "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2505.17335",
+    "real_title": "Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE",
+    "evidence": [
+     [
+      1.0,
+      "cbor-tag-6-dependent-type-formalization.md",
+      "Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2608.22974",
+    "real_title": "Toward Effective and Reliable LLM Agents via Dynamic Ontology",
+    "evidence": [
+     [
+      0.9636363636363636,
+      "frontier-research-ontology-oak-ontological-grounding-memory-architectures-2026-09-04.md",
+      "Toward Effective and Reliable LLM Agents via Dynamic Ontology (OaK)"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0033-2909.132.3.354",
+    "real_title": "Distributed practice in verbal recall tasks: A review and quantitative synthesis.",
+    "evidence": [
+     [
+      0.8615384615384616,
+      "Desirable-Difficulties-Bjork.md",
+      "Distributed practice in verbal recall tasks: A quantitative review"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1145/3646547.3688457",
+    "real_title": "IoT Bricks Over v6: Understanding IPv6 Usage in Smart Homes",
+    "evidence": [
+     [
+      1.0,
+      "iot-dns-traffic-pattern-evolution-post-2019.md",
+      "IoT Bricks Over v6: Understanding IPv6 Usage in Smart Homes"
+     ]
+    ]
+   }
+  ],
+  "no_title_written": [
+   {
+    "id": "arxiv:1902.01520",
+    "real_title": "Contextual Bandits with Continuous Actions: Smoothing, Zooming, and Adapting",
+    "evidence": [
+     [
+      "context-dependent-lipschitz-constants-k-lambda.md",
+      24,
+      "  - https://arxiv.org/abs/1902.01520"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2012.00073",
+    "real_title": "TimeSHAP: Explaining Recurrent Models through Sequence Perturbations",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      21,
+      "  - arxiv:2012.00073"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2206.03208",
+    "real_title": "From Attribution Maps to Human-Understandable Explanations through Concept Relevance Propagation",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      20,
+      "  - arxiv:2206.03208"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2311.09175",
+    "real_title": "Can Query Expansion Improve Generalization of Strong Cross-Encoder Rankers?",
+    "evidence": [
+     [
+      "kalman-attention-vs-delta-layer-division-hybrid-reranker.md",
+      17,
+      "  - arxiv:2311.09175"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2402.05602",
+    "real_title": "AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for Transformers",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      13,
+      "  - arxiv:2402.05602"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2403.01590",
+    "real_title": "The Hidden Attention of Mamba Models",
+    "evidence": [
+     [
+      "dynamiclpr-gdn-adaptation.md",
+      15,
+      "  - arxiv:2403.01590"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2406.06484",
+    "real_title": "Parallelizing Linear Transformers with the Delta Rule over Sequence Length",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      11,
+      "  - arxiv:2406.06484"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2406.07592",
+    "real_title": "MambaLRP: Explaining Selective State Space Sequence Models",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      10,
+      "  - arxiv:2406.07592"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2412.06464",
+    "real_title": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      11,
+      "  - arxiv:2412.06464"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2504.14366",
+    "real_title": "What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation",
+    "evidence": [
+     [
+      "gate-saturation-influence-score-interaction.md",
+      16,
+      "  - arxiv:2504.14366"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2505.24244",
+    "real_title": "Mamba Knockout for Unraveling Factual Information Flow",
+    "evidence": [
+     [
+      "influence-score-gated-deltanet-validation.md",
+      17,
+      "  - arxiv:2505.24244"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2506.02138",
+    "real_title": "Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability",
+    "evidence": [
+     [
+      "dynamiclpr-gdn-adaptation.md",
+      19,
+      "  - arxiv:2506.02138"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2508.19614",
+    "real_title": "LFD: Layer Fused Decoding to Exploit External Knowledge in Retrieval-Augmented Generation",
+    "evidence": [
+     [
+      "layer-type-aware-ceqe-fusion-weight-learning.md",
+      19,
+      "  - arxiv:2508.19614"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2510.20787",
+    "real_title": "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction",
+    "evidence": [
+     [
+      "kalman-attention-vs-delta-layer-division-hybrid-reranker.md",
+      11,
+      "  - arxiv:2510.20787"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2511.12694",
+    "real_title": "X-VMamba: Explainable Vision Mamba",
+    "evidence": [
+     [
+      "dynamiclpr-gdn-adaptation.md",
+      17,
+      "  - arxiv:2511.12694"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2511.17970",
+    "real_title": "Controllability Analysis of State Space-based Language Model",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      14,
+      "  - arxiv:2511.17970"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2511.21016",
+    "real_title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      14,
+      "  - arxiv:2511.21016"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2512.07010",
+    "real_title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      12,
+      "  - arxiv:2512.07010"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2512.11366",
+    "real_title": "qa-FLoRA: Data-free query-adaptive Fusion of LoRAs for LLMs",
+    "evidence": [
+     [
+      "qa-flora-adaptation-ceqe-fusion-weights.md",
+      19,
+      "  - https://arxiv.org/abs/2512.11366"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2512.16723",
+    "real_title": "KOSS: Kalman-Optimal Selective State Spaces for Long-Term Sequence Modeling",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      15,
+      "  - arxiv:2512.16723"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2601.09322",
+    "real_title": "Attentive multilayer fusion for vision transformers",
+    "evidence": [
+     [
+      "layer-type-aware-ceqe-fusion-weight-learning.md",
+      21,
+      "  - arxiv:2601.09322"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2602.00029",
+    "real_title": "Construct, Align, and Reason: Large Ontology Models for Enterprise Knowledge Management",
+    "evidence": [
+     [
+      "frontier-research-ontology-llm-reasoning-failures-large-ontology-model-2026-09-03.md",
+      195,
+      "[2] https://arxiv.org/pdf/2602.00029.pdf \u2014 Large Ontology Model (LOM) \u2014 Construct-Align-Reason"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2602.10743",
+    "real_title": "Kalman Linear Attention: Parallel Bayesian Filtering For Efficient Language Modelling and State Tracking",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      16,
+      "  - arxiv:2602.10743"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2602.22591",
+    "real_title": "Where Relevance Emerges: A Layer-Wise Study of Internal Attention for Zero-Shot Re-Ranking",
+    "evidence": [
+     [
+      "layer-type-aware-ceqe-fusion-weight-learning.md",
+      18,
+      "  - arxiv:2602.22591"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2603.07670",
+    "real_title": "Memory for Autonomous LLM Agents:Mechanisms, Evaluation, and Emerging Frontiers",
+    "evidence": [
+     [
+      "frontier-research-ontology-dual-memory-knowledge-hallucination-sept-2026-21.md",
+      355,
+      "[10] Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers \u2014 arXiv:2603.07670 \u2014 https://arxiv.org/abs/2603.07670"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2603.14597",
+    "real_title": "D-MEM: Dopamine-Gated Agentic Memory via Reward Prediction Error Routing",
+    "evidence": [
+     [
+      "band3-dmem-critic-router.md",
+      11,
+      "  - https://arxiv.org/abs/2603.14597"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.02618",
+    "real_title": "OntoKG: Ontology-Oriented Knowledge Graph Construction with Intrinsic-Relational Routing",
+    "evidence": [
+     [
+      "frontier-research-ontology-autonomous-memory-2026-09-02.md",
+      150,
+      "[8] OntoKG: Intrinsic-Relational Routing \u2014 arXiv:2604.02618 \u2014 https://arxiv.org/abs/2604.02618"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.03496",
+    "real_title": "Beyond Predefined Schemas: TRACE-KG for Context-Enriched Knowledge Graph Generation",
+    "evidence": [
+     [
+      "frontier-research-ontology-comprehensive-update-2026-09-01.md",
+      15,
+      "  - 'https://arxiv.org/abs/2604.03496'"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.07658",
+    "real_title": "Optimal Decay Spectra for Linear Recurrences",
+    "evidence": [
+     [
+      "spectral-shift-attribution-analysis.md",
+      12,
+      "  - arxiv:2604.07658"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.09608",
+    "real_title": "Unifying Ontology Construction and Semantic Alignment for Deterministic Enterprise Reasoning at Scale",
+    "evidence": [
+     [
+      "frontier-research-ontology-llm-reasoning-failures-large-ontology-model-2026-09-03.md",
+      196,
+      "[3] https://arxiv.org/pdf/2604.09608v1.pdf \u2014 Large Ontology Model \u2014 Deterministic Enterprise Reasoning at Scale"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.19021",
+    "real_title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      17,
+      "  - arxiv:2604.19021"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2604.21100",
+    "real_title": "Preconditioned DeltaNet: Curvature-aware Sequence Modeling for Linear Recurrences",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      13,
+      "  - arxiv:2604.21100"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.06460",
+    "real_title": "MINER: Mining Multimodal Internal Representation for Efficient Retrieval",
+    "evidence": [
+     [
+      "layer-type-aware-ceqe-fusion-weight-learning.md",
+      20,
+      "  - arxiv:2605.06460"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.16640",
+    "real_title": "Provably Shorter Scratchpads in Hybrid DeltaNet-Attention Decoders",
+    "evidence": [
+     [
+      "gated-deltanet-gradpath-construction.md",
+      31,
+      "  - \"https://arxiv.org/abs/2605.16640\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.18672",
+    "real_title": "Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment",
+    "evidence": [
+     [
+      "agentbound-continuity-abc-integration.md",
+      16,
+      "  - \"https://arxiv.org/abs/2605.18672 \u2014 Three-Layer Probabilistic Assume-Guarantee Architecture\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.20530",
+    "real_title": "AgentAtlas: Beyond Outcome Leaderboards for LLM Agents",
+    "evidence": [
+     [
+      "band2-mast-failure-taxonomy.md",
+      13,
+      "  - https://arxiv.org/abs/2605.20530"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2605.22791",
+    "real_title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+    "evidence": [
+     [
+      "kalman-delta-rule-attribution.md",
+      18,
+      "  - arxiv:2605.22791"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2606.04048",
+    "real_title": "Unlocking Feature Learning in Gated Delta Networks at Scale",
+    "evidence": [
+     [
+      "gate-saturation-influence-score-interaction.md",
+      14,
+      "  - arxiv:2606.04048"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2606.04194",
+    "real_title": "Training-Free Lexical-Dense Fusion for Conversational-Memory Retrieval",
+    "evidence": [
+     [
+      "ce-qe-query-expansion-longmemeval.md",
+      27,
+      "  - \"https://arxiv.org/abs/2606.04194 (Training-Free Lexical-Dense Fusion)\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2606.09888",
+    "real_title": "SinkRec: Mitigating Semantic State Sink in Long Sequence Recommendation with Memory-Conditioned Gated Delta Networks",
+    "evidence": [
+     [
+      "gdn-lrp-conservation-validation.md",
+      22,
+      "  - arxiv:2606.09888"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2606.24775",
+    "real_title": "Are We Ready For An Agent-Native Memory System?",
+    "evidence": [
+     [
+      "frontier-research-round7-sept-2026.md",
+      223,
+      "[48] https://arxiv.org/abs/2606.24775 \u2014 Are We Ready For An Agent-Native Memory System?"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2607.07953",
+    "real_title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing",
+    "evidence": [
+     [
+      "depass-decomposition-clvr-attribution.md",
+      12,
+      "  - \"https://arxiv.org/abs/2607.07953\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2607.11796",
+    "real_title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals",
+    "evidence": [
+     [
+      "influence-score-gated-deltanet-validation.md",
+      18,
+      "  - arxiv:2607.11796"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2608.00452",
+    "real_title": "CeQe: Grounding Lexical Retrieval in Semantic Evidence",
+    "evidence": [
+     [
+      "gmar-xai-metrics-ir-adaptation-validation.md",
+      29,
+      "  - url: \"https://arxiv.org/abs/2608.00452\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2608.30320",
+    "real_title": "On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability",
+    "evidence": [
+     [
+      "kalman-attention-vs-delta-layer-division-hybrid-reranker.md",
+      18,
+      "  - url:https://arxiv.org/pdf/2608.30320.pdf"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2608.30386",
+    "real_title": "DASC: Decay-Aware State Compression for Hybrid Linear-Attention Serving",
+    "evidence": [
+     [
+      "spectral-shift-attribution-analysis.md",
+      17,
+      "  - arxiv:2608.30386"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2609.00763",
+    "real_title": "Automated Tree Knowledge Graph Construction using Ontology Expansion and Retrieval from Vietnamese History Textbooks",
+    "evidence": [
+     [
+      "frontier-research-ontology-september-2026-round78.md",
+      108,
+      "**Source:** [arXiv 2609.00763](https://arxiv.org/abs/2609.00763) \u2014 Doan, Minh (Sep 1, 2026)"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2609.07816",
+    "real_title": "Kalman Delta Networks: Uncertainty-aware Associative Memory",
+    "evidence": [
+     [
+      "kdn-vs-gdnlrp-cross-encoder-benchmark.md",
+      9,
+      "  - arxiv:2609.07816"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2609.10413",
+    "real_title": "Fortunate Recall: Ontology-Driven Memory Lifecycle Management for Persistent Coherence in LLMs",
+    "evidence": [
+     [
+      "enforcement-layer-supersede-prevention.md",
+      27,
+      "  - \"https://arxiv.org/abs/2609.10413 (Fortunate Recall: Ontology-Driven Memory Lifecycle \u2014 slot-key supersession)\""
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2609.14320",
+    "real_title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization",
+    "evidence": [
+     [
+      "dynamiclpr-gdn-adaptation.md",
+      21,
+      "  - arxiv:2609.14320"
+     ]
+    ]
+   },
+   {
+    "id": "arxiv:2609.16183",
+    "real_title": "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It",
+    "evidence": [
+     [
+      "gate-saturation-influence-score-interaction.md",
+      15,
+      "  - arxiv:2609.16183"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1002/glia.23713",
+    "real_title": "Motor learning requires myelination to reduce asynchrony and spontaneity in neural activity",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      31,
+      "  - \"https://doi.org/10.1002/glia.23713\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1007/978-3-030-86523-8_22",
+    "real_title": "Ensembling Shift Detectors: An Extensive Empirical Evaluation",
+    "evidence": [
+     [
+      "signal-weight-calibration-real-data.md",
+      26,
+      "  - \"https://doi.org/10.1007/978-3-030-86523-8_22 (Ensembling Shift Detectors \u2014 dataset-adaptive significance levels)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1007/s11280-026-01413-y",
+    "real_title": "GenOM: ontology matching with description generation and large language models",
+    "evidence": [
+     [
+      "frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+      276,
+      "[5] GenOM: Ontology Matching with Description Generation and Large Language Models \u2014 Song, Chen, Schmidt, World Wide Web 2026 \u2014 https://doi.org/10.1007/s11280-026-01413-y"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.cobeha.2016.06.003",
+    "real_title": "Searching for principles of brain computation",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      21,
+      "  - \"https://doi.org/10.1016/j.cobeha.2016.06.003\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.cognition.2020.104470",
+    "real_title": "Repetition increases both the perceived truth and fakeness of information: An ecological account",
+    "evidence": [
+     [
+      "batch210-the-evidence-check-verifies-existence-not-support.md",
+      14,
+      "- https://doi.org/10.1016/j.cognition.2020.104470"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neubiorev.2020.10.013",
+    "real_title": "Effectiveness of sorting tests for detecting cognitive decline in older adults with dementia and other common neurodegenerative disorders: A meta-analysis",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      26,
+      "  - \"https://doi.org/10.1016/j.neubiorev.2020.10.013\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neuroimage.2016.11.068",
+    "real_title": "The role of myelination in measures of white matter integrity: Combination of diffusion tensor imaging and two-photon microscopy of CLARITY intact brains",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      27,
+      "  - \"https://doi.org/10.1016/j.neuroimage.2016.11.068\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neuron.2012.12.027",
+    "real_title": "Anatomical Plasticity of Adult Brain Is Titrated by Nogo Receptor 1",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      30,
+      "  - \"https://doi.org/10.1016/j.neuron.2012.12.027\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neuron.2019.04.032",
+    "real_title": "Loss of Adaptive Myelination Contributes to Methotrexate Chemotherapy-Related Cognitive Impairment",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      32,
+      "  - \"https://doi.org/10.1016/j.neuron.2019.04.032\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neuron.2019.10.013",
+    "real_title": "Disruption of Oligodendrogenesis Impairs Memory Consolidation in Adult Mice",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      34,
+      "  - \"https://doi.org/10.1016/j.neuron.2019.10.013\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.neuroscience.2019.06.012",
+    "real_title": "Reduced transfer of visuomotor adaptation is associated with aberrant sense of agency in schizophrenia",
+    "evidence": [
+     [
+      "band1-agency-schema-provenance.md",
+      11,
+      "  - https://doi.org/10.1016/j.neuroscience.2019.06.012"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1016/j.tins.2023.05.005",
+    "real_title": "Somatosensory neuron types and their neural networks as revealed via single-cell transcriptomics",
+    "evidence": [
+     [
+      "Developmental-Origins-of-Cognition.md",
+      365,
+      "[10] Isbel, B. et al. (2023). A critical period plasticity framework for the sensorimotor-association axis of cortical neurodevelopment. *Trends in Neurosciences*. https://doi.org/10.1016/j.tins.2023.05.005"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1017/CBO9780511606847",
+    "real_title": "Boundaries of the Mind",
+    "evidence": [
+     [
+      "Extended-Mind-Theories.md",
+      29,
+      "  - \"https://doi.org/10.1017/CBO9780511606847\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1017/S0033291722002963",
+    "real_title": "Effect of lysergic acid diethylamide (LSD) on reinforcement learning in humans",
+    "evidence": [
+     [
+      "Psychedelics-Cognitive-Flexibility-Entropy.md",
+      28,
+      "  - \"https://doi.org/10.1017/S0033291722002963\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0033-295x.112.1.3",
+    "real_title": "The Demise of Short-Term Memory Revisited: Empirical and Computational Investigations of Recency Effects.",
+    "evidence": [
+     [
+      "Serial-Position-Recency-Primacy.md",
+      260,
+      "[11] Davelaar, E.K., Goshen-Gottstein, Y., Ashkenazi, A., Haarmann, H.J., & Usher, M. (2005). The demise of short-term memory revisited. *Psychological Review*, 112(1), 3\u201342. https://doi.org/10.1037/0033-295x.112.1.3"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0278-7393.19.6.1235",
+    "real_title": "Illusions of familiarity.",
+    "evidence": [
+     [
+      "Processing-Fluency-Illusions.md",
+      277,
+      "4. Whittlesea, B. W. A. (1993). Illusions of familiarity. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 19(6), 1235\u20131253. https://doi.org/10.1037/0278-7393.19.6.1235"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0278-7393.33.1.219",
+    "real_title": "Reversing the truth effect: Learning the interpretation of processing fluency in judgments of truth.",
+    "evidence": [
+     [
+      "Processing-Fluency-Illusions.md",
+      309,
+      "20. Unkelbach, C. (2007). Reversing the truth effect: Learning the interpretation of processing fluency in judgments of truth. *Journal of Experimental Psychology: Learning, Memory, and Cognition*, 33(1), 219\u2013230. https://doi.org/10.1037/0278-7393.33.1.219"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/0278-7393.6.1.91",
+    "real_title": "Output interference in the recall of categorized and paired-associate lists.",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      15,
+      "- https://doi.org/10.1037/0278-7393.6.1.91"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/a0021433",
+    "real_title": "Dilution, not load, affects distractor processing.",
+    "evidence": [
+     [
+      "Load-Theory-Attention.md",
+      32,
+      "  - \"https://doi.org/10.1037/a0021433\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/a0024606",
+    "real_title": "The impact of race and rank on the sexual harassment of Black and White men in the U.S. military.",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      19,
+      "  - \"https://doi.org/10.1037/a0024606\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/a0031624",
+    "real_title": "The neuroaesthetics of music.",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      28,
+      "  - \"https://doi.org/10.1037/a0031624\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/bul0000045",
+    "real_title": "Temporal cognition: Connecting subjective time to perception, attention, and memory.",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      23,
+      "  - \"https://doi.org/10.1037/bul0000045\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1037/h0045283",
+    "real_title": "Perceived order in different sense modalities.",
+    "evidence": [
+     [
+      "Temporal-Binding-Problem-Perceptual-Synchrony.md",
+      20,
+      "  - \"https://doi.org/10.1037/h0045283\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/nn.2412",
+    "real_title": "Training induces changes in white-matter architecture",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      38,
+      "  - \"https://doi.org/10.1038/nn.2412\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/nn.3045",
+    "real_title": "Plasticity in gray and white: neuroimaging changes in brain structure during learning",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      37,
+      "  - \"https://doi.org/10.1038/nn.3045\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/nn1516",
+    "real_title": "Extensive piano practicing has regionally specific effects on white matter development",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      25,
+      "  - \"https://doi.org/10.1038/nn1516\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41386-024-01809-2",
+    "real_title": "Neural complexity is increased after low doses of LSD, but not moderate to high doses of oral THC or methamphetamine",
+    "evidence": [
+     [
+      "Psychedelics-Cognitive-Flexibility-Entropy.md",
+      33,
+      "  - \"https://doi.org/10.1038/s41386-024-01809-2\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41467-026-70041-x",
+    "real_title": "Systematic review and meta-analysis of the evidence for an illusory truth effect and its determinants",
+    "evidence": [
+     [
+      "batch210-the-evidence-check-verifies-existence-not-support.md",
+      28,
+      "- https://doi.org/10.1038/s41467-026-70041-x"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41582-022-00737-3",
+    "real_title": "Adaptive and maladaptive myelination in health and disease",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      36,
+      "  - \"https://doi.org/10.1038/s41582-022-00737-3\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41583-020-00379-8",
+    "real_title": "Myelin plasticity: sculpting circuits in learning and memory",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      35,
+      "  - \"https://doi.org/10.1038/s41583-020-00379-8\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41586-022-05340-6",
+    "real_title": "Dendrocentric learning for synthetic intelligence",
+    "evidence": [
+     [
+      "Neuromorphic-Computing.md",
+      27,
+      "  - \"https://doi.org/10.1038/s41586-022-05340-6\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s41593-022-01052-2",
+    "real_title": "Maladaptive myelination promotes generalized epilepsy progression",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      33,
+      "  - \"https://doi.org/10.1038/s41593-022-01052-2\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s42005-025-02055-8",
+    "real_title": "Myelin-induced gain control in nonlinear neural networks",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      41,
+      "  - \"https://doi.org/10.1038/s42005-025-02055-8\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/s43588-022-00315-z",
+    "real_title": "Homeostatic coordination and up-regulation of neural activity by activity-dependent myelination",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      39,
+      "  - \"https://doi.org/10.1038/s43588-022-00315-z\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1038/srep46421",
+    "real_title": "Increased spontaneous MEG signal diversity for psychoactive doses of ketamine, LSD and psilocybin",
+    "evidence": [
+     [
+      "Psychedelics-Cognitive-Flexibility-Entropy.md",
+      27,
+      "  - \"https://doi.org/10.1038/srep46421\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1073/pnas.1119598109",
+    "real_title": "Neural correlates of the psychedelic state as determined by fMRI studies with psilocybin",
+    "evidence": [
+     [
+      "Psychedelics-Cognitive-Flexibility-Entropy.md",
+      23,
+      "  - \"https://doi.org/10.1073/pnas.1119598109\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1080/00207541003690082",
+    "real_title": "Estimating the time of step change with Poisson CUSUM and EWMA control charts",
+    "evidence": [
+     [
+      "calibrate-absence-model-on-real-sessions.md",
+      40,
+      "  - \"https://doi.org/10.1080/00207541003690082 (Poisson CUSUM for change-point detection)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1093/acprof:oso/9780195333213.001.0001",
+    "real_title": "Supersizing the Mind",
+    "evidence": [
+     [
+      "Extended-Mind-Theories.md",
+      28,
+      "  - \"https://doi.org/10.1093/acprof:oso/9780195333213.001.0001\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1093/biostatistics/kxl008",
+    "real_title": "Disease mapping and spatial regression with count data",
+    "evidence": [
+     [
+      "hierarchical-empirical-bayes-preference-rates.md",
+      40,
+      "  - \"https://doi.org/10.1093/biostatistics/kxl008 (Wakefield 2006, Small area estimation for count data with covariates)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1098/rstb.2013.0475",
+    "real_title": "Goal-directed learning and obsessive\u2013compulsive disorder",
+    "evidence": [
+     [
+      "Habit-Formation.md",
+      27,
+      "  - \"https://doi.org/10.1098/rstb.2013.0475\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1109/ICCI-CC.2014.6921489",
+    "real_title": "Enhanced Particle Swarm Optimization algorithm with resuse guided retrieval capabilities",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      12,
+      "- https://doi.org/10.1109/ICCI-CC.2014.6921489"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1109/TNN.2003.820440",
+    "real_title": "Simple model of spiking neurons",
+    "evidence": [
+     [
+      "Neuromorphic-Computing.md",
+      24,
+      "  - \"https://doi.org/10.1109/TNN.2003.820440\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1111/2041-210x.12333",
+    "real_title": "Estimating abundance of unmarked animal populations: accounting for imperfect detection and other sources of zero inflation",
+    "evidence": [
+     [
+      "calibrate-absence-model-on-real-sessions.md",
+      33,
+      "  - \"https://doi.org/10.1111/2041-210x.12333 (Zero-inflated models for abundance data)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1111/cogs.12842",
+    "real_title": "Expertise Shapes Multimodal Imagery for Wine",
+    "evidence": [
+     [
+      "Developmental-Origins-of-Cognition.md",
+      379,
+      "[17] Taatgen, N.A. (2020). Cognitive Architectures: Innate or Learned? *Cognitive Science*, 44(5), e12842. https://doi.org/10.1111/cogs.12842"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1111/j.1467-9280.1990.tb00208.x",
+    "real_title": "The Last shall be First: How Memory Strength Affects Children's Retrieval",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      17,
+      "- https://doi.org/10.1111/j.1467-9280.1990.tb00208.x"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1111/j.1467-9280.2009.02435.x",
+    "real_title": "Causal Binding of Actions to Their Effects",
+    "evidence": [
+     [
+      "Temporal-Binding-Problem-Perceptual-Synchrony.md",
+      22,
+      "  - \"https://doi.org/10.1111/j.1467-9280.2009.02435.x\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1126/science.1114362",
+    "real_title": "Experience-Driven Plasticity of Visual Cortex Limited by Myelin and Nogo Receptor",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      29,
+      "  - \"https://doi.org/10.1126/science.1114362\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1126/science.1207745",
+    "real_title": "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips",
+    "evidence": [
+     [
+      "Transactive-Memory-Systems.md",
+      26,
+      "  - \"https://doi.org/10.1126/science.1207745\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1126/science.1252304",
+    "real_title": "Neuronal Activity Promotes Oligodendrogenesis and Adaptive Myelination in the Mammalian Brain",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      21,
+      "  - \"https://doi.org/10.1126/science.1252304\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1126/science.1254642",
+    "real_title": "A million spiking-neuron integrated circuit with a scalable communication network and interface",
+    "evidence": [
+     [
+      "Neuromorphic-Computing.md",
+      26,
+      "  - \"https://doi.org/10.1126/science.1254642\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1126/science.278.5343.1616",
+    "real_title": "Modulating Irrelevant Motion Perception by Varying Attentional Load in an Unrelated Task",
+    "evidence": [
+     [
+      "Load-Theory-Attention.md",
+      29,
+      "  - \"https://doi.org/10.1126/science.278.5343.1616\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1142/10269",
+    "real_title": "Real Options in Energy and Commodity Markets",
+    "evidence": [
+     [
+      "Neuromorphic-Computing.md",
+      31,
+      "  - \"https://doi.org/10.1142/10269\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1371/journal.pcbi.1014340",
+    "real_title": "pyhgf: A neural network library for predictive coding",
+    "evidence": [
+     [
+      "band4-pyhgf-neuromodulation.md",
+      13,
+      "  - https://doi.org/10.1371/journal.pcbi.1014340"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.14569/IJACSA.2026.0170397",
+    "real_title": "Domain-Agnostic Knowledge Graph Construction for Systematic Hallucination Reduction and Knowledge Reusability in Large Language Models",
+    "evidence": [
+     [
+      "frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+      280,
+      "[7] Domain-Agnostic Knowledge Graph Construction for Systematic Hallucination Reduction \u2014 Pawar, IJACSA 2026 \u2014 https://doi.org/10.14569/IJACSA.2026.0170397"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1523/JNEUROSCI.4122-13.2013",
+    "real_title": "Do Short-Term Changes in White Matter Structure Indicate Learning-Induced Myelin Plasticity?",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      26,
+      "  - \"https://doi.org/10.1523/JNEUROSCI.4122-13.2013\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1609/aaai.v33i01.33015409",
+    "real_title": "RobustSTL: A Robust Seasonal-Trend Decomposition Algorithm for Long Time Series",
+    "evidence": [
+     [
+      "proxy-label-bias-mitigation-strategies.md",
+      51,
+      "  - \"https://doi.org/10.1609/aaai.v33i01.33015409 (RobustSTL: Robust Seasonal-Trend Decomposition)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.1609/aaai.v40i29.39586",
+    "real_title": "Autonomous Concept Drift Threshold Determination",
+    "evidence": [
+     [
+      "multi-objective-k-lambda-optimization.md",
+      39,
+      "  - \"https://doi.org/10.1609/aaai.v40i29.39586 (Autonomous Concept Drift Threshold Determination)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.18653/v1/2021.naacl-main.272",
+    "real_title": "ZS-BERT: Towards Zero-Shot Relation Extraction with Attribute Representation Learning",
+    "evidence": [
+     [
+      "batch123-entity-resolution-anchors.md",
+      39,
+      "  - \"https://doi.org/10.18653/v1/2021.naacl-main.272\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.2307/2532959",
+    "real_title": "A Score Test for Zero Inflation in a Poisson Distribution",
+    "evidence": [
+     [
+      "calibrate-absence-model-on-real-sessions.md",
+      37,
+      "  - \"https://doi.org/10.2307/2532959 (Van den Broek 1995 score test for zero-inflation)\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3233/AIC-1994-7104",
+    "real_title": "Case-Based Reasoning: Foundational Issues, Methodological Variations, and System Approaches",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      13,
+      "- https://doi.org/10.3233/AIC-1994-7104"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3233/SW-200422",
+    "real_title": "Pattern-based design applied to cultural heritage knowledge          graphs",
+    "evidence": [
+     [
+      "frontier-research-ontology-computational-metaphysics-structural-hallucination-oaei-2026-2026-09-03.md",
+      283,
+      "[8] Ontology Design Patterns Applied to Cultural Heritage Knowledge Graphs \u2014 https://doi.org/10.3233/SW-200422"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3389/fnhum.2014.00020",
+    "real_title": "The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs",
+    "evidence": [
+     [
+      "Psychedelics-Cognitive-Flexibility-Entropy.md",
+      22,
+      "  - \"https://doi.org/10.3389/fnhum.2014.00020\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3389/fnins.2021.799576",
+    "real_title": "Potential Pitfalls of Using Fractional Anisotropy, Axial Diffusivity, and Radial Diffusivity as Biomarkers of Cerebral White Matter Microstructure",
+    "evidence": [
+     [
+      "Skill-Myelination-Hardware-Acceleration-Paths.md",
+      28,
+      "  - \"https://doi.org/10.3389/fnins.2021.799576\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3390/electronics14183605",
+    "real_title": "Scaling Entity Resolution with K-Means: A Review of Partitioning Techniques",
+    "evidence": [
+     [
+      "batch123-entity-resolution-anchors.md",
+      38,
+      "  - \"https://doi.org/10.3390/electronics14183605\""
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.34190/icair.5.1.4375",
+    "real_title": "Curiosity-Driven Learning and Autonomous Skill Acquisition: Multi-Modal Exploration for Self-Directed AI Development",
+    "evidence": [
+     [
+      "exclusion-imgep.md",
+      12,
+      "  - https://doi.org/10.34190/icair.5.1.4375"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3758/BF03208822",
+    "real_title": "Strong items get suppressed, weak items do not: The role of item strength in output interference",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      14,
+      "- https://doi.org/10.3758/BF03208822"
+     ]
+    ]
+   },
+   {
+    "id": "doi:10.3758/s13423-015-0840-5",
+    "real_title": "Dynamic memory searches: Selective output interference for the memory of facts",
+    "evidence": [
+     [
+      "batch235-retrospection-returns-the-first-hit-not-the-best-hit.md",
+      16,
+      "- https://doi.org/10.3758/s13423-015-0840-5"
+     ]
+    ]
+   }
+  ],
+  "not_in_corpus": [
+   {
+    "id": "arxiv:2407.13193",
+    "real_title": "Retrieval-Augmented Generation for Natural Language Processing: A Survey",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2502.08557",
+    "real_title": "A New Query Expansion Approach via Agent-Mediated Dialogic Inquiry",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2505.09388",
+    "real_title": "Qwen3 Technical Report",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2505.16782",
+    "real_title": "Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2506.04238",
+    "real_title": "A Review on Influx of Bio-Inspired Algorithms: Critique and Improvement Needs",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2508.03296",
+    "real_title": "Towards Trustworthy Multimodal Moderation via Policy-Aligned Reasoning and Hierarchical Labeling",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2508.03341",
+    "real_title": "What Deserves Memory: Adaptive Memory Distillation for LLM Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2509.20021",
+    "real_title": "Embodied AI: From LLMs to World Models",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2510.13826",
+    "real_title": "Towards Neurocognitive-Inspired Intelligence: From AI's Structural Mimicry to Human-Like Functional Cognition",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2510.27183",
+    "real_title": "Simple Additions, Substantial Gains: Expanding Scripts, Languages, and Lineage Coverage in URIEL+",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2601.06002",
+    "real_title": "The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2601.12369",
+    "real_title": "Can Deep Research Agents Retrieve and Organize? Evaluating the Synthesis Gap with Expert Taxonomies",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2601.12560",
+    "real_title": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2601.14053",
+    "real_title": "LLMOrbit: A Circular Taxonomy of Large Language Models -From Scaling Walls to Agentic AI Systems",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2601.15804",
+    "real_title": "Entangled Life and Code: A Computational Design Taxonomy for Synergistic Bio-Digital Systems",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2602.04261",
+    "real_title": "Data Agents: Levels, State of the Art, and Open Problems",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2602.06052",
+    "real_title": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2602.06176",
+    "real_title": "Large Language Model Reasoning Failures",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2602.12430",
+    "real_title": "Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2602.13379",
+    "real_title": "Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2603.23136",
+    "real_title": "HGNet: Scalable Foundation Model for Automated Knowledge Graph Generation from Scientific Literature",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2603.23801",
+    "real_title": "AgentRFC: Security Design Principles and Conformance Testing for Agent Protocols",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.01438",
+    "real_title": "ClawSafety: \"Safe\" LLMs, Unsafe Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.02022",
+    "real_title": "ATBench: A Diverse and Realistic Agent Trajectory Benchmark for Safety Evaluation and Diagnosis",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.08304",
+    "real_title": "Securing Retrieval-Augmented Generation: A Taxonomy of Attacks, Defenses, and Future Directions",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.09459",
+    "real_title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.14166",
+    "real_title": "Hierarchical Retrieval Augmented Generation for Adversarial Technique Annotation in Cyber Threat Intelligence Text",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.14228",
+    "real_title": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2604.15727",
+    "real_title": "Structured Abductive-Deductive-Inductive Reasoning for LLMs via Algebraic Invariants",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.00529",
+    "real_title": "Hierarchical Abstract Tree for Cross-Document Retrieval-Augmented Generation",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.11039",
+    "real_title": "The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.11610",
+    "real_title": "Fast and Accurate Prediction of Lattice Thermal Conductivity via Machine Learning Surrogates",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.16282",
+    "real_title": "Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.24601",
+    "real_title": "Conformity-Based Bayesian Projective Prediction",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2605.29270",
+    "real_title": "Indexing the Unreadable: LLM-Native Recursive Construction and Search of Service Taxonomies",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2606.04051",
+    "real_title": "RUBAS: Rubric-Based Reinforcement Learning for Agent Safety",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2606.05339",
+    "real_title": "A Taxonomy of Runtime Faults in Model Context Protocol Servers",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2606.23404",
+    "real_title": "ReasoningLens: Hierarchical Visualization and Diagnostic Auditing for Large Reasoning Models",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2606.24177",
+    "real_title": "Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2606.28690",
+    "real_title": "Formal Security Analysis of Agent Protocol Composition",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2608.02650",
+    "real_title": "HyperAgent: Planning and Acting over Tool-Schema Hypergraphs for Tool-Use LLM Agents",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2608.19995",
+    "real_title": "The Forward-Backward Disconnect: State Dynamics, Credit Assignment, and Biological Grounding in Neural Computation",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2609.01736",
+    "real_title": "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2609.03678",
+    "real_title": "Exploratory Unstructured Data Analysis: A Formative Study and Implications for Human-AI Collaboration",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2609.05510",
+    "real_title": "Memory as Infrastructure: Reliability Engineering for Persistent Agent Memory in Months-Long LLM-Assisted Development",
+    "evidence": []
+   },
+   {
+    "id": "arxiv:2609.07791",
+    "real_title": "LLM Agents as Computational Typologists",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1007/s00521-023-08328-z",
+    "real_title": "A systematic review of integrated information theory: a perspective from artificial intelligence and the cognitive sciences",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1073/pnas.0707919104",
+    "real_title": "Dendritic spikes induce single-burst long-term potentiation",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1073/pnas.0900271106",
+    "real_title": "REM, not incubation, improves creativity by priming associative networks",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1073/pnas.2017339118",
+    "real_title": "Active dendrites enable strong but sparse inputs to determine orientation selectivity",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1073/pnas.2123432119",
+    "real_title": "A model of autonomous interactions between hippocampus and neocortex driving sleep-dependent memory consolidation",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1093/biomet/asp055",
+    "real_title": "Bias reduction in exponential family nonlinear models",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1093/biomet/asx046",
+    "real_title": "Median bias reduction of maximum likelihood estimates",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1103/PhysRevE.73.036127",
+    "real_title": "Modeling bursts and heavy tails in human dynamics",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1103/PhysRevLett.125.028101",
+    "real_title": "Edge of Chaos and Avalanches in Neural Networks with Heavy-Tailed Synaptic Weight Distribution",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1126/science.1082976",
+    "real_title": "The Neural Basis of Economic Decision-Making in the Ultimatum Game",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1126/science.7466396",
+    "real_title": "The Evolution of Cooperation",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1126/science.aan3458",
+    "real_title": "Pavlovian conditioning\u2013induced hallucinations result from overweighting of perceptual priors",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1145/1553374.1553485",
+    "real_title": "Nearest neighbors in high-dimensional data",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1145/3453483.3454080",
+    "real_title": "DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1145/3580305.3599930",
+    "real_title": "Web-Scale Academic Name Disambiguation: The WhoIsWho Benchmark, Leaderboard, and Toolkit",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1146/annurev-psych-122216-011854",
+    "real_title": "The Emotion Process: Event Appraisal and Component Differentiation",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1177/105971230501300205",
+    "real_title": "Actor\u2013Critic Models of Reinforcement Learning in the Basal Ganglia:                 From Natural to Artificial Rats",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1177/1536867X1301300408",
+    "real_title": "Testing for Zero Inflation in Count Models: Bias Correction for the Vuong Test",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1177/15705838251334527",
+    "real_title": "On the Formal Alignment of Foundational Ontologies: Building Mappings Between Basic Formal Ontology and Descriptive Ontology for Linguistic and Cognitive Engineering",
+    "evidence": []
+   },
+   {
+    "id": "doi:10.1177/22104968261431521",
+    "real_title": "<scp>schema-miner</scp>\n                    pro: Agentic AI for Ontology Grounding Over LLM-Discovered Scientific Schemas in a Human-in-the-Loop Workflow",
+    "evidence": []
+   }
+  ]
+ }
+}

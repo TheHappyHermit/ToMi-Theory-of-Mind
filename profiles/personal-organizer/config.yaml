@@ -1,0 +1,26 @@
+model:
+  default: /models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+  provider: llamaCPP
+  base_url: http://<LLAMA-CPP-HOST-IP>:8080/v1
+  context_length: 262144
+providers:
+  llamaCPP:
+    api: http://<LLAMA-CPP-HOST-IP>:8080/v1
+    default_model: /models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+    transport: chat_completions
+  desktopLM:
+    api: http://<GPU-HOST-IP>:1234/v1
+    default_model: qwen3.8-27b
+    transport: chat_completions
+  vllm:
+    name: Vllm
+    base_url: http://<GPU-HOST-IP>:18020/v1
+    model: qwen3.8-27b
+    discover_models: true
+    models:
+      qwen3.8-27b: {}
+    key_env: HERMES_CUSTOM_VLLM_API_KEY
+plugins:
+  enabled: []
+_config_version: 39
+agent: {}

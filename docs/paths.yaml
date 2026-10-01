@@ -1,0 +1,51 @@
+# Hermes Brain Paths Configuration
+#
+# All paths use '${HOME}/.hermes' as the root.
+# On Windows, `~` resolves to `C:\Users\<username>\`.
+# On Linux/macOS, `~` resolves to `/home/<username>/` or `/Users/<username>/`.
+#
+# Hermes auto-detects the OS and expands `~` correctly.
+# If you need to override the root, set the HERMES_HOME environment variable:
+#   export HERMES_HOME=/custom/path   # Linux/macOS
+#   set HERMES_HOME=C:\custom\path    # Windows
+
+# Root directory for all Hermes Brain data
+hermes_home: ${HOME}/.hermes
+
+# Wiki (Cold Memory)
+wiki_path: ${HOME}/.hermes/active-wiki
+wiki_projects: ${HOME}/.hermes/active-wiki/projects
+wiki_reference: ${HOME}/.hermes/active-wiki/reference
+wiki_system: ${HOME}/.hermes/active-wiki/system
+wiki_personal: ${HOME}/.hermes/active-wiki/personal
+wiki_meta: ${HOME}/.hermes/active-wiki/.meta
+
+# Oracle Vault
+oracle_path: ${HOME}/.hermes/oracle
+
+# Graphify Graphs
+graphify_main_out: ${HOME}/.hermes/graphify-main-out
+graphify_oracle_out: ${HOME}/.hermes/graphify-oracle-out
+graphify_config: ${HOME}/.hermes/graphify-config.env
+
+# Personal Organizer (Deterministic State)
+personal_organizer_data: ${HOME}/.hermes/personal-organizer/data
+organizer_db: ${HOME}/.hermes/personal-organizer/data/organizer.db
+
+# Views (generated markdown from databases)
+views_dir: ${HOME}/.hermes/personal-organizer/data/views
+
+# Backup Paths
+backup_root: ${HOME}/.hermes/backups
+daily_backups: ${HOME}/.hermes/backups/daily
+weekly_backups: ${HOME}/.hermes/backups/weekly
+monthly_backups: ${HOME}/.hermes/backups/monthly
+
+# Research Exchange
+research_exchange: ${HOME}/.hermes/exchange/research
+oracle_exchange: ${HOME}/.hermes/exchange/oracle
+
+# Automation Paths
+scripts_dir: ${HOME}/.hermes/scripts
+logs_dir: ${HOME}/.hermes/logs
+integrity_reports: ${HOME}/.hermes/personal-organizer/data/integrity-reports

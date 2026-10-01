@@ -1,0 +1,90 @@
+# EXCLUDED.txt — corpus exclusion manifest
+
+Created 2026-09-25. Authoritative record of which ordered lines are **not read**, and why.
+
+## Authorization
+
+User direction, 2026-09-25: *"don't worry about the things that have to do with radios or hacking or
+finance or osint"* — extended to *"if it's about those things, you can skip over reading the file so we
+don't even waste the compute reading each of those files because there's a lot of them. But only cut
+out those specific topics very specifically. And don't tell yourself what to focus in on."*
+
+Scope is exactly four topics: **radio/RF, hacking/offensive security, finance, OSINT.**
+
+Second authorization, 2026-09-26: *"the maintenance reports that go from 1247-1257"* — 11 files under
+`oracle/brain/.meta/`. These are the wiki's own housekeeping logs (routine index rebuilds, view
+regeneration, link checkers). They describe maintenance *of* the corpus rather than being part of it,
+so reading them yields no new knowledge about the subject matter. Excluded on that basis, by line
+number, as directed. This is a **separate scope from the four topics above** — it is not a fifth
+topic, and it does not widen the four-topic filter.
+
+## Excluded ranges (ORDER.txt line numbers)
+
+| range | count | content |
+|-------|-------|---------|
+| 720–746 | 27 | `domains/cybersecurity/` (16) + `domains/financial-planning/` (11) |
+| 761–821 | 61 | `domains/radio-rf/` (all) |
+| 824–828 | 5 | `DragonOS/` — the OSINT platform; ShadowBroker reference, dragon-os-software |
+| 982 | 1 | `fm_radio_technician.md` — stray radio file at top level |
+| 1026–1028 | 3 | `Hardware-Hacking/` |
+| 1247–1257 | 11 | `oracle/brain/.meta/` — wiki housekeeping logs (see second authorization) |
+| 1349–1498 | 150 | `Offensive-Security/` |
+| 1502–1507 | 6 | `OSINT/` |
+| 1530–1531 | 2 | `personal-finance/` |
+| 2019–2020 | 2 | `Seattle-Radio/` |
+| 2052–2162 | 111 | `Software-Defined-Radio/` |
+
+**Total excluded: 379. Remaining to read: 1,838** (of 2,217).
+
+## Directory-level totals
+
+| directory | files |
+|-----------|-------|
+| `domains/radio-rf/` | 61 |
+| `Software-Defined-Radio/` | 111 |
+| `Offensive-Security/` | 150 |
+| `domains/cybersecurity/` | 16 |
+| `domains/financial-planning/` | 11 |
+| `OSINT/` | 6 |
+| `DragonOS/` | 5 |
+| `Hardware-Hacking/` | 3 |
+| `Seattle-Radio/` | 2 |
+| `personal-finance/` | 2 |
+| `oracle/brain/.meta/` (selected) | 11 |
+| `fm_radio_technician.md` | 1 |
+
+## Search method (so the boundary can be re-verified, not trusted)
+
+Exclusion was derived by enumerating all 214 `oracle/brain` top-level directory names and all
+6 `domains/*` subdirectories, then matching the four topics. Not filename-guessed.
+
+Deliberately **not** excluded, despite keyword collision — recorded so a later pass does not
+"helpfully" widen the net:
+
+- `AI-Safety-and-Alignment/Specification-Gaming-Reward-Hacking.md` — "hacking" in the
+  Goodhart/alignment sense, not offensive security. **Keep.**
+- `Decision-Neuroscience/Information-Foraging-Explore-Exploit.md` — explore/exploit bandits.
+  **Keep.**
+- `active-wiki/research/frontier-research-taxonomy-*.md` (15 files) and their Oracle twins —
+  matched a naive `tax` pattern; "taxonomy" is not finance. **Keep.**
+- `active-wiki/research/retrieval-failure-mode-taxonomy.md` ×2 — same. **Keep.**
+- `Free-Will-and-Personal-Identity/`, `personal/` — matched `personal`; not `personal-finance/`.
+  **Keep.**
+
+`domains/local-ai/` (11 files) and `domains/other/` (2) are **not** excluded.
+
+## Already read before the exclusion took effect
+
+Lines 720–746 and 761–821 were read under the earlier standing rule. Their findings stand and are
+recorded in CP-056 through CP-060. They are not unread; they are excluded from *future* reading.
+The radio/OSINT content findings in CP-058/059/060 remain valid as audit evidence about the
+generator, index, and schema defects, which are not topic-specific.
+
+## Effect on prior findings
+
+No prior checkpoint is invalidated. The corpus-wide defects found in excluded files —
+constant `stale_after`, `verified: []` + `confidence: high`, machine-identity-as-citation,
+identical tag sets, mid-token truncation — were each independently confirmed in
+**non-excluded** files as well. See CP-060 §§2–5, §11.
+
+## No source files were modified. No excluded-topic tool, endpoint, or process was run.

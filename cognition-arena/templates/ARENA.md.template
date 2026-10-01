@@ -1,0 +1,111 @@
+# ARENA — ranked designs for the Hermes brain
+
+**This is the answer.** It is rewritten in place every pass: a slot is replaced,
+never appended to.
+
+**The evidence lives in `ARENA-EVIDENCE.md`.** That file is append-only and is
+never pruned. A new fact about a design goes in the slot's field below; the
+reasoning, the measurement, the counter-argument, and the candidate that nearly
+displaced the slot go in the evidence file under the same area.
+
+Do not append evidence between two slots here. That is what grew this file to
+10,116 lines with Area 8's rank-1 sitting at line 108 of a 1,928-line area — the
+three-slot discipline was never broken, the ranking was simply buried under its
+own audit trail.
+
+**This file may legitimately reach 10,000+ lines** as areas and nuance are added.
+There is no size cap. What is forbidden is growing by accretion.
+
+<!--
+TEMPLATE. Copy to ../ARENA.md on install. Runtime state; not tracked in git.
+Replace every ALL-CAPS placeholder below before the first run.
+-->
+
+**Status: EMPTY — no files have been read yet.** Populate this file from the
+corpus. Do not import conclusions from any other source; the files are the
+authority.
+
+The target: **a full brain AI system replicating a human brain for AI on top of
+Hermes** — physical/anatomical parts, psychological parts, heuristics (including
+the systematically wrong ones), and philosophical framing. Memory is one organ in
+the target, not the target.
+
+Corpus-hygiene requirements live in `ARENA-INFRA.md`. Separate files so this stays
+a brain design, not a linter spec.
+
+## How to read this file
+
+**One area = exactly three ranked slots: 1st, 2nd, 3rd by preference.**
+
+- Rank 1 is what gets built if nothing changes. Rank 2 is the fallback when rank 1
+  conflicts with another area's rank 1. Rank 3 is the fallback for that.
+- **Three slots is not padding.** If only one option survived per area, the case
+  where area A's best choice composes badly with area B's best choice would be
+  invisible — and you cannot fall back to a runner-up you deleted.
+- Every slot states: the **brain part**, the **design**, what **already exists** to
+  adopt, a **backup-document link**, an **evidence grade**, why it ranks there, and
+  which areas it **constrains or conflicts with**.
+
+**Support counts.** Each slot carries `Support: N independent sources`. Three files
+restating one study are **one** source, not three.
+
+**Evidence grades:** `HIGH` replicated or convergent from independent sources ·
+`LOW` some trials, mixed or thin · `UNSUCCESSFUL` tried and did not work · `UNTESTED`
+no trials found. **UNSUCCESSFUL is a first-class result** — it exists so a dead end
+is not rebuilt blind.
+
+Standards: see `standards/okf-schema.yaml` and `standards/WIKI-STANDARDS.md`. Do not
+restate them here.
+
+---
+
+## COVERAGE
+
+| | |
+|---|---|
+| Areas | 0 |
+| Slots filled | 0 of 0 |
+| Files read | 0 |
+| Cursor | (none) |
+
+## AREAS
+
+*No areas yet. The first run creates them from the files it reads. An area is
+earned when a file discusses a brain function or cognitive mechanism — a directory
+name or a product name never qualifies.*
+
+---
+
+## AREA LOG
+
+| # | Area | Named for | Provisional | Earned by | Date |
+|---|---|---|---|---|---|
+| — | *none yet* | | | | |
+
+## BRAIN PARTS NOT YET COVERED
+
+*Nothing observed yet. This is **not** a claim that the corpus lacks these — it
+records only what the read has not observed. Never write `absent` or `unnecessary`.
+Update in both directions. Do not pad from a generic anatomy list; rows are earned
+by the read, or seeded explicitly as `ANTICIPATED`.*
+
+- Not observed yet.
+
+## HOW TO UPDATE THIS FILE
+
+1. Extract candidate **designs**, not facts.
+2. Load the area's three slots. Ask: does this beat rank 1, 2, or 3? Displace it
+   and record what it beat and why.
+3. **A file that supports a slot already present is new evidence, not a repeat.**
+   Append the source, raise the independent-source count, raise the grade if it
+   earns one, record any qualification. Never skip a file because the area looks
+   covered.
+4. **A new brain part with no area? Create it here immediately**, marked
+   `PROVISIONAL` until all three slots fill. Name it for the function, not the
+   file. If you cannot name the brain function it fills, it is infrastructure →
+   `ARENA-INFRA.md`.
+5. Log every new area. Keep `## BRAIN PARTS NOT YET COVERED` current both ways.
+6. **Never delete an area.** Demote the slot and say why.
+7. **Never claim a brain part is unnecessary.** A gap means the read has not
+   reached it.
+8. **Keep design-evidence and deployment-evidence as separate grades.**

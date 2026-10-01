@@ -1,0 +1,63 @@
+name: hermes-searxng
+
+services:
+  core:
+    image: docker.io/searxng/searxng:${SEARXNG_VERSION:-latest}
+    container_name: searxng-core
+    restart: always
+    ports:
+      # 0.0.0.0 so the LAN -- other machines, phones, the desktop workers --
+      # can reach SearXNG, not just this host. The container already binds
+      # 0.0.0.0 internally (core-config/settings.yml server.bind_address); this
+      # is the host-side publish that was loopback-only.
+      #
+      # Set SEARXNG_BIND=127.0.0.1 in docker/.env to go back to loopback-only.
+      - "${SEARXNG_BIND:-0.0.0.0}:8080:8080"
+    environment:
+      # The stack is reachable from the network, so a well-known default secret
+      # is not acceptable. docker/.env is optional (a missing file must not
+      # abort `docker compose config`), so the fallback is an obviously-invalid
+      # placeholder rather than a real default: set SEARXNG_SECRET in
+      # docker/.env for any deployment that is not purely local.
+      - SEARXNG_SECRET=${SEARXNG_SECRET:-UNSET-generate-your-own-searxng-secret}
+    # Optional: a missing docker/.env must not abort `docker compose config`,
+    # so the placeholder above stands in until one is created. See
+    # .env.searxng.example.
+    env_file:
+      - path: ./.env
+        required: false
+    volumes:
+      - ./core-config/:/etc/searxng/:Z
+      - searxng-cache:/var/cache/searxng/
+    networks:
+      - searxng-net
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  valkey:
+    image: docker.io/valkey/valkey:${VALKEY_VERSION:-9-alpine}
+    container_name: searxng-valkey
+    command: valkey-server --save 30 1 --loglevel warning
+    restart: always
+    expose:
+      - "6379"
+    volumes:
+      - searxng-valkey-data:/data/
+    networks:
+      - searxng-net
+    healthcheck:
+      test: ["CMD-SHELL", "valkey-cli ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  searxng-cache:
+  searxng-valkey-data:
+
+networks:
+  searxng-net:
+    driver: bridge

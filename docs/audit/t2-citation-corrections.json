@@ -1,0 +1,62 @@
+{
+ "corrections": {
+  "arxiv:2505.10468": {
+   "correct_citation": "doi:10.1017/langcog.2025.10 (no arXiv equivalent)",
+   "files": [
+    "research/frontier-research-taxonomy-comprehensive-2026-09-11.md",
+    "research/frontier-research-taxonomy-comprehensive-2026-09-10-v2.md"
+   ],
+   "why": "The cited ID is \"AI Agents vs. Agentic AI: A Conceptual Taxonomy\" -- unrelated to the label \"Redefining Linguistic Categories Through Network Theory\", which is a Language and Cognition journal article (Hernandez Munoz et al., 2025) with no arXiv record. A journal DOI was tagged with an unrelated arXiv ID. Both citing files make the same error."
+  },
+  "arxiv:2601.12560": {
+   "correct_citation": "no arXiv equivalent; self-published at synthetictaxonomy.com/paper/ai_taxonomy.pdf",
+   "files": [
+    "research/frontier-research-taxonomy-2027-supplement-v2.md"
+   ],
+   "per_file": "identifier is correct for the other citing files, which are recorded as match",
+   "why": "This citing file labels the citation \"Cogitantia Synthetica: Taxonomic Classification of Transformer-Descended AI Systems\" -- a self-published Linnaean taxonomy (Institute for Synthetic Intelligence Taxonomy, rev. 10.75, Aug 2026) with no arXiv record and zero arXiv full-text hits. The identifier resolves to the Agentic AI survey that the OTHER citing files name correctly. The ID is right for the vault and wrong for this file, which is why two 2601.12560 verdicts differ."
+  },
+  "arxiv:2602.06052": {
+   "correct_citation": "no single correct ID -- the label splices three papers",
+   "files": [
+    "research/frontier-research-taxonomy-comprehensive-2026-09-11.md",
+    "research/frontier-research-taxonomy-2027-supplement.md"
+   ],
+   "why": "Label reads \"Memory in the Age of AI Agents: 47-author survey (3D-8Q taxonomy)\". Title and author count come from 2512.13564 \"Memory in the Age of AI Agents\", which arXiv confirms has exactly 47 authors, so that half is exact. The 3D-8Q taxonomy comes from 2504.15965 \"From Human Memory to AI Memory\". The cited 2602.06052 is a different survey: \"A Survey of Agent Memory in the Second Half\", 60 authors, TMLR, three dimensions (substrate / cognitive mechanism / subject). No single ID makes the label correct, so the vault has to decide which survey it means."
+  },
+  "arxiv:2605.11610": {
+   "correct_citation": "arXiv:2505.11610",
+   "files": [
+    "research/frontier-research-taxonomy-comprehensive-2026-09-11-supplement-v2.md"
+   ],
+   "why": "Year transposition, and both IDs are real unrelated papers. 2605.11610 is \"Fast and Accurate Prediction of Lattice Thermal Conductivity via Machine Learning Surrogates\" (14 authors, 2026-05-12); the label's paper is 2505.11610 \"Foundation Models for AI-Enabled Biological Design\" (2 authors, 2025-05-16). Verified against arXiv, not inferred from the number pattern."
+  },
+  "arxiv:2605.24601": {
+   "correct_citation": "arXiv:2505.24601",
+   "files": [
+    "research/frontier-research-taxonomy-september-2026-supplement-v2.md"
+   ],
+   "why": "Year transposition, same cause. 2605.24601 is \"Conformity-Based Bayesian Projective Prediction\" (2 authors, stats); the label's paper is 2505.24601 \"Taxonomic Networks: A Representation for Neuro-Symbolic Pairing\" (4 authors, also PMLR v288)."
+  }
+ },
+ "generated_by": "scripts/adjudicate_t2_suspects.py",
+ "note": "Vault files are gitignored. These are the T2 rows where the IDENTIFIER, not the label, is wrong. Repair the cited ID in the listed files. The verdict stays mismatch because the file does cite the wrong work.",
+ "real_titles_from_arxiv_2026_09_29": {
+  "2407.13193": "Retrieval-Augmented Generation for Natural Language Processing: A Survey",
+  "2505.10468": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+  "2506.08422": "Transforming Expert Knowledge into Scalable Ontology via Large Language Models",
+  "2508.19428": "Heterogeneous LLM Methods for Ontology Learning (Few-Shot Prompting, Ensemble Typing, ...)",
+  "2509.17096": "Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering",
+  "2601.12560": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+  "2602.06052": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+  "2604.01438": "ClawSafety: \"Safe\" LLMs, Unsafe Agents",
+  "2605.11610": "Fast and Accurate Prediction of Lattice Thermal Conductivity via Machine Learning Surrogates",
+  "2605.20530": "AgentAtlas: Beyond Outcome Leaderboards for LLM Agents",
+  "2605.24601": "Conformity-Based Bayesian Projective Prediction",
+  "2606.06448": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+  "2608.08601": "Unaccountable Delegation, Fading Skills: Mapping the Risks of Workplace AI Agents",
+  "2608.22974": "Toward Effective and Reliable LLM Agents via Dynamic Ontology",
+  "2609.02248": "From Prompting to Engineering: A Research Agenda for Prompt Engineering in Software Engineering",
+  "2609.07791": "LLM Agents as Computational Typologists"
+ }
+}

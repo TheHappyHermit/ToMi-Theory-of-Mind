@@ -1,0 +1,35 @@
+# Corpus Ledger — direct-read progress
+
+<!--
+TEMPLATE. Copy to ../LEDGER.md on install. The real ledger is runtime state and is
+not tracked in git. One row per corpus file, in the exact order given by ORDER.txt.
+
+STATES
+  [ ]  unread
+  [x]  read in full
+  [-]  excluded by user scope — never opened
+  [!]  blocked; reason required
+
+Every `[x]` is a claim that one `read_file` returned that file in full. The
+proof of a read is the run's `RUNLOG.jsonl` entry, whose `order_numbers_read`
+field lists every ORDER line the pass actually opened. A mark with no runlog
+entry naming it is an unearned claim, not a read.
+
+THE CURSOR is the first `[ ]` line. The ledger is the sole authority for progress.
+A narrative summary is not evidence: verify any count against this file.
+-->
+
+## LEDGER
+
+<!-- Generate one row per ORDER.txt line, preserving order exactly: -->
+<!--   - [ ]  <path-from-ORDER.txt>   -->
+<!-- The first column is the ORDER.txt line number. Do not reorder, do not rename. -->
+
+## SUMMARY
+
+| | |
+|---|---|
+| Read | 0 |
+| Pending | 0 |
+| Excluded | 0 |
+| Cursor | (none — ledger not yet populated) |

@@ -1,0 +1,3638 @@
+{
+ "files": {
+  "AI-Architecture/AI-Architecture-Historical-Context-and-Alternatives.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41534-025-01078-x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Entanglement-induced provable and robust quantum learning advantages"
+    }
+   ]
+  },
+  "AI-Architecture/Neuromorphic-Computing.md": {
+   "edits": 9,
+   "rows": [
+    {
+     "action": "excluded",
+     "identifier": "doi:10.1142/10269",
+     "reason": "Stray source. The DOI resolves to \"Real Options in Energy and Commodity Markets\" (Hu, 2002), a finance paper. It sits in the sources list of a neuromorphic-computing note, is never referenced in the body, and shares no vocabulary with the subject. Left untitled because titling it would make the T2 gate treat a stray URL as a verified citation. The correct replacement is unknown and is not guessed."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/TNN.2003.820440",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Simple model of spiking neurons"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/MM.2018.112130359",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Loihi: A Neuromorphic Manycore Processor with On-Chip Learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1254642",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A million spiking-neuron integrated circuit with a scalable communication network and interface"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41586-022-05340-6",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Dendrocentric learning for synthetic intelligence"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41467-022-28487-2",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Embodied neuromorphic intelligence"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/JPROC.2021.3067593",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s43588-021-00184-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Opportunities for neuromorphic computing algorithms and applications"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/TBCAS.2017.2759700",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Scalable Multicore Architecture With Heterogeneous Memory Structures for Dynamic Neuromorphic Asynchronous Processors (DYNAPs)"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1088/2634-4386/ad1cd7",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "DYNAP-SE2: a scalable multi-core dynamic neuromorphic asynchronous spiking neural network processor"
+    }
+   ]
+  },
+  "AI-Cognition-Theory/Probabilistic-Program-Induction-Human-Concepts.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.0802631105",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The discovery of structural form"
+    }
+   ]
+  },
+  "Attention/Attentional-Residue.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.1611612115",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Minds and brains of media multitaskers: Current findings and future directions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1287/orsc.2017.1184",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Tasks Interrupted: How Anticipating Time Pressure on Resumption of an Interrupted Task Causes Attention Residue and Low Performance on Interrupting Tasks and How a \u201cReady-to-Resume\u201d Plan Mitigates the"
+    }
+   ]
+  },
+  "Attention/Feature-Integration-Theory.md": {
+   "edits": 12,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/0010-0285(80)90005-5",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A feature-integration theory of attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/0010-0285(82)90006-8",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Illusory conjunctions in the perception of objects"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0956797610365130",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Are Some Features Easier to Bind Than Others?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0096-1523.15.4.650",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Illusory conjunctions inside and outside the focus of attention."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.7638604",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Parietal Contributions to Visual Feature Binding: Evidence from a Patient with Bilateral Lesions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-295X.96.3.433",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Visual search and stimulus similarity."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-2909.129.5.643",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Visual feature integration theory: Past, present, and future."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/BF03200774",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Guided Search 2.0 A revised model of visual search"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/1467-9280.00006",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "What Can 1 Million Trials Tell Us About Visual Search?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nrn1411",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "What attributes guide the deployment of visual attention and how do they do it?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/S0959-4388(96)80070-5",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The binding problem"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.1998.0284",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Feature binding, attention and object perception"
+    }
+   ]
+  },
+  "Attention/Frontoparietal-Attention-Networks.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1162/jocn_a_00281",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Intrinsic Architecture Underlying the Relations among the Default, Dorsal Attention, and Frontoparietal Control Networks of the Human Brain"
+    }
+   ]
+  },
+  "Attention/Inattentional-Blindness-Change-Blindness.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.1997.tb00427.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "To See or not to See: The Need for Attention to Perceive Changes in Scenes"
+    }
+   ]
+  },
+  "Attention/Load-Theory-Attention.md": {
+   "edits": 8,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/bf03213897",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Perceptual load as a major determinant of the locus of selection in visual attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0096-1523.21.3.451",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Perceptual load as a necessary condition for selective attention."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.tics.2004.12.004",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Distracted and confused?: Selective attention under load"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3389/fpsyg.2013.00522",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Conceptual and methodological concerns in the theory of perceptual load"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.278.5343.1616",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Modulating Irrelevant Motion Perception by Varying Attentional Load in an Unrelated Task"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn1294",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neural fate of ignored stimuli: dissociable effects of perceptual and working memory load"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0018172",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Diluting the burden of load: Perceptual load effects are simply dilution effects."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0021433",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Dilution, not load, affects distractor processing."
+    }
+   ]
+  },
+  "Attention/Vigilance-Decrement-Sustained-Attention.md": {
+   "edits": 4,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/rev0000021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A critical examination of the evidence for sensitivity loss in modern vigilance tasks."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1745691614556681",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Resource-Control Account of Sustained Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1518/001872000779656480",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Effects of Signal Salience and Caffeine on Performance, Workload, and Stress in an Abbreviated Vigilance Task"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1518/001872008X312152",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Vigilance Requires Hard Mental Work and Is Stressful"
+    }
+   ]
+  },
+  "Belief-and-Knowledge/Belief-Formation-Updating.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.aan3458",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Pavlovian conditioning\u2013induced hallucinations result from overweighting of perceptual priors"
+    }
+   ]
+  },
+  "Canonical-Microcircuit/Canonical-Microcircuit-Columnar-Architecture.md": {
+   "edits": 7,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2012.10.038",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Canonical Microcircuits for Predictive Coding"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cell.2015.09.029",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Reconstruction and Simulation of Neocortical Microcircuitry"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn.3917",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The neocortical circuit: themes and variations"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nature07150",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Internal brain state regulates membrane potential synchrony in barrel cortex of behaving mice"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1113/jphysiol.1991.sp018733",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A functional microcircuit for cat visual cortex."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1162/neco.1989.1.4.480",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Canonical Microcircuit for Neocortex"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1523/JNEUROSCI.1400-04.2004",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Quantitative Map of the Circuit of Cat Primary Visual Cortex"
+    }
+   ]
+  },
+  "Cellular-Neuroscience/Pyramidal-Neuron-Apical-Dendrite-Computations.md": {
+   "edits": 9,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.tins.2012.11.006",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A cellular mechanism for cortical associations: an organizing principle for the cerebral cortex"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2003.08.012",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Targeted Whole-Cell Recordings in the Mammalian Brain In Vivo"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2013.11.030",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Learning by the Dendritic Prediction of Somatic Spiking"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1152/jn.2000.83.5.3177",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Site Independence of EPSP Time Course Is Mediated by DendriticI h in Neocortical Pyramidal Neurons"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/nc/niab036",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Apical amplification\u2014a cellular mechanism of conscious perception?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/nc/niw015",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The effects of arousal on apical amplification and conscious state"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nature06725",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Compartmentalized dendritic plasticity and input feature storage in neurons"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41467-025-56297-9",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Dendrites endow artificial neural networks with accurate, robust and parameter-efficient learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1113/jphysiol.2011.209015",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The spatio\u2010temporal characteristics of action potential initiation in layer 5 pyramidal neurons: a voltage imaging study"
+    }
+   ]
+  },
+  "Computational-Psychiatry/Computational-Phenotyping-Belief-Updating-Pathologies.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.aan3458",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Pavlovian conditioning\u2013induced hallucinations result from overweighting of perceptual priors"
+    }
+   ]
+  },
+  "Consciousness/Body-Ownership-Body-Transfer-Illusions.md": {
+   "edits": 10,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/35784",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Rubber hands \u2018feel\u2019 touch that eyes see"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1142175",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Experimental Induction of Out-of-Body Experiences"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1143439",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Video Ergo Sum: Manipulating Bodily Self-Consciousness"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/419269a",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Stimulating illusory own-body perceptions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1162/PRES_a_00124",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Sense of Embodiment in Virtual Reality"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1371/journal.pone.0003832",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "If I Were You: Perceptual Illusion of Body Swapping"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1525/collabra.325",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Demand Characteristics Confound the Rubber Hand Illusion"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/09637214221150521",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Role of Phenomenological Control in Experience"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2015.09.029",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Behavioral, Neural, and Computational Principles of Bodily Self-Consciousness"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/brain/awn281",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Disruption of neurofascin and gliomedin at nodes of Ranvier precedes demyelination in experimental allergic neuritis"
+    }
+   ]
+  },
+  "Consciousness/Psychedelics-Cognitive-Flexibility-Entropy.md": {
+   "edits": 10,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1124/pr.118.017160",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "REBUS and the Anarchic Brain: Toward a Unified Model of the Brain Action of Psychedelics"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3389/fnhum.2014.00020",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.1119598109",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neural correlates of the psychedelic state as determined by fMRI studies with psilocybin"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41398-021-01706-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Psilocybin therapy increases cognitive and neural flexibility in patients with major depressive disorder"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41467-026-74215-5",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Multi-metric evaluations of acute psychedelic effects on fMRI brain entropy"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/srep46421",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Increased spontaneous MEG signal diversity for psychoactive doses of ketamine, LSD and psilocybin"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1017/S0033291722002963",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effect of lysergic acid diethylamide (LSD) on reinforcement learning in humans"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41586-025-08813-6",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Psilocybin\u2019s lasting action requires pyramidal cell types and 5-HT2A receptors"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1101/2024.04.12.589282",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A dual-receptor model of serotonergic psychedelics"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41386-024-01809-2",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neural complexity is increased after low doses of LSD, but not moderate to high doses of oral THC or methamphetamine"
+    }
+   ]
+  },
+  "Consolidation/Adaptive-Forgetting.md": {
+   "edits": 7,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nrn.2017.134",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Growth restriction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.tics.2018.03.003",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Interpreting and Utilising Intersubject Variability in Brain Function"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.jarmac.2015.07.001",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A naturalistic decision making perspective on studying intuitive decision making."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cogpsych.2010.05.002",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Causal\u2013explanatory pluralism: How intentions, functions, and mechanisms influence causal ascriptions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0027958",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "\"Evolving judgments of terror risks: Foresight, hindsight, and emotion\": Correction to Fischhoff et al. (2005)."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.1611835114",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nature09021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The folding cooperativity of a protein is controlled by its chain topology"
+    }
+   ]
+  },
+  "Consolidation/Targeted-Memory-Reactivation.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nature02663/",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Local sleep and learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1166673/",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Widespread Changes in Synaptic Markers as a Function of Sleep and Wakefulness in Drosophila"
+    }
+   ]
+  },
+  "Decision-Making/Counterfactual-Thinking-Regret.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1088868308316091",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Functional Theory of Counterfactual Thinking"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1094550",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Involvement of the Orbitofrontal Cortex in the Experience of Regret"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0146167208328329",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "What We Regret Most Are Lost Opportunities: A Theory of Regret Intensity"
+    }
+   ]
+  },
+  "Decision-Making/Satisficing-Bounded-Rationality.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0022-3514.83.5.1178",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Maximizing versus satisficing: Happiness is a matter of choice."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-295x.103.4.650",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Reasoning the fast and frugal way: Models of bounded rationality."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0042769",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Rational choice and the structure of the environment."
+    }
+   ]
+  },
+  "Decision-Neuroscience/Neuroeconomics-Reward.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev-psych-122216-011854",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Emotion Process: Event Appraisal and Component Differentiation"
+    }
+   ]
+  },
+  "Developmental-Cognition/Developmental-Origins-of-Cognition.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.tins.2023.05.005",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Somatosensory neuron types and their neural networks as revealed via single-cell transcriptomics"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/cogs.12842",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Expertise Shapes Multimodal Imagery for Wine"
+    }
+   ]
+  },
+  "Developmental-Cognition/Developmental-Origins-of-Cognitive-Architecture.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/1467-7687.00296",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Connectionist models of development"
+    }
+   ]
+  },
+  "Distributed-Cognition/Extended-Mind-Theories.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/analys/58.1.7",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Extended Mind"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1207745",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1080/19416520.2011.590300",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transactive Memory Systems 1985\u20132010: An Integrative Framework of Key Dimensions, Antecedents, and Consequences"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0022-3514.61.6.923",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transactive memory in close relationships."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/acprof:oso/9780195333213.001.0001",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Supersizing the Mind"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1017/CBO9780511606847",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Boundaries of the Mind"
+    }
+   ]
+  },
+  "Distributed-Cognition/Transactive-Memory-Systems.md": {
+   "edits": 7,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/978-1-4612-4634-3_9",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transactive Memory: A Contemporary Analysis of the Group Mind"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0022-3514.61.6.923",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transactive memory in close relationships."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1080/19416520.2011.590300",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transactive Memory Systems 1985\u20132010: An Integrative Framework of Key Dimensions, Antecedents, and Consequences"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0021-9010.88.4.587",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Measuring transactive memory systems in the field: Scale development and validation."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1207745",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0146167295214009",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Group Versus Individual Training and Group Performance: The Mediating Role of Transactive Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0022-3514.46.2.330",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Sex role orientation and division of labor early in marriage."
+    }
+   ]
+  },
+  "Emotion-Cognition/Emotion-Regulation-Strategies-And-Gross.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/01461672992511010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Composure at Any Cost? The Cognitive Consequences of Emotion Suppression"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0956797611418350",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Emotion-Regulation Choice"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1155/2015/856726",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Should I Stop Thinking About It: A Computational Exploration of Reappraisal Based Emotion Regulation"
+    }
+   ]
+  },
+  "Executive-Control/Dual-Process-Theories.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neubiorev.2008.04.006",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Corticosteroid\u2013serotonin interactions in the neurobiological mechanisms of stress-related disorders"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2015.0162",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The interaction of fire and mankind: Introduction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev-neuro-061010-113641",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Modulation of Striatal Projection Systems by Dopamine"
+    }
+   ]
+  },
+  "Executive-Control/Habit-Formation.md": {
+   "edits": 8,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0024606",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The impact of race and rank on the sexual harassment of Black and White men in the U.S. military."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neubiorev.2008.04.006",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Corticosteroid\u2013serotonin interactions in the neurobiological mechanisms of stress-related disorders"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cobeha.2016.06.003",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Searching for principles of brain computation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2015.0162",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The interaction of fire and mankind: Introduction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/bul0000045",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Temporal cognition: Connecting subjective time to perception, attention, and memory."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neubiorev.2020.10.013",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effectiveness of sorting tests for detecting cognitive decline in older adults with dementia and other common neurodegenerative disorders: A meta-analysis"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2013.0475",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Goal-directed learning and obsessive\u2013compulsive disorder"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0031624",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The neuroaesthetics of music."
+    }
+   ]
+  },
+  "Judgment-and-Decision-Making/Heuristics-and-Biases.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.185.4157.1124",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Judgment under Uncertainty: Heuristics and Biases"
+    }
+   ]
+  },
+  "Learning/Desirable-Difficulties-Bjork.md": {
+   "edits": 7,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.jarmac.2020.09.003",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Desirable difficulties in theory and practice."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.2008.02127.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Learning Concepts and Categories"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-2909.132.3.354",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Distributed practice in verbal recall tasks: A review and quantitative synthesis."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/e520602012-806",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "When Disfluency is not a Desirable Difficulty: The Influence of Typeface Clarity on Metacognitive Judgments and Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13421-016-0641-8",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Comparing the testing effect under blocked and mixed practice: The mnemonic benefits of retrieval practice are not affected by practice format"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13421-010-0063-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Spacing enhances the learning of natural concepts: an investigation of mechanisms, metacognition, and aging"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/2372732215624708",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Spaced Repetition Promotes Efficient and Effective Learning"
+    }
+   ]
+  },
+  "Learning/Interleaving-Effect-Discriminative-Contrast.md": {
+   "edits": 11,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.2008.02127.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Learning Concepts and Categories"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13421-012-0272-7",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Why interleaving enhances inductive learning: The roles of discrimination and retrieval"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3389/fpsyg.2024.1377122",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The effect of contextual interference on transfer in motor learning - a systematic review and meta-analysis"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s10648-021-09613-w",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Spacing and Interleaving Effects Require Distinct Theoretical Bases: a Systematic Review Testing the Cognitive Load and Discriminative-Contrast Hypotheses"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/bul0000209",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Similarity matters: A meta-analysis of interleaved learning and its moderators."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/acp.1801",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Learning Painting Styles: Spacing is Advantageous when it Promotes Discriminative Contrast"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cognition.2008.07.013",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The spacing effect in children\u2019s memory and category induction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0017807",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Spacing as the friend of both memory and induction in young and older adults."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/acp.1598",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The effects of interleaved practice"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0040295",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Concept learning with differing sequences of instances."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13421-010-0063-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Spacing enhances the learning of natural concepts: an investigation of mechanisms, metacognition, and aging"
+    }
+   ]
+  },
+  "Learning/Model-Based-vs-Model-Free-Basal-Ganglia.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/105971230501300205",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Actor\u2013Critic Models of Reinforcement Learning in the Basal Ganglia: From Natural to Artificial Rats"
+    }
+   ]
+  },
+  "Memory-Architecture/Adult-Hippocampal-Neurogenesis-Pattern-Separation.md": {
+   "edits": 4,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cell.2012.01.046",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Young Dentate Granule Cells Mediate Pattern Separation, whereas Old Granule Cells Facilitate Pattern Completion"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2011.05.010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Resolving New Memories: A Critical Look at the Dentate Gyrus, Adult Neurogenesis, and Pattern Separation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/hipo.22746",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Hippocampal neurogenesis and pattern separation: A meta\u2010analysis of behavioral data"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/hipo.20167",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A functional hypothesis for adult hippocampal neurogenesis: Avoidance of catastrophic interference in the dentate gyrus"
+    }
+   ]
+  },
+  "Memory-Architecture/Scene-Construction-and-Mental-Visualization.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.1503863112",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Memory, scene construction, and the human hippocampus"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2007.2087",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The cognitive neuroscience of constructive memory: remembering the past and imagining the future"
+    }
+   ]
+  },
+  "Metacognition/Feeling-of-Knowing.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1088467X261436903",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Do AI know what they know? Exploring metacognition in LLMs"
+    }
+   ]
+  },
+  "Metacognition/Processing-Fluency-Illusions.md": {
+   "edits": 12,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1088868309341564",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Uniting the Tribes of Fluency to Form a Metacognitive Nation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0096-3445.136.4.569",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Overcoming intuition: Metacognitive difficulty activates analytic reasoning."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.0601071103",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Predicting short-term stock fluctuations by using processing fluency"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.2008.02127.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Learning Concepts and Categories"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1207/s15327957pspr0804_3",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Processing Fluency and Aesthetic Pleasure: Is Beauty in the Perceiver's Processing Experience?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1006/ccog.1999.0386",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effects of Perceptual Fluency on Judgments of Truth"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0022-3514.81.6.989",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mind at ease puts a smile on the face: Psychophysiological evidence that processing facilitation elicits positive affect."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/1467-9280.00008",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effects of Perceptual Fluency on Affective Judgments"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.jcps.2013.09.008",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Popcorn in the cinema: Oral interference sabotages advertising effects"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1948550610368434",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "On Writing Legibly"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/a0014678",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The architecture of intuition: Fluency and affect determine intuitive judgments of semantic and visual coherence and judgments of grammaticality in artificial grammar learning."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0963721410388803",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gaining Insight Into the \u201cAha\u201d Experience"
+    }
+   ]
+  },
+  "Neuromodulation-Systems/Dopaminergic-Pathway-Diversity-Computation.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1152/jn.1998.80.1.1",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Predictive Reward Signal of Dopamine Neurons"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.1014269108",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Understanding dopamine and reinforcement learning: The dopamine reward prediction error hypothesis"
+    }
+   ]
+  },
+  "Neuromodulation-Systems/Locus-Coeruleus-NE-Network-Reset.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev.neuro.28.061604.135709",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AN INTEGRATIVE THEORY OF LOCUS COERULEUS-NOREPINEPHRINE FUNCTION: Adaptive Gain and Optimal Performance"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.7554/eLife.70510",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Pupil diameter is not an accurate real-time readout of locus coeruleus activity"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1523/jneurosci.5024-08.2009",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Optimality and Robustness of a Biophysical Decision-Making Model under Norepinephrine Modulation"
+    }
+   ]
+  },
+  "Neuroplasticity/Dendritic-Spike-Plateau-Potential-Computation.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.0707919104",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Dendritic spikes induce single-burst long-term potentiation"
+    }
+   ]
+  },
+  "Neuroplasticity/Skill-Myelination-Hardware-Acceleration-Paths.md": {
+   "edits": 21,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1252304",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neuronal Activity Promotes Oligodendrogenesis and Adaptive Myelination in the Mammalian Brain"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1254960",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Motor skill learning requires active central myelination"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1523/JNEUROSCI.3048-13.2013",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Motor Skill Learning Induces Changes in White Matter Microstructure and Myelination"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn.4351",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Rapid production of new oligodendrocytes is required in the earliest stages of motor-skill learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn1516",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Extensive piano practicing has regionally specific effects on white matter development"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1523/JNEUROSCI.4122-13.2013",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Do Short-Term Changes in White Matter Structure Indicate Learning-Induced Myelin Plasticity?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuroimage.2016.11.068",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The role of myelination in measures of white matter integrity: Combination of diffusion tensor imaging and two-photon microscopy of CLARITY intact brains"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3389/fnins.2021.799576",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Potential Pitfalls of Using Fractional Anisotropy, Axial Diffusivity, and Radial Diffusivity as Biomarkers of Cerebral White Matter Microstructure"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1114362",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Experience-Driven Plasticity of Visual Cortex Limited by Myelin and Nogo Receptor"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2012.12.027",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Anatomical Plasticity of Adult Brain Is Titrated by Nogo Receptor 1"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/glia.23713",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Motor learning requires myelination to reduce asynchrony and spontaneity in neural activity"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2019.04.032",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Loss of Adaptive Myelination Contributes to Methotrexate Chemotherapy-Related Cognitive Impairment"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41593-022-01052-2",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Maladaptive myelination promotes generalized epilepsy progression"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuron.2019.10.013",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Disruption of Oligodendrogenesis Impairs Memory Consolidation in Adult Mice"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41583-020-00379-8",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Myelin plasticity: sculpting circuits in learning and memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41582-022-00737-3",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Adaptive and maladaptive myelination in health and disease"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn.3045",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Plasticity in gray and white: neuroimaging changes in brain structure during learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/nn.2412",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Training induces changes in white-matter architecture"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s43588-022-00315-z",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Homeostatic coordination and up-regulation of neural activity by activity-dependent myelination"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s42005-025-02055-8",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Myelin-induced gain control in nonlinear neural networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1254960",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Motor skill learning requires active central myelination"
+    }
+   ]
+  },
+  "Neuroscience/Corollary-Discharge-Efference-Copy-Agency.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0055479",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neural basis of the spontaneous optokinetic response produced by visual inversion."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/BF00622503",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Das Reafferenzprinzip"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/schbul/4.4.636",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Efference Copy and Corollary Discharge: Implications for Thinking and Its Disorders*"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/ejn.16125",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Corollary discharge function in healthy controls: Evidence about self\u2010speech and external speech processing"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/nc/niz006",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A match does not make a sense: on the sufficiency of the comparator model for explaining the sense of agency"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1523/jneurosci.0947-04.2004",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Synaptic Transformations Underlying Highly Selective Auditory Representations of Learned Birdsong"
+    }
+   ]
+  },
+  "Neuroscience/Dendritic-Computation-Two-Layer-Neurons.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.2017339118",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Active dendrites enable strong but sparse inputs to determine orientation selectivity"
+    }
+   ]
+  },
+  "Neuroscience/Insular-Interoception-Visceral-Signaling.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1749-6632.2011.05990.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Significance of the insula for the evolution of human awareness of feelings from the body"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.biopsycho.2015.12.003",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Discrepancies between dimensions of interoception in autism: Implications for emotion and anxiety"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2016.0007",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Active interoceptive inference and the emotional brain"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.tics.2013.09.007",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Interoceptive inference, emotion, and the embodied self"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/cne.23368",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Anterior insular cortex and emotional awareness"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2016.0011",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "An active inference theory of allostasis and interoception in depression"
+    }
+   ]
+  },
+  "Neuroscience/Neural-Basis-Taste-Gustatory-Cortex.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev-physiol-060121-041637",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Cellular and Molecular Basis of Sour Taste"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev-physiol-031522-075853",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Molecular and Cellular Mechanisms of Salt Taste"
+    }
+   ]
+  },
+  "Neurovascular/Meningeal-Lymphatics-Glymphatic-Clearance.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1126/scitranslmed.3003748",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1126/science.1241224",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "Perception-Systems/Interoception-Body-Prediction.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.biopsycho.2014.11.004",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Knowing your own heart: Distinguishing interoceptive accuracy from interoceptive awareness"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.physbeh.2011.06.004",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Allostasis: A model of predictive regulation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s00429-010-0258-9",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Interoception in anxiety and depression"
+    }
+   ]
+  },
+  "Perception-Systems/Temporal-Binding-Problem-Perceptual-Synchrony.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0045283",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Perceived order in different sense modalities."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.brainres.2006.05.078",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Audiovisual synchrony perception for music, speech, and object actions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.2009.02435.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Causal Binding of Actions to Their Effects"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/S1364-6613(00)01568-0",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Temporal binding and the neural correlates of sensory awareness"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuroimage.2014.04.077",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Audio-visual synchrony modulates the ventriloquist illusion and its neural/spatial representation in the auditory cortex"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s11097-025-10078-3",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Against the brain time theory as a general theory of temporal binding"
+    }
+   ]
+  },
+  "Population-Coding/Population-Coding-Direction-Tuning-Curves.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.3749885",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Neuronal Population Coding of Movement Direction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.90.22.10749",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Simple models for reading neuronal population codes."
+    }
+   ]
+  },
+  "Reasoning/Mental-Models-and-Mental-Logic.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1146/annurev-psych-010419-051132",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "New Paradigms in the Psychology of Reasoning"
+    }
+   ]
+  },
+  "Sleep-and-Cognition/Sleep-Dependent-Insight-Generation.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.0900271106",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "REM, not incubation, improves creativity by priming associative networks"
+    }
+   ]
+  },
+  "Social-Cognition/Game-Theoretic-Social-Cognition-And-Reciprocity.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.7466396",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Evolution of Cooperation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.1082976",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Neural Basis of Economic Decision-Making in the Ultimatum Game"
+    }
+   ]
+  },
+  "Social-Cognition/Overimitation-Cumulative-Culture-Ratchet.md": {
+   "edits": 10,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.0704452104",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The hidden structure of overimitation"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/0956797610368808",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Overimitation in Kalahari Bushman Children and the Origins of Human Cultural Cognition"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s10071-004-0239-6",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Causal knowledge and imitation/emulation switching in chimpanzees (Pan troglodytes) and children (Homo sapiens)"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2009.0052",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Ratcheting up the ratchet: on the evolution of cumulative culture"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2009.0069",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Emulation, imitation, over-imitation and the scope of culture for child and chimpanzee"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.copsyc.2015.09.008",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The ontogeny of cultural learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1371/journal.pone.0086127",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Social Modulation of Imitation Fidelity in School-Age Children"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.jecp.2014.10.005",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Over-imitation is not automatic: Context sensitivity in children\u2019s overimitation and action interpretation of causally irrelevant actions"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2011.0019",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Using stem cells to study and possibly treat type 1 diabetes"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1098/rstb.2012.0119",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Transmission fidelity is the key to the build-up of cumulative culture"
+    }
+   ]
+  },
+  "Social-Cognition/Stereotype-Threat-Steele.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/0022-3514.69.5.797",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/0033-295X.115.2.336",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/a0012702",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1016/j.jsp.2014.10.002",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/a0031412",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/0003-066X.59.1.7",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1111/j.1467-9280.2009.02417.x",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1093/scan/nsn012",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1093/scan/nsl041",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/0022-3514.85.3.440",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1111/j.1467-9280.2008.02063.x",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/a0013834",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1080/23743603.2018.1559647",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1037/apl0000770",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "Temporal-Cognition/Encoding-Specificity-Context-Dependent-Memory.md": {
+   "edits": 21,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/acp.2350070405",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Contextual effects on the ability of divers to use decompression tables"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1006/jmps.2001.1388",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Distributed Representation of Temporal Context"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0003-066X.36.2.129",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mood and memory."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-295X.88.2.93",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Search of associative memory."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0096-3445.123.2.201",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mood dependent memory for events of the personal past."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0096-3445.129.3.361",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Language-dependent recall of autobiographical memories."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0278-7393.15.3.443",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mood dependent memory for internal versus external events."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0020071",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Encoding specificity and retrieval processes in episodic memory."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0026069",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effectiveness of retrieval cues in memory for words."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0030186",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Retrieval processes in recognition memory: Effects of associative context."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0036115",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A semantic interpretation of encoding specificity."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1080/02699938908408077",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mood state-dependent memory: A meta-analysis"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1101/lm.1022308",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The dynamics of memory: Context-dependent updating"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/1467-9280.00249",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Are Real Moods Required to Reveal Mood-Congruent and Mood-Dependent Memory?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.2044-8295.1975.tb01468.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CONTEXT\u2010DEPENDENT MEMORY IN TWO NATURAL ENVIRONMENTS: ON LAND AND UNDERWATER"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.2044-8295.1980.tb02735.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "When does context influence recognition memory?"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1126/science.163.3873.1358",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Alcohol and Recall: State-Dependent Effects in Man"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/BF03195266",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Strong cues are not necessarily weak: Thomson and Tulving (1970) and the encoding specificity principle revisited"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/BF03213419",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The cue-dependent nature of state-dependent retrieval"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/BF03333153",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Relation between recognition and recognition failure of recallable words"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13421-012-0234-0",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effects of study time and meaningfulness on environmental context-dependent recognition"
+    }
+   ]
+  },
+  "domains/ai-cognition/missing-brain-systems-deep-dive.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "already_titled",
+     "identifier": "arxiv:2509.20021",
+     "reason": "inline-array source already carries a title, so a second was not appended"
+    },
+    {
+     "action": "already_titled",
+     "identifier": "arxiv:2604.14228",
+     "reason": "inline-array source already carries a title, so a second was not appended"
+    }
+   ]
+  },
+  "frontier-research-ontology-sept-late-2026-addenda-2.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/15705838251401450",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Approximating DOLCE in OWL: The DOLCEbasic and DOLCEnaryRel Core Modules"
+    }
+   ]
+  },
+  "frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.14569/IJACSA.2026.0170397",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Domain-Agnostic Knowledge Graph Construction for Systematic Hallucination Reduction and Knowledge Reusability in Large Language Models"
+    }
+   ]
+  },
+  "reference/ontology-engineering-research.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/15705838251334527",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "On the Formal Alignment of Foundational Ontologies: Building Mappings Between Basic Formal Ontology and Descriptive Ontology for Linguistic and Cognitive Engineering"
+    }
+   ]
+  },
+  "research/author-name-disambiguation-coauthorship-graphs.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1371/journal.pone.0310992",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Author name disambiguation based on heterogeneous graph neural network"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/caibda65784.2025.11182797",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Author Name Disambiguation Based on Multi Relationship Fusion and Representation Learning"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3580305.3599930",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Web-Scale Academic Name Disambiguation: The WhoIsWho Benchmark, Leaderboard, and Toolkit"
+    }
+   ]
+  },
+  "research/band1-agency-schema-provenance.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.neuroscience.2019.06.012",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Reduced transfer of visuomotor adaptation is associated with aberrant sense of agency in schizophrenia"
+    }
+   ]
+  },
+  "research/band1-dreaming-plugin-consolidation.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.2123432119",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A model of autonomous interactions between hippocampus and neocortex driving sleep-dependent memory consolidation"
+    }
+   ]
+  },
+  "research/band1-hermes-dreaming-plugin.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1073/pnas.2123432119",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A model of autonomous interactions between hippocampus and neocortex driving sleep-dependent memory consolidation"
+    }
+   ]
+  },
+  "research/band3-custom-curriculum.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.34190/icair.5.1.4375",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Curiosity-Driven Learning and Autonomous Skill Acquisition: Multi-Modal Exploration for Self-Directed AI Development"
+    }
+   ]
+  },
+  "research/band3-dmem-critic-router.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2603.14597",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "D-MEM: Dopamine-Gated Agentic Memory via Reward Prediction Error Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2603.14597",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "D-MEM: Dopamine-Gated Agentic Memory via Reward Prediction Error Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2603.14597",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "D-MEM: Dopamine-Gated Agentic Memory via Reward Prediction Error Routing"
+    }
+   ]
+  },
+  "research/band4-criticality-health.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1103/PhysRevLett.125.028101",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Edge of Chaos and Avalanches in Neural Networks with Heavy-Tailed Synaptic Weight Distribution"
+    }
+   ]
+  },
+  "research/band4-dream-sleep.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3453483.3454080",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning"
+    }
+   ]
+  },
+  "research/band4-phi-regression.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s00521-023-08328-z",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A systematic review of integrated information theory: a perspective from artificial intelligence and the cognitive sciences"
+    }
+   ]
+  },
+  "research/band4-pyhgf-neuromodulation.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1371/journal.pcbi.1014340",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "pyhgf: A neural network library for predictive coding"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1371/journal.pcbi.1014340",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "pyhgf: A neural network library for predictive coding"
+    }
+   ]
+  },
+  "research/batch123-entity-resolution-anchors.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.3390/electronics14183605",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Scaling Entity Resolution with K-Means: A Review of Partitioning Techniques"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.18653/v1/2021.naacl-main.272",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "ZS-BERT: Towards Zero-Shot Relation Extraction with Attribute Representation Learning"
+    }
+   ]
+  },
+  "research/batch124-embedding-geometry-pathology-anchors.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/1553374.1553485",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Nearest neighbors in high-dimensional data"
+    }
+   ]
+  },
+  "research/batch210-the-evidence-check-verifies-existence-not-support.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0278-7393.33.1.219",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Reversing the truth effect: Learning the interpretation of processing fluency in judgments of truth."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.cognition.2020.104470",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Repetition increases both the perceived truth and fakeness of information: An ecological account"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1006/ccog.1999.0386",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Effects of Perceptual Fluency on Judgments of Truth"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0278-7393.19.6.1235",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Illusions of familiarity."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0033-295X.100.4.609",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "How do we know that we know? The accessibility model of the feeling of knowing."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1038/s41467-026-70041-x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Systematic review and meta-analysis of the evidence for an illusory truth effect and its determinants"
+    }
+   ]
+  },
+  "research/batch235-retrospection-returns-the-first-hit-not-the-best-hit.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/ICCI-CC.2014.6921489",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Enhanced Particle Swarm Optimization algorithm with resuse guided retrieval capabilities"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3233/AIC-1994-7104",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Case-Based Reasoning: Foundational Issues, Methodological Variations, and System Approaches"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/BF03208822",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Strong items get suppressed, weak items do not: The role of item strength in output interference"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/0278-7393.6.1.91",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Output interference in the recall of categorized and paired-associate lists."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.3758/s13423-015-0840-5",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Dynamic memory searches: Selective output interference for the memory of facts"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/j.1467-9280.1990.tb00208.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Last shall be First: How Memory Strength Affects Children's Retrieval"
+    }
+   ]
+  },
+  "research/batch236-the-second-gate-and-the-audit-that-audits-it.md": {
+   "edits": 4,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.visres.2008.09.007",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Bayesian surprise attracts human attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1002/j.1538-7305.1951.tb01366.x",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Prediction and Entropy of Printed English"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0039515",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Attention: Some theoretical considerations."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3290605.3300233",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Guidelines for Human-AI Interaction"
+    }
+   ]
+  },
+  "research/batch236-the-urgency-test-nobody-made-and-the-audit-that-audits-the-wrong-gate.md": {
+   "edits": 5,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.visres.2008.09.007",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Bayesian surprise attracts human attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0039515",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Attention: Some theoretical considerations."
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3290605.3300233",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Guidelines for Human-AI Interaction"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1016/j.visres.2008.09.007",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Bayesian surprise attracts human attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1037/h0039515",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Attention: Some theoretical considerations."
+    }
+   ]
+  },
+  "research/bias-reduced-nb-dispersion-estimation-small-samples.md": {
+   "edits": 5,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2011.02784",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Accurate inference in negative binomial regression"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/biomet/asp055",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Bias reduction in exponential family nonlinear models"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1093/biomet/asx046",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Median bias reduction of maximum likelihood estimates"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/1536867X1301300408",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Testing for Zero Inflation in Count Models: Bias Correction for the Vuong Test"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2011.02784",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Accurate inference in negative binomial regression"
+    }
+   ]
+  },
+  "research/calibrate-absence-model-on-real-sessions.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1103/PhysRevE.73.036127",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1111/2041-210x.12333",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.2307/2532959",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1080/00207541003690082",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1103/PhysRevE.73.036127",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1111/2041-210x.12333",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.2307/2532959",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1080/00207541003690082",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/cbor-tag-6-dependent-type-formalization.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2505.17335",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/clvr-aware-layer-type-attribution.md": {
+   "edits": 8,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.07953",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.00452",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CeQe: Grounding Lexical Retrieval in Semantic Evidence"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.20787",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.19021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.07953",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2607.07953",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping; the entry is now quoted and still a string"
+    }
+   ]
+  },
+  "research/continuity-capability-negotiation-failure-modes.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.05269",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2603.23801",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AgentRFC: Security Design Principles and Conformance Testing for Agent Protocols"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2606.28690",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Formal Security Analysis of Agent Protocol Composition"
+    },
+    {
+     "action": "already_titled",
+     "identifier": "arxiv:2605.11039",
+     "reason": "source is written in prose form -- the text before the identifier is the work's own name (e.g. \"PACT\"), not a bare URL, so no title was appended"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.05269",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2603.23801",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AgentRFC: Security Design Principles and Conformance Testing for Agent Protocols"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.11039",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck"
+    }
+   ]
+  },
+  "research/drift-strength-adaptive-suppression-policy.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1109/ijcnn64981.2025.11228919",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/dynamiclpr-gdn-adaptation.md": {
+   "edits": 14,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2403.01590",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Hidden Attention of Mamba Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.12694",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "X-VMamba: Explainable Vision Mamba"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2402.05602",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for Transformers"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2506.02138",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.14320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2412.06464",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2406.07592",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/exclusion-imgep.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.34190/icair.5.1.4375",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Curiosity-Driven Learning and Autonomous Skill Acquisition: Multi-Modal Exploration for Self-Directed AI Development"
+    }
+   ]
+  },
+  "research/flow-corrected-lipschitz-updates.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:1902.01520",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Contextual Bandits with Continuous Actions: Smoothing, Zooming, and Adapting"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:1902.01520",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-generative-induction-dolce-dissonance-2026-09-03.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s11280-026-01413-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "GenOM: ontology matching with description generation and large language models"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-knowledge-memories-sept-2026-round20.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/s11280-026-01413-y",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "GenOM: ontology matching with description generation and large language models"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-llm-reasoning-failures-large-ontology-model-2026-09-03.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2602.06176",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-memory-sept-2026-round14.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/22104968261453138",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Extended NeOn-GPT: Advancing LLM-Powered Ontology Learning Through Ontology Reuse and Automated Verification"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-sept-late-2026-addenda-2.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/15705838251401450",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Approximating DOLCE in OWL: The DOLCEbasic and DOLCEnaryRel Core Modules"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.14569/IJACSA.2026.0170397",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Domain-Agnostic Knowledge Graph Construction for Systematic Hallucination Reduction and Knowledge Reusability in Large Language Models"
+    }
+   ]
+  },
+  "research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1177/22104968261431521",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "schema-miner pro: Agentic AI for Ontology Grounding Over LLM-Discovered Scientific Schemas in a Human-in-the-Loop Workflow"
+    }
+   ]
+  },
+  "research/frontier-research-taxonomy-2027-supplement-v2.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2604.14197",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2603.07379",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2602.19320",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/frontier-research-taxonomy-2027-supplement.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2606.05339",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/frontier-research-taxonomy-comprehensive-2026-09-11-supplement-v2.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2501.09136",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/frontier-research-taxonomy-metadata-categorization-linguistic-philosophical-2026-09-10.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2505.10468",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping; the entry is now quoted and still a string"
+    }
+   ]
+  },
+  "research/frontier-research-taxonomy-september-2026-supplement-v3.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2505.10468",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping; the entry is now quoted and still a string"
+    }
+   ]
+  },
+  "research/gate-saturation-influence-score-interaction.md": {
+   "edits": 11,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2606.04048",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Unlocking Feature Learning in Gated Delta Networks at Scale"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.16183",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2504.14366",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.11796",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    }
+   ]
+  },
+  "research/gdn-lrp-conservation-validation.md": {
+   "edits": 18,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2403.01590",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Hidden Attention of Mamba Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.12694",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "X-VMamba: Explainable Vision Mamba"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2402.05602",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for Transformers"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2506.02138",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.14320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2606.09888",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SinkRec: Mitigating Semantic State Sink in Long Sequence Recommendation with Memory-Conditioned Gated Delta Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.14320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization"
+    }
+   ]
+  },
+  "research/hierarchical-empirical-bayes-preference-rates.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1080/01621459.1981.10477731",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1145/3511808.3557066",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1093/biostatistics/kxl008",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/hybrid-reranker-attribution-pipeline-design.md": {
+   "edits": 6,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.07953",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.07953",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    }
+   ]
+  },
+  "research/influence-score-gated-deltanet-validation.md": {
+   "edits": 12,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.12694",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "X-VMamba: Explainable Vision Mamba"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2403.01590",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Hidden Attention of Mamba Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2505.24244",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Mamba Knockout for Unraveling Factual Information Flow"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.11796",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    }
+   ]
+  },
+  "research/iot-dns-traffic-pattern-evolution-post-2019.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3646547.3688457",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "IoT Bricks Over v6: Understanding IPv6 Usage in Smart Homes"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1145/3777912.3809142",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Beyond the Hype: Empirical Analysis of Matter Standard\u2019s Security and Privacy"
+    }
+   ]
+  },
+  "research/joint-k-lambda-bandit-calibration.md": {
+   "edits": 1,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/IJCNN64981.2025.11228919",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Fuzzy-Based Ensemble Method for Robust Concept Drift Detection in Multivariate Time Series"
+    }
+   ]
+  },
+  "research/kalman-attention-vs-delta-layer-division-hybrid-reranker.md": {
+   "edits": 9,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.20787",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.19021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.26692",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kimi Linear: An Expressive, Efficient Attention Architecture"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.00452",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CeQe: Grounding Lexical Retrieval in Semantic Evidence"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.11366",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "qa-FLoRA: Data-free query-adaptive Fusion of LoRAs for LLMs"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2311.09175",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Can Query Expansion Improve Generalization of Strong Cross-Encoder Rankers?"
+    }
+   ]
+  },
+  "research/kalman-delta-rule-attribution.md": {
+   "edits": 13,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.06484",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Parallelizing Linear Transformers with the Delta Rule over Sequence Length"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.26692",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kimi Linear: An Expressive, Efficient Attention Architecture"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.21100",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Preconditioned DeltaNet: Curvature-aware Sequence Modeling for Linear Recurrences"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.21016",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.16723",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "KOSS: Kalman-Optimal Selective State Spaces for Long-Term Sequence Modeling"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2602.10743",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Linear Attention: Parallel Bayesian Filtering For Efficient Language Modelling and State Tracking"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.19021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2206.03208",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "From Attribution Maps to Human-Understandable Explanations through Concept Relevance Propagation"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2012.00073",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "TimeSHAP: Explaining Recurrent Models through Sequence Perturbations"
+    }
+   ]
+  },
+  "research/kdn-diagonal-covariance-attribution-quality.md": {
+   "edits": 10,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.21016",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.19021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2607.07953",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    }
+   ]
+  },
+  "research/kdn-vs-gdnlrp-cross-encoder-benchmark.md": {
+   "edits": 8,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.07816",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.07010",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Always Keep Your Promises: A Model-Agnostic Attribution Algorithm for Neural Networks"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2402.05602",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for Transformers"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2609.07816",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2412.06464",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2406.07592",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2512.07010",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "requoted",
+     "identifier": "arxiv:2402.05602",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/layer-type-aware-ceqe-fusion-weight-learning.md": {
+   "edits": 21,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.00452",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CeQe: Grounding Lexical Retrieval in Semantic Evidence"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.11366",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "qa-FLoRA: Data-free query-adaptive Fusion of LoRAs for LLMs"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.16640",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Provably Shorter Scratchpads in Hybrid DeltaNet-Attention Decoders"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.30320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.30386",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "DASC: Decay-Aware State Compression for Hybrid Linear-Attention Serving"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.20787",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.19021",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2510.26692",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Kimi Linear: An Expressive, Efficient Attention Architecture"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2602.22591",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Where Relevance Emerges: A Layer-Wise Study of Internal Attention for Zero-Shot Re-Ranking"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2508.19614",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "LFD: Layer Fused Decoding to Exploit External Knowledge in Retrieval-Augmented Generation"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.06460",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MINER: Mining Multimodal Internal Representation for Efficient Retrieval"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2601.09322",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Attentive multilayer fusion for vision transformers"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2606.04194",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Training-Free Lexical-Dense Fusion for Conversational-Memory Retrieval"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.10413",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Fortunate Recall: Ontology-Driven Memory Lifecycle Management for Persistent Coherence in LLMs"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2410.10813",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.00452",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "CeQe: Grounding Lexical Retrieval in Semantic Evidence"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2512.11366",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "qa-FLoRA: Data-free query-adaptive Fusion of LoRAs for LLMs"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.16640",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Provably Shorter Scratchpads in Hybrid DeltaNet-Attention Decoders"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.30320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2608.30386",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "DASC: Decay-Aware State Compression for Hybrid Linear-Attention Serving"
+    }
+   ]
+  },
+  "research/mambalrp-extension-gated-deltanet.md": {
+   "edits": 9,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2403.01590",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "The Hidden Attention of Mamba Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    }
+   ]
+  },
+  "research/memory-write-deduplication-amplification-control.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1145/509907.509965",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/seasonal-decomposition-burstiness-interaction.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1103/PhysRevE.94.032311",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/signal-reliability-modulated-fuzzy-membership.md": {
+   "edits": 3,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/IJCNN64981.2025.11228919",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Fuzzy-Based Ensemble Method for Robust Concept Drift Detection in Multivariate Time Series"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.70286/isu-18.02.2026.012",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "RELIABILITY-AWARE ANOMALY DETECTION FOR STREAMING MULTIMODAL TIME SERIES IN DECISION SUPPORT SYSTEMS"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1007/978-3-031-40725-3_8",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "A Fuzzy Logic Ensemble Approach to Concept Drift Detection"
+    }
+   ]
+  },
+  "research/signal-weight-calibration-real-data.md": {
+   "edits": 0,
+   "rows": [
+    {
+     "action": "requoted",
+     "identifier": "doi:10.1007/978-3-030-86523-8_22",
+     "reason": "source already carried a title but was unquoted, so a colon in the title made YAML read the entry as a mapping"
+    }
+   ]
+  },
+  "research/spectral-shift-attribution-analysis.md": {
+   "edits": 9,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.14320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.07658",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Optimal Decay Spectra for Linear Recurrences"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2412.06464",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2511.17970",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Controllability Analysis of State Space-based Language Model"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2406.07592",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "MambaLRP: Explaining Selective State Space Sequence Models"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2609.14320",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2604.07658",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Optimal Decay Spectra for Linear Recurrences"
+    },
+    {
+     "action": "titled",
+     "identifier": "arxiv:2605.22791",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
+    }
+   ]
+  },
+  "research/temporal-window-calibration-preference-sessions.md": {
+   "edits": 2,
+   "rows": [
+    {
+     "action": "titled",
+     "identifier": "doi:10.1109/IJCNN64981.2025.11228919",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Fuzzy-Based Ensemble Method for Robust Concept Drift Detection in Multivariate Time Series"
+    },
+    {
+     "action": "titled",
+     "identifier": "doi:10.1111/exsy.13394",
+     "reason": "title resolved from the identifier itself (Crossref/arXiv) and consistent with the file subject; the URL previously carried no title so nothing could be compared",
+     "title": "Concept drift detection and adaption framework using optimized deep learning and adaptive sliding window approach"
+    }
+   ]
+  }
+ },
+ "generated_by": "scripts/title_untitled_sources.py",
+ "note": "Every bare-URL source that received a title, with the reason. Titles come from Crossref/arXiv for the exact identifier. Reviewer: each row should be read against the file it belongs to."
+}

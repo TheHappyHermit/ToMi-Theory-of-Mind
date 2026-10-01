@@ -1,0 +1,112 @@
+# Brain Postgres — separate Postgres + ParadeDB pg_search + pgvector for native brain search
+# Own database, own lifecycle. Does NOT share with Honcho or any other service.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.brain.yml up -d
+#
+# Connect from host:
+#   psql -h localhost -p 5433 -U brain -d brain
+#
+# Initialize schema:
+#   python3 scripts/brain_sync.py --init
+#
+# Prerequisites:
+#   - Docker Engine installed
+#   - No existing service on port 5433
+#
+# ---------------------------------------------------------------------------
+# CHANGED 2026-09-27. Read before assuming this file matches the live server.
+# ---------------------------------------------------------------------------
+# This file previously said `pgvector/pgvector:pg16` while the live server was
+# PostgreSQL 15.19 on `pgvector/pgvector:pg15`, and it declared a volume that
+# did not exist. The running container had NOT been started from this file.
+#
+#   before:  image pgvector/pgvector:pg16   volume autognosia-brain_brain-pgdata
+#   now:     image paradedb/paradedb:...    volume hermes-brain_brain-pgdata
+#
+# Two consequences, both deliberate:
+#
+# 1. ParadeDB image, not pgvector. pg_search is a ParadeDB extension and is
+#    only available in their image. The vector extension ships there too, so
+#    one image serves both retrieval paths and HNSW is retained. The version
+#    choice (PG18) and its fallback chain are in DB-MIGRATION-HANDOFF.md
+#    section 2.1 — read that before changing the tag.
+#
+# 2. NEW volume, not a rename. Starting this compose against the old volume
+#    name would yield a healthy-looking EMPTY database, indistinguishable
+#    from total data loss. A new volume fails loudly instead. The old volume
+#    `autognosia-brain_brain-pgdata` is deliberately left in place as the
+#    rollback and must not be deleted.
+#
+# The port and container name are unchanged on purpose: every consumer script
+# and cron job connects to 127.0.0.1:5433 as user `brain`, so nothing
+# downstream needs editing.
+# ---------------------------------------------------------------------------
+
+name: hermes-brain
+
+services:
+  database:
+    # ParadeDB ships pg_search (BM25 lexical) AND the vector extension.
+    # Fallback if pgvector misbehaves on PG18: 0.25.10-pg17, then -pg16.
+    # A wrong-major attempt costs time, not data — the dump is repeatable.
+    image: paradedb/paradedb:0.25.10-pg18
+    container_name: brain-postgres
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5433:5432"
+    environment:
+      - POSTGRES_DB=brain
+      - POSTGRES_USER=brain
+      - POSTGRES_PASSWORD=brain
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    # ParadeDB needs >=15MB maintenance_work_mem per maintenance worker to
+    # build BM25 indexes. Without this the index build fails or silently
+    # degrades. Do not remove. See DB-MIGRATION-HANDOFF.md section 3.8.
+    command:
+      - "postgres"
+      - "-c"
+      - "maintenance_work_mem=1GB"
+      - "-c"
+      - "max_parallel_maintenance_workers=4"
+    volumes:
+      - brain-pgdata:/var/lib/postgresql/data/
+    # Docker's default /dev/shm inside a container is 64MB. Parallel index
+    # builds and parallel query workers allocate shared memory segments
+    # sized by maintenance_work_mem, so a 1GB maintenance_work_mem with 4
+    # workers asks for ~1GB of shared memory and dies with:
+    #   could not resize shared memory segment ... No space left on device
+    # That error names the DEVICE, not the container, so it reads like the
+    # host is out of space when the host has 9.8GB free. Raise shm_size to
+    # match maintenance_work_mem or the HNSW/BM25 index builds cannot run.
+    shm_size: 2gb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U brain -d brain"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - brain-net
+
+  # Optional: pgAdmin for debugging (disabled by default)
+  # pgadmin:
+  #   image: dpage/pgadmin4:latest
+  #   container_name: brain-pgadmin
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=admin@brain.local
+  #     - PGADMIN_DEFAULT_PASSWORD=admin
+  #   ports:
+  #     - "127.0.0.1:8088:80"
+  #   depends_on:
+  #     - database
+  #   networks:
+  #     - brain-net
+  #   profiles: ["debug"]
+
+volumes:
+  brain-pgdata:
+
+networks:
+  brain-net:
+    driver: bridge

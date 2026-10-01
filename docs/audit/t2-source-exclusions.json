@@ -1,0 +1,16 @@
+{
+ "excluded": {
+  "AI-Architecture/Neuromorphic-Computing.md::doi:10.1142/10269": "Stray source. The DOI resolves to \"Real Options in Energy and Commodity Markets\" (Hu, 2002), a finance paper. It sits in the sources list of a neuromorphic-computing note, is never referenced in the body, and shares no vocabulary with the subject. Left untitled because titling it would make the T2 gate treat a stray URL as a verified citation. The correct replacement is unknown and is not guessed."
+ },
+ "note": "Sources deliberately NOT titled during the untitled-citation pass, and sources the mismatch screen flagged but a reviewer cleared. Titling an excluded row would turn \"unknown\" into \"vouched for\" and satisfy the T2 gate on a citation the file should not have made.",
+ "screened_and_cleared": {
+  "Social-Cognition/Stereotype-Threat-Steele.md::doi:10.1037/0003-066X.59.1.7": {
+   "reason": "Sackett, Hardison & Cullen (2004) on interpreting stereotype threat -- the standard critique, and the right source for a Steele/Aronson note. Shares {stereotype, threat} with subject.",
+   "title": null
+  },
+  "research/calibrate-absence-model-on-real-sessions.md::doi:10.1111/2041-210x.12333": {
+   "reason": "A zero-inflated abundance-estimation paper, genuinely the right source for a file validating a Poisson zero/absence model. Already cited with a correct title elsewhere in the same file.",
+   "title": null
+  }
+ }
+}

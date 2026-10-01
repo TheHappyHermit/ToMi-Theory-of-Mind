@@ -1,0 +1,9 @@
+name: brain-memory-consolidator
+description: >
+  Autonomous episodic memory consolidation and working memory updater.
+  Runs on agent:end and session:reset to feed conversation episodes into
+  HermesBrain, update limbic valence, and record action outcomes.
+
+events:
+  - agent:end
+  - session:reset

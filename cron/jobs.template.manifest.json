@@ -1,0 +1,16 @@
+{
+  "variables": {
+    "HERMES_HOME": 109,
+    "INFERENCE_NODE_MAIN": 35,
+    "MODEL_DEEP": 18,
+    "MODEL_DESKTOP_A": 1,
+    "MODEL_DESKTOP_B": 1,
+    "MODEL_DIR": 3,
+    "MODEL_UTILITY": 17,
+    "PROJECT_NAME": 1,
+    "SCRIPT_BACKUP": 2,
+    "SCRIPT_HEALTH": 3
+  },
+  "runtime_fields_dropped": 542,
+  "job_count": 51
+}

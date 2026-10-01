@@ -1,0 +1,454 @@
+{
+ "writes": [
+  {
+   "vault": "active-wiki",
+   "path": "research/RESEARCH.md",
+   "prior_sources": [],
+   "adding": 5,
+   "after": 5,
+   "abspath": "/home/operator/.hermes/active-wiki/research/RESEARCH.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "prior_sources": [],
+   "adding": 35,
+   "after": 35,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-knowledge-structures-sept-2026-round14.md",
+   "prior_sources": [],
+   "adding": 20,
+   "after": 20,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-knowledge-structures-sept-2026-round14.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-2026-09-01-5.md",
+   "prior_sources": [],
+   "adding": 32,
+   "after": 32,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-2026-09-01-5.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-2026-09-03-comprehensive.md",
+   "prior_sources": [],
+   "adding": 2,
+   "after": 2,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-2026-09-03-comprehensive.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-computational-metaphysics-structural-hallucination-oaei-2026-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-computational-metaphysics-structural-hallucination-oaei-2026-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-failure-ontology-memory-ontology-2026-09-04.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-failure-ontology-memory-ontology-2026-09-04.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-generative-induction-dolce-dissonance-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 11,
+   "after": 11,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-generative-induction-dolce-dissonance-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-induction-memory-spectrum-sept-2026-round22.md",
+   "prior_sources": [],
+   "adding": 5,
+   "after": 5,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-induction-memory-spectrum-sept-2026-round22.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-knowledge-memories-sept-2026-round20.md",
+   "prior_sources": [],
+   "adding": 25,
+   "after": 25,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-knowledge-memories-sept-2026-round20.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-memory-sept-2026-round14.md",
+   "prior_sources": [],
+   "adding": 4,
+   "after": 4,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-memory-sept-2026-round14.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-memory-sept-2026-round15.md",
+   "prior_sources": [],
+   "adding": 34,
+   "after": 34,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-memory-sept-2026-round15.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-oak-ontological-grounding-memory-architectures-2026-09-04.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-oak-ontological-grounding-memory-architectures-2026-09-04.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "prior_sources": [],
+   "adding": 7,
+   "after": 7,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "active-wiki",
+   "path": "research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/active-wiki/research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "prior_sources": [],
+   "adding": 35,
+   "after": 35,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-ontology-2026-09-01-5.md",
+   "prior_sources": [],
+   "adding": 32,
+   "after": 32,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-ontology-2026-09-01-5.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-ontology-comprehensive-update-2026-09-01.md",
+   "prior_sources": [],
+   "adding": 44,
+   "after": 42,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-ontology-comprehensive-update-2026-09-01.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-ontology-sept-late-2026-addenda-2.md",
+   "prior_sources": [],
+   "adding": 28,
+   "after": 22,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-ontology-sept-late-2026-addenda-2.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-ontology-sept-late-2026-addenda.md",
+   "prior_sources": [],
+   "adding": 27,
+   "after": 27,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-ontology-sept-late-2026-addenda.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "prior_sources": [],
+   "adding": 7,
+   "after": 7,
+   "abspath": "/home/operator/.hermes/oracle/brain/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Cognitive-Architecture/Dual-Process-Cognitive-Memory.md",
+   "prior_sources": [],
+   "adding": 1,
+   "after": 1,
+   "abspath": "/home/operator/.hermes/oracle/brain/Cognitive-Architecture/Dual-Process-Cognitive-Memory.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "reference/ontology-engineering-research.md",
+   "prior_sources": [],
+   "adding": 34,
+   "after": 34,
+   "abspath": "/home/operator/.hermes/oracle/brain/reference/ontology-engineering-research.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Perception/Temporal-Auditory-Processing.md",
+   "prior_sources": [],
+   "adding": 1,
+   "after": 1,
+   "abspath": "/home/operator/.hermes/oracle/brain/Perception/Temporal-Auditory-Processing.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Entities/Trevor-Darrell.md",
+   "prior_sources": [],
+   "adding": 7,
+   "after": 7,
+   "abspath": "/home/operator/.hermes/oracle/brain/Entities/Trevor-Darrell.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Perception-Systems/Blindsight.md",
+   "prior_sources": [],
+   "adding": 3,
+   "after": 3,
+   "abspath": "/home/operator/.hermes/oracle/brain/Perception-Systems/Blindsight.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Developmental-Cognition/Developmental-Origins-of-Cognition.md",
+   "prior_sources": [],
+   "adding": 13,
+   "after": 13,
+   "abspath": "/home/operator/.hermes/oracle/brain/Developmental-Cognition/Developmental-Origins-of-Cognition.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Developmental-Cognition/Developmental-Origins-of-Cognitive-Architecture.md",
+   "prior_sources": [],
+   "adding": 14,
+   "after": 14,
+   "abspath": "/home/operator/.hermes/oracle/brain/Developmental-Cognition/Developmental-Origins-of-Cognitive-Architecture.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Learning/Deliberate-Practice-Expertise-Ericsson.md",
+   "prior_sources": [],
+   "adding": 14,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/Learning/Deliberate-Practice-Expertise-Ericsson.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Memory-Architecture/Serial-Position-Recency-Primacy.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/Memory-Architecture/Serial-Position-Recency-Primacy.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/RESEARCH.md",
+   "prior_sources": [],
+   "adding": 5,
+   "after": 5,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/RESEARCH.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "prior_sources": [],
+   "adding": 35,
+   "after": 35,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-kg-ontology-memory-sept-2026-2.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-knowledge-structures-sept-2026-round14.md",
+   "prior_sources": [],
+   "adding": 20,
+   "after": 20,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-knowledge-structures-sept-2026-round14.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-2026-09-01-5.md",
+   "prior_sources": [],
+   "adding": 32,
+   "after": 32,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-2026-09-01-5.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-2026-09-03-comprehensive.md",
+   "prior_sources": [],
+   "adding": 2,
+   "after": 2,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-2026-09-03-comprehensive.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-comprehensive-update-2026-09-01.md",
+   "prior_sources": [],
+   "adding": 44,
+   "after": 42,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-comprehensive-update-2026-09-01.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-computational-metaphysics-structural-hallucination-oaei-2026-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-computational-metaphysics-structural-hallucination-oaei-2026-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-failure-ontology-memory-ontology-2026-09-04.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-failure-ontology-memory-ontology-2026-09-04.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-generative-induction-dolce-dissonance-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 11,
+   "after": 11,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-generative-induction-dolce-dissonance-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-induction-memory-spectrum-sept-2026-round22.md",
+   "prior_sources": [],
+   "adding": 5,
+   "after": 5,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-induction-memory-spectrum-sept-2026-round22.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-knowledge-memories-sept-2026-round20.md",
+   "prior_sources": [],
+   "adding": 25,
+   "after": 25,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-knowledge-memories-sept-2026-round20.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-memory-sept-2026-round14.md",
+   "prior_sources": [],
+   "adding": 4,
+   "after": 4,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-memory-sept-2026-round14.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-memory-sept-2026-round15.md",
+   "prior_sources": [],
+   "adding": 34,
+   "after": 34,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-memory-sept-2026-round15.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-oak-ontological-grounding-memory-architectures-2026-09-04.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-oak-ontological-grounding-memory-architectures-2026-09-04.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-round74-2026-10-22.md",
+   "prior_sources": [],
+   "adding": 20,
+   "after": 20,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-round74-2026-10-22.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-sept-late-2026-addenda-2.md",
+   "prior_sources": [],
+   "adding": 28,
+   "after": 22,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-sept-late-2026-addenda-2.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-sept-late-2026-addenda.md",
+   "prior_sources": [],
+   "adding": 27,
+   "after": 27,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-sept-late-2026-addenda.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "prior_sources": [],
+   "adding": 7,
+   "after": 7,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-tool-compilation-structured-memory-2026-09-02.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "prior_sources": [],
+   "adding": 9,
+   "after": 9,
+   "abspath": "/home/operator/.hermes/oracle/brain/research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  },
+  {
+   "vault": "oracle",
+   "path": "Agent-Systems/Agent-Systems-Part2-Memory-MultiAgent-and-Benchmarks.md",
+   "prior_sources": [],
+   "adding": 1,
+   "after": 1,
+   "abspath": "/home/operator/.hermes/oracle/brain/Agent-Systems/Agent-Systems-Part2-Memory-MultiAgent-and-Benchmarks.md",
+   "backup": "/home/operator/hermes-brain/archive/sources_backup/20260928T231820Z"
+  }
+ ]
+}

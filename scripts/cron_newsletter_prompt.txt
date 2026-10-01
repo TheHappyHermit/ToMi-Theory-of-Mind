@@ -1,0 +1,13 @@
+Run the daily newsletter builder script and deliver the results to the user.
+
+Steps:
+1. Run the newsletter builder: MAX_ARTICLES=25 LOOKBACK_HOURS=24 ~/.hermes/newsletter_venv/bin/python3 ~/.hermes/scripts/newsletter_builder.py
+2. If the script produced output, send it as your final response to the user.
+3. If the script failed or produced no output, report the error to the user.
+
+Important context:
+- The script at ~/.hermes/scripts/newsletter_builder.py fetches unread articles from FreshRSS via Google Reader API, runs a content extraction waterfall (Jina Reader with API key → direct fetch + trafilatura → Wayback → RSS summary), and produces LLM summaries via OpenRouter.
+- The script reads credentials from ~/.hermes/.env (FRESHRSS_API_PASSWORD, FRESHRSS_USERNAME=<username>, OPENROUTER_API_KEY, JINA_API_KEY).
+- Expected output is a formatted newsletter with 2-3 paragraph summaries per article.
+- Some articles may show "Full article content could not be retrieved" — that's expected for heavily blocked sites.
+- The output should be delivered as-is to the user in your final response.

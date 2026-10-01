@@ -1,0 +1,49 @@
+# ARENA-EVIDENCE — the audit trail
+
+<!--
+TEMPLATE. Copy to ../ARENA-EVIDENCE.md on install.
+THIS FILE IS APPEND-ONLY. Never delete a block. Never rewrite an existing block.
+Superseded evidence stays, marked superseded. A displaced rank stays visible for
+one revision. The reason a claim was withdrawn is the most useful thing in the
+file, and it is only useful if it survives.
+-->
+
+**This is not the answer.** The ranked designs live in `ARENA.md`. This file
+carries everything that explains how they got that way.
+
+## What belongs here
+
+- tranche narratives — what was read this pass and what it changed
+- measurements, coefficients, figures, and the provenance of each
+- contradictions between sources, preserved rather than reconciled
+- the candidate that nearly displaced a slot, and why it lost
+- qualifications that narrow a claim without overturning it
+- superseded material, marked as superseded
+
+## What does not belong here
+
+- the ranked slots themselves — those are `ARENA.md`
+- anything that would be better as a one-line consequence in a slot field
+
+## Format
+
+One `###` block per area per pass, appended at the end of that area's section.
+Name the pass and the files it read, so a later reader can tell a real read from
+a claimed one.
+
+<!-- EXAMPLE STRUCTURE — delete this comment, keep the shape:
+
+### Area 8 — hippocampus consolidation — pass 24
+
+Read: `active-wiki/concepts/x.md`, `active-wiki/concepts/y.md`
+
+The second file argues consolidation is a replay operation rather than a
+write-amplification one. That contradicts rank 1's justification, which assumed
+write-back. Rank 1 holds for now because the contradiction is unresolved, not
+because it was reconciled away; grade dropped HIGH -> LOW pending a source that
+distinguishes replay from write-back.
+
+Displaced candidate: `z.md`'s "consolidate on schedule, not on salience" — it
+beat rank 1 on cost and lost on evidence grade (UNTESTED vs LOW). Kept here so
+a later pass can re-raise it if trials appear.
+-->

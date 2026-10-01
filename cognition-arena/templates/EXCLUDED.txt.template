@@ -1,0 +1,25 @@
+# EXCLUDED.txt — corpus exclusion manifest
+
+<!--
+TEMPLATE. Copy to ../EXCLUDED.txt on install. Runtime state; not tracked.
+Authoritative record of which ordered lines are NOT read, and why.
+-->
+
+## Scope
+
+<!-- Record the user's exclusion rule verbatim. One subject per line. -->
+
+## Ranges
+
+<!-- Format: START-END  reason
+     Contiguous ranges, not per-file lines, so the manifest stays small. -->
+
+## Rules
+
+1. **Never open an excluded file.** Not to summarise, not to check relevance.
+2. **Ambiguity resolves to IN SCOPE.** A path stays eligible until its subject is
+   clear.
+3. **Generic words are not subjects.** `taxonomy`, `security`, `monitor`,
+   `hardware`, `system` do not by themselves match an excluded topic.
+4. **Exclusion is not progress.** These marks survive a restart of the read.
+5. **If one looks misclassified, record it in VERIFICATION.md and move on.**

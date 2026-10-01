@@ -1,0 +1,52 @@
+# VERIFICATION — claims needing external confirmation
+
+<!--
+TEMPLATE. Copy to ../VERIFICATION.md on install. Runtime state; not tracked.
+Not architecture. Corpus-hygiene defects and unverified external facts live here
+so ARENA.md / ARENA-EVIDENCE.md stays a brain design, not a corpus of trivia.
+-->
+
+**Admission rule:** a claim enters only if resolving it could change a design
+decision. Otherwise it is dropped, not filed.
+
+Per R-J4, when the vault and external evidence disagree, both are preserved.
+**Nothing here is a verified fact.**
+
+## A. Unverified external claims
+
+_None yet._
+
+## B. Corpus hygiene (defective but not architectural)
+
+_None yet._
+
+## C. Self-measurement claims (R-J2: do not measure)
+
+_None yet._
+
+**Standing note:** resource dashboards, CPU/RAM breakdowns, and per-job error
+inventories are **not** design evidence. A component's resource cost is not a
+measure of whether its design works.
+
+## D. Excluded
+
+Per user scope. **Record the count and the rule; never open an excluded file,
+summarize it, or infer its contents.** If one looks misclassified, record that
+here and move on.
+
+Exclusion is a standing scope instruction, not progress — a restart of the read
+does not reopen excluded files.
+
+## E. Workspace integrity
+
+_Record any case where the workspace's own progress record was found wrong._
+
+A progress record that can be silently falsified will eventually produce an arena
+claiming conclusions from files nobody read. Treat any unexpected drop in the read
+count as this until proven otherwise, and say so in the run report rather than
+silently re-marking.
+
+## F. Machine checks (read-only)
+
+    python3 scripts/okf_lint.py --check --source both
+    python3 scripts/okf_gate.py <file>

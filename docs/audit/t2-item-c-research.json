@@ -1,0 +1,78 @@
+{
+ "measured": "2026-09-30T00:55:00Z",
+ "scope": "Item C research for Consolidation/Adaptive-Forgetting.md. Research only; the three load-bearing claims are NOT applied pending one user decision (withdraw the numbers, or keep them marked as unsupported). Everything here is verified on two resolvers unless flagged.",
+
+ "status_of_the_evidence_table": {
+  "verifier_reran_after_this_session_repairs": true,
+  "before": {"match": 938, "mismatch": 0, "unresolvable": 19, "untitled_citation": 1, "rows": 958},
+  "after": {"match": 939, "mismatch": 0, "unresolvable": 18, "untitled_citation": 0, "rows": 957},
+  "what_moved": "The Anderson replacement (10.1037/0278-7393.20.5.1063) re-derived and resolved as 'match'. The finance DOI and the phantom Nature DOI are gone from the vault so their rows no longer exist. The McCloskey & Cohen row is now TITLED but still 'unresolvable' -- the correct and honest outcome, because the underlying cause is a Crossref backfill gap rather than a bad citation. Do not 'fix' that by deleting the citation.",
+  "gate": "Still fails. 18 unresolvable remain. Confidence NOT written."
+ },
+
+ "the_three_load_bearing_claims_all_confirmed_nonexistent": {
+  "method": "PubMed and Crossref, with a positive control on each endpoint before any zero was read (controls: 131 Friston active-inference papers; 27 RIF replication/preregistration papers; 1 RIF meta-analysis). Coverage measured where a negative mattered. Note: an earlier version of this survey reported every PubMed query as 'None' because a transient HTTP failure was indistinguishable from a zero; that was an instrument failure, and every result below was re-taken after fixing it.",
+  "Basden_2014": {
+   "claim_in_file": "Failed replication of RIF in a large sample, N = 288, multiple paradigm variants; argues RIF may be an artifact of small samples and p-hacking.",
+   "finding": "NO SUCH PAPER. Basden's only retrieval-induced-forgetting publication in PubMed is Basden, Basden & Morales (2003), 'The role of retrieval practice in directed forgetting', J Exp Psychol Learn Mem Cogn 29(3):389-397, doi 10.1037/0278-7393.29.3.389 -- a different topic (directed forgetting), 11 years earlier, and not a replication attempt.",
+   "verdict": "fabricated; no real substitute found for an N=288 failed-replication claim"
+  },
+  "Huettl_2021": {
+   "claim_in_file": "Large-scale preregistered multi-lab replication, N = 630, d = 0.15-0.20.",
+   "finding": "NO SUCH PAPER, and the name does not even exist in the psychology literature. PubMed returns 145 'Huettl' records and every one is a different person -- surgery, oncology, neurosurgery, limb regeneration. No Huettl has a psychology publication on RIF. Searching JEP:LMC 2021 for an RIF paper returns an unrelated 2022 attention/testing-effect paper.",
+   "verdict": "fabricated; the N=630 figure has no real source"
+  },
+  "Depret_2020": {
+   "claim_in_file": "Meta-analysis, 105 experiments / 72 independent tests / 39,000+ participants; significant publication bias; corrected d = 0.15 vs uncorrected d = 0.31.",
+   "finding": "NO SUCH PAPER. Murayama, Miyatsu & Buchli (2014), 'Forgetting as a consequence of retrieval: a meta-analytic review of retrieval-induced forgetting', Psychological Bulletin 140(5):1383-1409, doi 10.1037/a0037505, PMID 25180807 is the ONLY RIF meta-analysis in existence (a pre-2015 title search returns exactly 1 hit). It is real and authoritative, but its abstract reports NO publication-bias correction and no d = 0.31 -> 0.20 result. A PubMed search for RIF plus publication bias returns 3 records, none of them a RIF meta-analysis.",
+   "verdict": "fabricated; Murayama 2014 is real but does NOT support the publication-bias claim as written. Substituting it would be a correct-metadata citation that fails to support its own sentence -- the exact failure mode section 4 of the handoff forbids."
+  }
+ },
+
+ "real_papers_found_that_MIGHT_support_adjacent_claims": {
+  "note": "Found while checking the three above. These are verified real and genuinely support claims the file makes ELSEWHERE. Applying them is a content edit and is therefore held for the same user decision. Listed so the choice is informed rather than guessed.",
+  "Clark_2026_meta_analysis": {
+   "citation": "Clark, A., Todorovic, D., Levy, B. J., Eschmann, C., Klein, S. B., & Anderson, M. C. (2026). Forgetting as a consequence of retrieval suppression: A meta-analytic review. Journal of Experimental Psychology: General, 155(5), 1318-1346.",
+   "doi": "10.1037/xge0001922",
+   "pmid": "42060405",
+   "verified": "Crossref HIT (title, all six authors, JEP:General, v155 issue 5, pp.1318-1346, 2026) AND PubMed record independently. NOTE: an earlier guessed DOI 10.1037/xge0000617 resolved to an unrelated Hitchcock et al. paper -- recorded here because it is the same failure as the subagent's bad Bergstrom DOI, and the lesson is to take identifiers from the record, never infer them.",
+   "what_it_actually_reports": "Meta-analysis of SUPPRESSION-INDUCED FORGETTING (think/no-think), not RIF. 500 effects from 120 studies. Aggregate SIF effect d approximately 0.20-0.40, measured as SIF approximately 6% (same probe), 5-6% (independent probe), 2-4% (recognition). Substantial heterogeneity, with prediction intervals. Concludes the effect IS robust.",
+   "the_important_distinction": "This is SIF, not RIF. It must NOT be used to support Depret's RIF publication-bias claim -- that would repeat the exact error being repaired. It is a legitimate support for a DIFFERENT claim in the same file.",
+   "candidate_for": "Body line 196 currently reads 'Meta-analysis across suppression studies shows average suppression effect of d = 0.55 (95% CI [0.42, 0.68])' attributed to Anderson & Hulbert (2018) -- which is a REVIEW, not a meta-analysis, and cannot be the source of a meta-analytic estimate. Clark et al. is a real meta-analysis of precisely the think/no-think paradigm. Caveat to state if applied: their aggregate is d approximately 0.20-0.40, NOT 0.55, and they conclude robustness rather than weakness -- so the number and the emphasis would both have to change, making this a rewrite of the sentence rather than a citation swap."
+  },
+  "Cinel_2018_large_scale_RIF": {
+   "citation": "Cinel, C., Cortis Mack, C., & Ward, G. (2018). Towards augmented human memory: Retrieval-induced forgetting and retrieval practice in an interactive, end-of-day review. Journal of Experimental Psychology: General, 147(5), 632-661.",
+   "doi": "10.1037/xge0000441",
+   "pmid": "29745709",
+   "verified": "Crossref HIT with exact title, all three authors, JEP:General v147(5) pp.632-661, 2018.",
+   "what_it_actually_reports": "Six experiments using real-world campus-tour and scavenger-hunt materials. Reports reliable RIF in a naturalistic, ecologically valid setting, with retrieval practice benefitting practised items while harming unpractised items from practised categories.",
+   "why_it_matters_here": "This is a real, large-scale, ecologically-valid demonstration that RIF IS robust. It is evidence on the OPPOSITE side of the file's replication-scepticism section from Basden/Huettl. Worth weighing before that section is left standing: after removing the two fabricated replications, the file's 'RIF may be an artifact' argument loses its only support, and a real counterweight exists in the literature.",
+   "not_a_substitute_for": "Basden or Huettl -- it is not a failed replication and does not report N=288 or N=630."
+  },
+  "Murayama_2014": {
+   "citation": "Murayama, K., Miyatsu, T., & Buchli, D. (2014). Forgetting as a consequence of retrieval: A meta-analytic review of retrieval-induced forgetting. Psychological Bulletin, 140(5), 1383-1409.",
+   "doi": "10.1037/a0037505",
+   "pmid": "25180807",
+   "verified": "Crossref HIT and PubMed abstract retrieved in full.",
+   "what_it_actually_reports": "Described by its authors as the first major meta-analysis of RIF. Results largely supported inhibition accounts while also providing challenging evidence, with results often varying as a function of how RIF was assessed.",
+   "use": "A legitimate real source for the general proposition that RIF has been meta-analysed and that the inhibition account has support with caveats. NOT a source for the d=0.31 -> 0.20 publication-bias figures, and its abstract does not license any specific effect size."
+  }
+ },
+
+ "open_decision_for_the_user": {
+  "question": "For the three confirmed-fabricated load-bearing claims -- Basden N=288 failed replication, Huettl N=630 preregistered replication, Depret d=0.31->0.20 -- should the specific numbers be (a) withdrawn from the body text along with the citation, or (b) kept and explicitly marked as unsourced/unverified?",
+  "why_it_cannot_be_decided_automatically": "Section 4 of the handoff requires the claim to be withdrawn or marked when its citation is dropped, but which of the two is a judgement about the file's argument, not a lookup. The replication-scepticism section (body lines 270-290) is currently built on these three; removing all three leaves it asserting a conclusion with no supporting evidence, which may warrant removing or reframing the section itself.",
+  "what_is_ready_regardless": "The three citations can be dropped from the sources list and the reference list under either choice; only the body sentences differ."
+ },
+
+ "still_open_and_deliberately_not_guessed": {
+  "Friston_2017": "Confirmed still open. PubMed holds 131 Friston active-inference papers; the only Brain-journal hits are Parr et al. 2021 (computational neurology of movement) and an unrelated 1992 PET study. There is no 2017 Brain paper of that name. Per section 4 of the handoff, no substitute is being guessed, because the file uses this citation for two different claims and selecting one is a reading of the file rather than a lookup.",
+  "RIF_coinage": "Which paper coined the term 'retrieval-induced forgetting' remains unestablished. PubMed holds no RIF-titled paper before 2000. Common attribution to Butler & Anderson (1991) / Butler, Lee & Anderson (1993) in Psychological Science could be neither confirmed nor refuted (Crossref holds 2 Anderson items there for 1991, none for Butler 1993 -- a SAGE backfill gap, so not evidence against). The vault deliberately says 'the original behavioural RIF demonstration' and must not acquire 'coined' or 'first'."
+ },
+
+ "damage_reported": {
+  "what": "Running scripts/grade_all.py without --apply overwrote docs/audit/grade-decisions.csv, which held uncommitted user work. Cause: line 380 of that script opens the report file 'w' unconditionally, BEFORE the --apply gate at line 403, so the dry run protects the vault but not the report.",
+  "recovery": "Restored the committed version via git checkout. The clobbered content was preserved, not deleted, at /home/operator/.hermes/cache/scratch/grade-decisions.CLOBBERED-17-17-36.csv (284767 bytes, mtime 17:18). VERIFIED PRESENT on 2026-09-30. An earlier note in this file wrongly claimed the scratch directory had been pruned; it had not -- the directory holds ~2931 entries. A pre-invalidation backup of the evidence table is also preserved at /home/operator/.hermes/cache/scratch/t2-verification.pre-invalidate.bak.json.",
+  "fix_applied": "A warning comment now sits at the write site in scripts/grade_all.py documenting the unconditional write, the date it was discovered, and the instruction to copy the file aside first."
+ }
+}

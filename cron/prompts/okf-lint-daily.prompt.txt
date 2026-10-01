@@ -1,0 +1,25 @@
+Run the wiki schema conformance check.
+
+Do exactly this, in order, and report the raw output:
+
+1. Run the linter over BOTH wikis (the full corpus, not a sample):
+
+   python3 ${HERMES_HOME}/hermes-brain/scripts/okf_lint.py --check --source both
+
+2. Read the repair queue if it exists, and summarise the top defect classes by count:
+
+   wc -l ${HERMES_HOME}/hermes-brain/schemas/okf-queue.jsonl
+
+3. Report, in this format and nothing else:
+   - scanned file count
+   - total findings, split auto-fixable vs report-only
+   - the top 8 defect classes with counts
+   - the total number of judgement-queue items currently outstanding
+   - whether the run took longer than 10 minutes (this is a full-corpus walk and may be slow)
+
+Standards authority — do NOT restate these, read them if you need them:
+   format: ${HERMES_HOME}/hermes-brain/schemas/okf-schema.yaml
+   rules:  ${HERMES_HOME}/hermes-brain/schemas/WIKI-STANDARDS.md
+
+Do not edit any wiki file. This job is READ-ONLY. Repair is a separate job
+(`okf-repair-daily`) which is also paused.

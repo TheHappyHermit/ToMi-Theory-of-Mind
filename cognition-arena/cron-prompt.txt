@@ -1,0 +1,25 @@
+# cron-prompt — moved
+
+**The canonical job prompt is `installers/arena-prompt.md` in this repository.**
+
+This file used to hold a second copy of the cron job's prompt. It was pre-split: no
+mention of `ARENA-EVIDENCE.md`, no `RUNLOG.jsonl` schema, no mandatory invariant run,
+and it still said "repeat every 15 minutes" after the job moved to 12.
+
+**Install it:**
+
+This prompt is seeded from `cron/jobs.template.json` when the cron job is
+created, so the job and this file come from the same source.
+
+To check an existing job against the template:
+
+```bash
+python3 scripts/check_cron_drift.py --job 49280b099b12 --verbose
+```
+
+The previous contents are recoverable from git:
+`git show bb607aa^:audit/fullread/cron-prompt.txt`.
+
+**Do not recreate this file as a copy.** The prompt and the skill are one system:
+the skill states the rules, the prompt tells the job to enforce them. Change
+`installers/arena-prompt.md`, re-run the installer.

@@ -1,0 +1,32 @@
+Run the wiki schema REPAIR pass. It writes to wiki files, so dry-run first and report before applying.
+
+Do exactly this and report the raw output:
+
+1. Dry run first, always, and report what WOULD change:
+
+   python3 ${HERMES_HOME}/hermes-brain/scripts/okf_repair.py --dry-run --source both
+
+2. Then apply, but only the classes the schema marks `repair.auto`:
+
+   python3 ${HERMES_HOME}/hermes-brain/scripts/okf_repair.py --apply --source both
+
+3. Report:
+   - files scanned per wiki
+   - files actually changed per wiki
+   - count per repair class applied
+   - count of report-only items appended to the queue
+   - the backup directory path
+
+Rules that constrain this job — these are enforced by the script, not by you:
+   * ONLY these repairs happen automatically: okf_version normalisation, type/status
+     enum migration, and adding missing required fields. Nothing else.
+   * NEVER auto-edit: attributions, fabricated claims, stale live state, source
+     truncation, unresolved citations, index gaps, or body prose. Those need a human
+     judgement and go to the queue instead.
+   * The schema decides what is valid. Do not add fields, enums, or exceptions here.
+     If the schema is wrong, report that — do not work around it in the job.
+
+   format: ${HERMES_HOME}/hermes-brain/schemas/okf-schema.yaml
+   rules:  ${HERMES_HOME}/hermes-brain/schemas/WIKI-STANDARDS.md
+
+Backups of every modified file are written to ${HERMES_HOME}/.okf-backups/<timestamp>/ so any run is reversible. If a repair looks wrong in the report, say so loudly.

@@ -1,0 +1,9 @@
+name: brain-cognitive-guard
+description: >
+  Real-time Basal Ganglia action gating and Miyake executive inhibition guard.
+  Intercepts agent steps and commands to check somatic marker risk appraisal,
+  prevent repetitive looping, and arbitrate Go/No-Go pathways.
+
+events:
+  - agent:step
+  - command:*

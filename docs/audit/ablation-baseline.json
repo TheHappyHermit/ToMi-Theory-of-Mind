@@ -1,0 +1,77 @@
+{
+ "control_fired": {
+  "agm": 0,
+  "associative_graph": 0,
+  "chronesthesia": 0,
+  "counterfactual": 0,
+  "defeater_graph": 0,
+  "dialectic": 0
+ },
+ "control_mean_turn_s": 0.000235,
+ "gates": {
+  "agm": {
+   "delta_pct": -6.38,
+   "delta_s": -1.5e-05,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 0.00022,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  },
+  "associative_graph": {
+   "delta_pct": -17.87,
+   "delta_s": -4.2e-05,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 0.000193,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  },
+  "chronesthesia": {
+   "delta_pct": 44.68,
+   "delta_s": 0.000105,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 0.00034,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  },
+  "counterfactual": {
+   "delta_pct": -0.85,
+   "delta_s": -2e-06,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 0.000233,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  },
+  "defeater_graph": {
+   "delta_pct": -94.04,
+   "delta_s": -0.000221,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 1.4e-05,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  },
+  "dialectic": {
+   "delta_pct": 117.02,
+   "delta_s": 0.000275,
+   "errors": 0,
+   "fired_delta": 0,
+   "mean_turn_s": 0.00051,
+   "times_fired": 0,
+   "times_fired_when_present": 0
+  }
+ },
+ "invalid_reason": "gates never fired under this load: ['defeater_graph', 'counterfactual']. Ablating a gate that never runs cannot show an effect, so these numbers measure nothing. Use --load stressed.",
+ "known_limits": [
+  "Single-gate ablation measures marginal contribution given the other five present. A subsystem that only matters when another is absent will read as zero here.",
+  "Timings are sequential, not interleaved: a machine that gets busier mid-run biases later conditions.",
+  "Wall-clock delta is a proxy for cost, not for value. A slow subsystem can be earning its keep; a fast one can be dead weight. Read both columns."
+ ],
+ "load": "baseline",
+ "trials": 1,
+ "turns_per_trial": 4,
+ "valid": false
+}

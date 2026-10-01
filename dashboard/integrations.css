@@ -1,0 +1,1477 @@
+/* ==========================================================================
+   Hermes Brain Command Deck — Integrations & Advanced Pages Stylesheet
+   Covers: Home Assistant, n8n, pgvector, Obsidian Vault, SearXNG, Markets & TTS
+   ========================================================================== */
+
+/* ── Smart Home (Home Assistant) ─────────────────────────────────────────── */
+.ha-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.ha-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: transform var(--motion-fast), border-color var(--motion-fast), box-shadow var(--motion-fast);
+}
+
+.ha-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.ha-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ha-card-title {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  color: var(--text-1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ha-card-state {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.ha-card-state.on {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--emerald, #10b981);
+}
+
+.ha-card-state.off {
+  background: rgba(100, 116, 139, 0.15);
+  color: var(--text-3);
+}
+
+.ha-toggle-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all var(--motion-fast);
+}
+
+.ha-toggle-btn:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ha-climate-dial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.ha-climate-temp {
+  font-size: var(--fs-xl);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+/* ── n8n Automation Engine ───────────────────────────────────────────────── */
+.n8n-pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.n8n-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.n8n-tag {
+  display: inline-block;
+  padding: 2px 7px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-2);
+}
+
+.n8n-exec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin-top: var(--space-3);
+}
+
+.n8n-exec-table th,
+.n8n-exec-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.n8n-exec-table th {
+  color: var(--text-3);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Financial Markets (yfinance & Lightweight Charts) ───────────────────── */
+.market-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(320px, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 960px) {
+  .market-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.market-chart-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.market-chart-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  min-height: 280px;
+  display: block;
+}
+
+#market-candlestick-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.market-timeframe-switcher,
+.market-timeframe-bar {
+  display: inline-flex;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.market-tf-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-2);
+  cursor: pointer;
+  transition: all var(--motion-fast);
+}
+
+.market-tf-btn:hover {
+  color: var(--text-1);
+}
+
+.market-tf-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.chart-style-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.btn-chart-style {
+  background: transparent;
+  border: none;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-2);
+  cursor: pointer;
+  transition: all var(--motion-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-chart-style:hover {
+  color: var(--text-1);
+}
+
+.btn-chart-style.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.market-watchlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.market-watchlist-table tr {
+  cursor: pointer;
+  transition: background var(--motion-fast);
+}
+
+.market-watchlist-table tr:hover {
+  background: var(--bg-tertiary);
+}
+
+.market-watchlist-table tr.active-watchlist-row {
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--accent, #22d3ee);
+}
+
+.market-watchlist-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.market-gain {
+  color: var(--emerald, #10b981);
+  font-weight: 600;
+}
+
+.market-loss {
+  color: var(--rose, #ef4444);
+  font-weight: 600;
+}
+
+/* ── Obsidian Vault & pgvector Visualizer ────────────────────────────────── */
+.vault-workspace-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  gap: var(--space-3);
+  height: calc(100vh - 160px);
+  min-height: 580px;
+}
+
+@media (max-width: 1024px) {
+  .vault-workspace-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.vault-tree-pane {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.vault-editor-pane {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.vault-backlinks-pane {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.vault-note-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background var(--motion-fast);
+}
+
+.vault-note-item:hover,
+.vault-note-item.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.vector-scatter-canvas {
+  width: 100%;
+  height: 380px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  cursor: crosshair;
+}
+
+/* ── SearXNG Metasearch Omnibar ──────────────────────────────────────────── */
+.searxng-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  z-index: 1100;
+}
+
+.searxng-modal-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  width: 720px;
+  max-width: 92vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.searxng-search-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+}
+
+.searxng-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-1);
+  outline: none;
+}
+
+.searxng-categories {
+  display: flex;
+  gap: 6px;
+  padding: 8px 18px;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.searxng-cat-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+.searxng-cat-btn.active {
+  background: var(--bg-card);
+  border-color: var(--border-subtle);
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+.searxng-results-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.searxng-result-card {
+  padding: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.searxng-result-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.searxng-result-url {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+}
+
+.searxng-result-snippet {
+  font-size: 0.8rem;
+  color: var(--text-2);
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* ── ElevenLabs Voice HUD ─────────────────────────────────────────────────── */
+.tts-player-hud {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+}
+
+.tts-waveform-bars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 14px;
+}
+
+.tts-wave-bar {
+  width: 2px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.tts-waveform-bars.active .tts-wave-bar {
+  animation: wavePulse 0.5s ease-in-out infinite alternate;
+}
+
+.tts-waveform-bars.active .tts-wave-bar:nth-child(2) { animation-delay: 0.15s; }
+.tts-waveform-bars.active .tts-wave-bar:nth-child(3) { animation-delay: 0.3s; }
+.tts-waveform-bars.active .tts-wave-bar:nth-child(4) { animation-delay: 0.45s; }
+
+@keyframes wavePulse {
+  from { height: 4px; }
+  to { height: 14px; }
+}
+
+/* ==========================================================================
+   System Settings & Financial API Configuration Panel
+   ========================================================================== */
+.system-settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.system-setting-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--motion-fast);
+}
+
+.system-setting-card:hover {
+  border-color: var(--border-active);
+}
+
+.system-setting-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.setting-field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-field-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.system-settings-section-header {
+  grid-column: 1 / -1;
+}
+
+.setting-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.setting-key-input {
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-1);
+  outline: none;
+}
+
+.setting-key-input:focus {
+  border-color: var(--accent);
+}
+
+.setting-status-msg {
+  font-size: 0.75rem;
+  margin-top: 8px;
+  min-height: 18px;
+}
+
+.setting-status-msg.success {
+  color: var(--emerald, #10b981);
+}
+
+.setting-status-msg.error {
+  color: var(--rose, #ef4444);
+}
+
+/* ==========================================================================
+   Financial Markets Universal Search Omnibar & Dropdown
+   ========================================================================== */
+.market-search-bar-wrap {
+  width: 100%;
+}
+
+.market-search-input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.market-search-input-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-1);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.market-search-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  max-height: 380px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme="light"] .market-search-dropdown {
+  background: #ffffff;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.market-search-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: background var(--motion-fast);
+}
+
+.market-search-item:hover {
+  background: var(--bg-secondary);
+}
+
+.market-search-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.market-search-symbol {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-1);
+  min-width: 80px;
+}
+
+.market-search-name {
+  font-size: 0.8rem;
+  color: var(--text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.market-follow-btn {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all var(--motion-fast);
+  white-space: nowrap;
+}
+
+.market-follow-btn:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.market-follow-btn.following {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.market-unfollow-btn {
+  background: none;
+  border: none;
+  color: var(--text-3);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  transition: color var(--motion-fast), background var(--motion-fast);
+}
+
+.market-unfollow-btn:hover {
+  color: var(--rose, #ef4444);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* ==========================================================================
+   Comprehensive Multi-API Breakdown Deck
+   ========================================================================== */
+.breakdown-provider-tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--bg-secondary);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  overflow-x: auto;
+}
+
+.breakdown-tab-btn {
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--motion-fast);
+  white-space: nowrap;
+}
+
+.breakdown-tab-btn:hover {
+  color: var(--text-1);
+}
+
+.breakdown-tab-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.breakdown-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.breakdown-kpi-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+
+.breakdown-kpi-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-3);
+}
+
+.breakdown-kpi-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-1);
+  margin-top: 4px;
+}
+
+.breakdown-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 840px) {
+  .breakdown-subgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.breakdown-section-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.breakdown-section-title {
+  margin: 0 0 12px 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-1);
+  letter-spacing: 0.3px;
+}
+
+.breakdown-metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.breakdown-metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.breakdown-metric-label {
+  color: var(--text-3);
+}
+
+.breakdown-metric-val {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.api-unconfigured-banner {
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Homelab 11-Service Live Health & Latency Mesh
+   ========================================================================== */
+.homelab-mesh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.homelab-mesh-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  transition: all var(--motion-fast);
+  position: relative;
+}
+
+.homelab-mesh-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.homelab-mesh-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homelab-mesh-identity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.homelab-mesh-icon {
+  font-size: 1.25rem;
+}
+
+.homelab-mesh-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text-1);
+}
+
+.homelab-mesh-category {
+  font-size: 0.7rem;
+  color: var(--text-3);
+}
+
+.homelab-mesh-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.homelab-mesh-status-dot.online {
+  background: var(--emerald, #10b981);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+.homelab-mesh-status-dot.slow {
+  background: var(--amber, #f59e0b);
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+}
+
+.homelab-mesh-status-dot.offline {
+  background: var(--rose, #ef4444);
+  opacity: 0.7;
+}
+
+.homelab-mesh-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.latency-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-2);
+}
+
+.latency-pill.online {
+  color: var(--emerald, #10b981);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.latency-pill.slow {
+  color: var(--amber, #f59e0b);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.latency-pill.offline {
+  color: var(--rose, #ef4444);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+/* ==========================================================================
+   Multi-Host Inference Cluster & GPU/VRAM Telemetry
+   ========================================================================== */
+.cluster-nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.cluster-node-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cluster-node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cluster-node-role {
+  font-size: 0.72rem;
+  color: var(--text-3);
+  margin-top: 2px;
+}
+
+.cluster-gauge-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cluster-gauge-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+}
+
+.cluster-gauge-bar-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cluster-gauge-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--info), #8b5cf6);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+/* ==========================================================================
+   Epistemic Truth Ledger & Disputed Claims Deck
+   ========================================================================== */
+.epistemic-deck {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.epistemic-filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.claim-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color var(--motion-fast);
+}
+
+.claim-card:hover {
+  border-color: var(--accent);
+}
+
+.claim-card.status-DISPUTED {
+  border-left: 4px solid var(--amber, #f59e0b);
+}
+
+.claim-card.status-VERIFIED {
+  border-left: 4px solid var(--emerald, #10b981);
+}
+
+.claim-card.status-SUPERSEDED {
+  border-left: 4px solid var(--text-4, #64748b);
+  opacity: 0.85;
+}
+
+.claim-card.status-UNVERIFIED {
+  border-left: 4px solid var(--accent);
+}
+
+.claim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.claim-topic {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-3);
+}
+
+.claim-text {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-1);
+}
+
+.evidence-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 720px) {
+  .evidence-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.evidence-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.evidence-source {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.evidence-assertion {
+  font-size: 0.78rem;
+  color: var(--text-2);
+}
+
+.action-gate-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.action-gate-tag.HOLD {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.action-gate-tag.ALLOW {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.action-gate-tag.REJECT {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ==========================================================================
+   Autonomous Deep Research Pipeline Stepper
+   ========================================================================== */
+.research-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 16px 0;
+  padding: 0 8px;
+}
+
+.research-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+}
+
+.research-step-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-3);
+  transition: all 0.3s;
+}
+
+.research-step.active .research-step-dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.research-step.completed .research-step-dot {
+  border-color: var(--emerald, #10b981);
+  background: var(--emerald, #10b981);
+  color: #ffffff;
+}
+
+.research-step-label {
+  font-size: 0.7rem;
+  color: var(--text-3);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.research-step.active .research-step-label {
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Voice Copilot & Waveform HUD
+   ========================================================================== */
+.voice-copilot-btn {
+  position: relative;
+}
+
+.voice-copilot-btn.listening {
+  color: var(--rose, #ef4444) !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  animation: voice-pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes voice-pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.bots-chat-mic.listening {
+  background: var(--rose, #ef4444) !important;
+  color: white !important;
+  animation: voice-pulse 1.2s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   Persistent Financial Market Ticker Ribbon
+   ========================================================================== */
+.market-ticker-ribbon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 30px;
+  background: var(--bg-secondary);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  z-index: 1000;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 28px;
+  white-space: nowrap;
+  align-items: center;
+  animation: ticker-scroll 45s linear infinite;
+}
+
+.market-ticker-ribbon:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  color: var(--text-2);
+}
+
+.ticker-pill:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-1);
+}
+
+.ticker-pill .ticker-sym {
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.ticker-pill .ticker-price {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.ticker-pill.up .ticker-pct {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.ticker-pill.down .ticker-pct {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Split-Screen Dual Workbench Mode
+   ========================================================================== */
+.workbench-container {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+.workbench-pane-primary {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.workbench-pane-secondary {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.workbench-secondary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 8px;
+}
+
+.workbench-secondary-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+/* ==========================================================================
+   Docker Container Log Terminal Drawer / Modal
+   ========================================================================== */
+.container-logs-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-logs-drawer.open {
+  display: flex;
+}
+
+.terminal-window {
+  width: 960px;
+  max-width: 95vw;
+  height: 640px;
+  max-height: 90vh;
+  background: var(--bg-primary);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 12px;
+}
+
+.terminal-search-input {
+  background: var(--bg-tertiary);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  width: 180px;
+}
+
+.terminal-body {
+  flex: 1;
+  padding: 14px 16px;
+  overflow-y: auto;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #c9d1d9;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.terminal-line-err { color: #f85149 !important; font-weight: 600; }
+.terminal-line-warn { color: #d29922 !important; font-weight: 600; }
+.terminal-line-info { color: #58a6ff !important; }
+
+/* ==========================================================================
+   Homelab Summary Widgets & n8n Control Board
+   ========================================================================== */
+.homelab-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.summary-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.summary-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-progress-bar {
+  height: 6px;
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.summary-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #38bdf8);
+  border-radius: 3px;
+}
+
+.n8n-quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.n8n-action-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.n8n-action-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+

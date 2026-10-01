@@ -1,0 +1,40 @@
+# Hermes Command Deck -- durable user service.
+#
+# Install (the repo must be at ~/hermes-brain):
+#     mkdir -p ~/.config/systemd/user
+#     cp deploy/hermes-command-deck.service ~/.config/systemd/user/
+#     systemctl --user daemon-reload
+#     systemctl --user enable --now hermes-command-deck.service
+#
+# %h expands to the user's home directory, so this file carries no absolute
+# path and no username -- it is safe to track in a public repository.
+#
+# Published on 0.0.0.0: the Command Deck is a LAN service. The dashboard has no
+# authentication layer, so anything that can reach 8088 can read and WRITE the
+# settings holding API keys and database passwords. Secrets are masked on read;
+# the write endpoints are not protected. Trusted-LAN only -- do not port-forward.
+
+[Unit]
+Description=Hermes Command Deck Dashboard
+Documentation=file://%h/hermes-brain/dashboard/README.md
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/hermes-brain
+# dashboard_server.py imports `dashboard.backend.config`, so the repository
+# root has to be importable as well as the dashboard directory itself.
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=%h/hermes-brain:%h/hermes-brain/dashboard
+Environment=DASHBOARD_PORT=8088
+Environment=DASHBOARD_HOST=0.0.0.0
+ExecStart=/usr/bin/python3 %h/hermes-brain/dashboard/run_dashboard.py --host 0.0.0.0 --port 8088
+Restart=on-failure
+RestartSec=5
+# Bound to loopback: the dashboard exposes task, email, and credential
+# configuration, so it is not reachable off-host.
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

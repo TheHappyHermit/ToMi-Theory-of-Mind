@@ -1,0 +1,10 @@
+<!--
+TEMPLATE. Append one JSON object per run to ../RUNLOG.jsonl. Never rewrite or
+reorder earlier lines. A corrupted log is worse than a missing one, because it
+looks authoritative.
+
+order_numbers_read is the load-bearing field: it is the only way a later pass can
+tell a real read from a claimed one. A file cited in ARENA.md whose ORDER number
+appears in no run's order_numbers_read was never read.
+-->
+{"run_id":"2026-01-01T00:00:00-08:00","pass_type":"tranche","order_numbers_read":[],"ledger_rows_marked":[],"read_file_calls":0,"rows_flipped":0,"slots_changed":0,"areas_opened":0,"citations_removed":0,"arena_lines_after":0,"evidence_lines_after":0,"invariants":{"all_other":"not-run"},"unread_citations_after":0,"strays":[],"notes":"first run — nothing read yet"}

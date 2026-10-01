@@ -1,0 +1,144 @@
+{
+  "$comment": "Phase 4 graph decision. Machine-readable companion to docs/GRAPH-DECISION.md. Every number here was measured on this machine on 2026-09-26 against the graph built 2026-09-19. If a number and the document disagree, the document is authoritative and this file is the bug.",
+  "decision": "keep",
+  "decided_on": "2026-09-26",
+  "role": "associative-traversal view alongside retrieval",
+  "not": "a replacement for retrieval, and not a default",
+  "routing": {
+    "direct_lookup_single_hop_fact": "retrieval",
+    "multi_hop": "graph",
+    "cross_document_association": "graph",
+    "default": "retrieval",
+    "consult_graph_when": "retrieval's answer looks incomplete, not first"
+  },
+  "measured": {
+    "date": "2026-09-26",
+    "corpus_files": 2104,
+    "graph_built_at": "2026-09-19",
+    "queries": 8,
+    "recall_at_k": 10,
+    "arms": {
+      "full_context_control": 1.0,
+      "body_bm25_control": 0.046,
+      "keyword": 0.046,
+      "fused": 0.042,
+      "graph": 0.028,
+      "oracle": 0.068
+    },
+    "reading": "retrieval currently beats the graph on direct lookup and fusion is worse than either; the decision is a routing rule, not a ranking claim, because the graph is not competing to return the best single document"
+  },
+  "why_keep_despite_scoring_lower": [
+    {
+      "finding": "RETRACTED 2026-09-26: _FILE_CHAR_CAP does not truncate the corpus",
+      "status": "not a defect in the installed version (0.9.67)",
+      "evidence": "llm.py:2619-2621 pre-splits oversized documents into slices covering the whole file (upstream fix #1369); the code comment at llm.py:631-632 states the cap is a no-op for slices",
+      "verified_on_this_corpus": {
+        "files_checked": 250,
+        "reassembled_byte_identically": 250,
+        "gaps_or_overlaps": 0,
+        "largest_file": "540,653 chars -> 33 slices, all extracted",
+        "median_slices_per_large_file": 5
+      },
+      "error_made": "the first draft of this decision read a per-slice size limit as a whole-file size limit, inferred loss from file sizes, and never tested what the extractor actually receives",
+      "effect_on_decision": "none; the reason for keeping the graph was that 0.028 was a floor on a truncated corpus, and that premise is gone. The decision now rests on the association argument",
+      "version_caveat": "the graph was built by 0.9.46 and 0.9.67 is installed; whether 0.9.46 sliced .md (its set was {.md,.mdx,.markdown,.txt,.rst}) is unconfirmed, though this corpus is 100% .md so it should have"
+    },
+    {
+      "finding": "the graph holds structure retrieval cannot represent",
+      "evidence": "edge relations in the built graph",
+      "relations": {
+        "references": 19203,
+        "conceptually_related_to": 4790,
+        "cites": 2604,
+        "implements": 1191,
+        "semantically_similar_to": 529,
+        "wikilink": 0
+      },
+      "implication": "the conceptually_related_to layer is what the graph is for; the 0 wikilinks is an open item to check before the next rebuild"
+    },
+    {
+      "finding": "flat similarity cannot arbitrate claim identity, and scaling does not fix it",
+      "evidence": "AVA, arXiv 2609.00177",
+      "numbers": {
+        "general_triplet_accuracy": 0.739,
+        "hard_negative_accuracy": 0.135,
+        "triplets": 171007,
+        "hard_negative_definition": "anchor and negative share >=90% lexical similarity and differ only ontologically"
+      },
+      "implication": "this is why a symbolic layer is kept at all; a pure-vector stack cannot do this job at any model size"
+    }
+  ],
+  "plan_claims_corrected": [
+    {
+      "claim": "markdown extraction is unreachable on the normal path; only watch.py reaches extract_markdown",
+      "verdict": "no longer true in the installed version",
+      "evidence": "extract.py:6678-6680 map .md/.mdx/.qmd to extract_markdown in the main dispatch table",
+      "corroboration": "the built graph contains 2377 document nodes, which could not exist if markdown were skipped"
+    },
+    {
+      "claim": "_FILE_CHAR_CAP truncates silently; a 229k-char file is read to 8.7%",
+      "verdict": "wrong in this version; described a real historical bug, fixed upstream as #1369",
+      "evidence": "installed 0.9.67 pre-splits oversized files into gap-free slices covering the whole file; verified 250/250 files reassemble byte-identically. The plan was written against older behaviour. I repeated this error in the first draft of this document, which is why the correction is recorded rather than quietly patched."
+    }
+  ],
+  "unresolved_on_purpose": [
+    {
+      "question": "LightRAG claims 67.6-84.8% win rates; the HippoRAG 2 aligned reproduction scores 16.6/2.4 direct and 1.6/11.6/2.4 multi-hop F1",
+      "why_not_settled": "both are third-party numbers on other people's datasets; nothing in this repository can adjudicate between them, and picking a side without running the comparison would assert a preference as a finding",
+      "practical_consequence": "do not adopt LightRAG on the strength of its own win-rate claim; if it is ever evaluated here, the reproduction's numbers are the prior"
+    },
+    {
+      "question": "whether 66.7% degrades to 39.06% under LLM-judge order/length/trial correction",
+      "why_not_settled": "same reason"
+    }
+  ],
+  "upstream_defects": [
+    {
+      "item": "_FILE_CHAR_CAP = 20_000",
+      "location": "graphify/llm.py:30, :2621",
+      "status": "NOT a defect in 0.9.67; pre-slicing means no content is dropped",
+      "impact": "none"
+    },
+    {
+      "item": "cap is not configurable",
+      "location": "no GRAPHIFY_* override, no config loader",
+      "status": "minor",
+      "impact": "should not need changing"
+    },
+    {
+      "item": "cross-chunk relations are invisible",
+      "location": "--token-budget default 60000",
+      "status": "the real limitation for a relational graph",
+      "impact": "991 of 1014 oversized files have slices split across >1 chunk; a prompt never contains two chunks, so conceptually_related_to cannot be emitted between them",
+      "fix": "raise --token-budget, or use --mode deep for INFERRED edges"
+    },
+    {
+      "item": "no wikilink relation emitted",
+      "location": "0 of 28946 edges",
+      "status": "open",
+      "impact": "the vault's own link structure may not be indexed as such"
+    }
+  ],
+  "deployment_finding_keep_both_gradings": {
+    "$comment": "kept verbatim in every form because a reader who sees only one grading draws the wrong conclusion in one direction or the other",
+    "mechanism": "offline consolidation gated by surprisal",
+    "design_grade": "LOW",
+    "deployment_grade": "UNTESTED and not running",
+    "evidence": "six independent papers report trials on the mechanism; the locally-deployed instance prints a complete plausible config with ENABLED = true and TOP_PERCENT_SURPRISAL = 0.1, and the same file records the dream cycle as 404 and surprisal as disabled"
+  },
+  "do_not_claim": [
+    "that 13-22 hours is an upstream ingestion figure; it is the owner's own measured run, found in no graphify doc, issue, or PR",
+    "that ingestion is free and local; markdown is 100% the expensive LLM pass, while the free deterministic tree-sitter AST pass is for code"
+  ],
+  "code_that_encodes_this": {
+    "file": "brain/cortex/wiring.py",
+    "function": "CognitiveWiring.gate_associative_graph",
+    "behaviour": "the associative graph is a second candidate source, never a default; it fires on the deliberative route or on a turn with enough distinct concepts that one document is unlikely to hold the whole answer"
+  },
+  "review_triggers": [
+    "a rebuild at a higher --token-budget, or with --mode deep; the 0.028 was measured at the 60k default where 991 of 1014 large files span more than one chunk",
+    "the corpus grows substantially; multi-hop needs enough documents for a path to exist",
+    "a wikilink relation appears in the built graph, or its absence is explained",
+    "the slicer's behaviour is confirmed against 0.9.46, the version that built the current graph"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+ "rewritten": [
+  {
+   "path": "research/calibrate-absence-model-on-real-sessions.md",
+   "identifier": "doi:10.1080/00207541003690082",
+   "kind": "abbreviation",
+   "title": "Estimating the time of step change with Poisson CUSUM and EWMA control charts",
+   "old": "  - \"https://doi.org/10.1080/00207541003690082 (Poisson CUSUM for change-point detection)\"",
+   "new": "  - \"https://doi.org/10.1080/00207541003690082 (Estimating the time of step change with Poisson CUSUM and EWMA control charts)\""
+  },
+  {
+   "path": "research/calibrate-absence-model-on-real-sessions.md",
+   "identifier": "doi:10.1103/PhysRevE.73.036127",
+   "kind": "abbreviation_and_wrong_year",
+   "title": "Modeling bursts and heavy tails in human dynamics",
+   "old": "  - \"https://link.aps.org/doi/10.1103/PhysRevE.73.036127 (Vazquez et al. 2005, Phys Rev E \u2014 non-Poisson statistics in human activity)\"",
+   "new": "  - \"https://link.aps.org/doi/10.1103/PhysRevE.73.036127 (Modeling bursts and heavy tails in human dynamics)\""
+  },
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement-v2.md",
+   "identifier": "arxiv:2602.19320",
+   "kind": "abbreviation",
+   "title": "Anatomy of Agentic Memory: Taxonomy and Empirical Analysis of Evaluation and System Limitations",
+   "old": "  - \"arXiv:2602.19320 \u2014 Anatomy of Agentic Memory: 4-Structure Taxonomy (lightweight semantic, entity-centric, episodic/reflective, structured/hierarchical)\"",
+   "new": "  - \"arXiv:2602.19320 \u2014 Anatomy of Agentic Memory: 4-Structure Taxonomy (Anatomy of Agentic Memory: Taxonomy and Empirical Analysis of Evaluation and System Limitations)\""
+  },
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement-v2.md",
+   "identifier": "arxiv:2604.14197",
+   "kind": "abbreviation",
+   "title": "The PICCO Framework for Large Language Model Prompting: A Taxonomy and Reference Architecture for Prompt Engineering",
+   "old": "  - \"arXiv:2604.14197 \u2014 PICCO Framework: Five-Element Prompt Taxonomy (Persona, Instructions, Context, Constraints, Output)\"",
+   "new": "  - \"arXiv:2604.14197 \u2014 PICCO Framework: Five-Element Prompt Taxonomy (The PICCO Framework for Large Language Model Prompting: A Taxonomy and Reference Architecture for Prompt Engineering)\""
+  },
+  {
+   "path": "research/frontier-research-taxonomy-2027-supplement.md",
+   "identifier": "arxiv:2606.05339",
+   "kind": "abbreviation",
+   "title": "A Taxonomy of Runtime Faults in Model Context Protocol Servers",
+   "old": "  - \"arXiv:2606.05339 \u2014 Taxonomy of Runtime Faults in MCP Servers (11 top-level, 27 subcategories, 73 leaf types)\"",
+   "new": "  - \"arXiv:2606.05339 \u2014 Taxonomy of Runtime Faults in MCP Servers (A Taxonomy of Runtime Faults in Model Context Protocol Servers)\""
+  },
+  {
+   "path": "research/hierarchical-empirical-bayes-preference-rates.md",
+   "identifier": "doi:10.1080/01621459.1981.10477731",
+   "kind": "abbreviation",
+   "title": "Bayes Empirical Bayes",
+   "old": "  - \"https://doi.org/10.1080/01621459.1981.10477731 (Deely & Lindley 1981, Bayes Empirical Bayes, JASA)\"",
+   "new": "  - \"https://doi.org/10.1080/01621459.1981.10477731 (Bayes Empirical Bayes)\""
+  },
+  {
+   "path": "research/signal-weight-calibration-real-data.md",
+   "identifier": "doi:10.1007/978-3-030-86523-8_22",
+   "kind": "abbreviation",
+   "title": "Ensembling Shift Detectors: An Extensive Empirical Evaluation",
+   "old": "  - \"https://doi.org/10.1007/978-3-030-86523-8_22 (Ensembling Shift Detectors \u2014 dataset-adaptive significance levels)\"",
+   "new": "  - \"https://doi.org/10.1007/978-3-030-86523-8_22 (Ensembling Shift Detectors: An Extensive Empirical Evaluation)\""
+  }
+ ],
+ "left_alone": [
+  {
+   "path": "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "identifier": "arxiv:2509.20021",
+   "kind": "nickname_in_body",
+   "reason": "the real title is already carried in the body; the sources entry needs no change",
+   "body_lines": 2
+  },
+  {
+   "path": "domains/ai-cognition/missing-brain-systems-deep-dive.md",
+   "identifier": "arxiv:2604.14228",
+   "kind": "nickname_in_body",
+   "reason": "the real title is already carried in the body; the sources entry needs no change",
+   "body_lines": 2
+  }
+ ]
+}

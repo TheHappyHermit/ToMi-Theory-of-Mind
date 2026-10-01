@@ -1,0 +1,533 @@
+# ── Runtime directories ──
+.hermes/
+.hermes/
+.github/
+
+hub/
+.openclaw.pre-migration/
+
+# ── Package managers ──
+.bun/
+.npm/
+.npm-global/
+.nvm/
+.cargo/
+.rustup/
+.node/
+.node_modules/
+
+# ── AI tool configs ──
+.claude/
+.codex/
+.copilot/
+.cua-driver/
+.agents/
+.antigravity-server/
+
+# ── System/user data ──
+.config/
+.local/
+.cache/
+.DS_Store
+Thumbs.db
+.Xauthority
+.env
+.env.*
+!.env.example
+!example.env
+
+# ── Shell configs ──
+.bash_history
+.bash_logout
+.bashrc
+.profile
+
+# ── Screenshots and temp files ──
+dashboard-*.png
+dashboard_*.png
+view-*.png
+debug_*.py
+
+# ── Separate projects (not part of Hermes Brain core) ──
+rebate-platform/
+
+# ── Runtime task state ──
+pending/
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Research scratch data (not source) ──
+ontology_memory_2026_findings.json
+demo_data.py
+Decision-*.md
+developmental_ai_research.json
+tmr_semantic_scholar.json
+val_out.txt
+vm-port-diagnosis.sh
+vm-port-fix.sh
+wiki_engram.json
+*.pyc
+
+
+
+# ── Personal directories ──
+Downloads/
+body_schema_*
+cd_search*
+cognitive_effort_*
+command-deck-design-report.md
+carryover_tasks.md
+audit*.png
+audit_research.py
+benchmark.py
+check_system.py
+engram_research_*.py
+lib_research.py
+parse_*.py
+tmr_research.py
+research_search.py
+
+# ── Large binaries ──
+*.bin
+*.pack
+*.tar.gz
+*.zip
+models_dev_cache.json
+
+# ── Browser ──
+.browser-use/
+snap/
+
+# ── Temp ──
+/tmp/oc-*
+/tmp/hermes-*
+
+# ── PII scrubbing scripts ──
+# Skills that document the scrub procedure are not themselves scrub scripts,
+# and must stay tracked. This exception covers both spellings, and the
+# public-skills copy as well as the skills/ one: the first version listed
+# only skills/repo-pii-scrub/, so the generated publish copy was silently
+# dropped from the repo.
+*pii*scrub*
+*scrub*pii*
+!public-skills/repo-pii-scrub/
+!public-skills/repo-pii-scrub/**
+!skills/repo-pii-scrub/
+!skills/repo-pii-scrub/**
+
+# ── Git ──
+# Note: .gitignore is intentionally NOT ignored so it can be versioned
+
+# ── Docker ──
+.docker/
+Projects/
+hermes-retrieval-reflex/
+oc-work/
+personal-agent/
+wiki.bak-*/
+honcho/
+node_modules/
+lightllm/
+litellm_proxy/
+firecrawl-stack/
+
+Public/
+
+tirith/
+repo-backup-*/
+hermes-env-backup/
+archive/
+# archive/ is ignored wholesale, which is what we want. The one exception is
+# the README that explains WHY, so the rule is self-documenting in the repo
+# rather than only in a scratch file. `archive/*` cannot be used for this: it
+# would also match the subdirectory and stop git descending, so the negation
+# below could never match. `archive/**` ignores contents while leaving the
+# directory itself visible, which is the form that works.
+!archive/
+archive/**
+!archive/README.md
+# Anchored to the repo root. An unanchored `research/` matches at ANY depth,
+# so it silently swallowed profiles/research/SOUL.md: the profile existed,
+# was published by the sync script, and was never tracked. Nothing failed
+# and nothing warned -- git simply never saw the file, exactly like the
+# bundled-category skills that publish_profiles_and_skills.py could not
+# reach. A pattern's DEPTH is part of its meaning, and this one had none.
+/research/
+/research_output/
+
+# ── Vault and backups ──
+Documents/
+backups/
+_home_home_user_*/
+_home_home_user_*
+venv/
+.venv/
+site-packages/
+research_task/
+knowledge_base/
+
+# ── Bundled Hermes skills (ship with base Hermes, not custom) ──
+skills/apple/
+skills/creative/
+skills/data-science/
+skills/devops/
+skills/diffusion/
+skills/email/
+skills/gaming/
+skills/leisure/
+skills/media/
+skills/mlops/
+skills/note-taking/
+skills/productivity/
+skills/research/
+skills/social-media/
+skills/software-development/
+skills/web/
+
+# ── Bundled-skill exceptions ──
+# The categories above are ignored in bulk because they are large, mostly
+# upstream, and not required to run a fresh install. A skill that a CRON JOB
+# depends on must be tracked, or the job breaks on a clean install.
+#
+# Job-required skills live FLAT (skills/<name>/SKILL.md) so they are not
+# shadowed by the category ignores above. Do not nest one under a category
+# directory: that is how wiki-cognition ended up invisible to a fresh clone.
+
+# ── Large binaries ──
+.vscode-server/
+
+# ── AI tool configs ──
+.gemini/
+.honcho/
+.notebooklm-mcp-cli/
+.qwen/
+.pki/
+.ssh/
+.gitconfig
+.vscode-server/
+
+# ═══════════════════════════════════════════════════════════
+# Downloaded binaries & build artifacts (not project source)
+# ═══════════════════════════════════════════════════════════
+
+# Downloaded CLI binaries (gh, etc. - install via package manager)
+bin/
+.electron-gyp/
+
+# Hermes skills backup (regenerated from base Hermes install)
+hermes-skills-backup/
+
+# Temporary research/download scratch space
+research_tmp/
+tmp_research_blocks/
+
+# ═══════════════════════════════════════════════════════════
+# Runtime / cache state (regenerated on install)
+# ═══════════════════════════════════════════════════════════
+
+# Hermes profile cache/state files
+profiles/*/models_dev_cache.etag
+profiles/*/.update_check
+profiles/*/.skills_prompt_snapshot.json
+
+# Bundled skills duplicated under profiles (ship with base Hermes)
+profiles/personal-organizer/skills/apple/
+profiles/personal-organizer/skills/autonomous-ai-agents/
+profiles/personal-organizer/skills/creative/
+profiles/personal-organizer/skills/devops/
+profiles/personal-organizer/skills/email/
+profiles/personal-organizer/skills/github/
+profiles/personal-organizer/skills/media/
+profiles/personal-organizer/skills/mlops/
+profiles/personal-organizer/skills/note-taking/
+profiles/personal-organizer/skills/productivity/
+profiles/personal-organizer/skills/research/
+profiles/personal-organizer/skills/smart-home/
+profiles/personal-organizer/skills/social-media/
+profiles/personal-organizer/skills/software-development/
+profiles/personal-organizer/skills/web/
+
+# Researcher profile (active wiki research)
+profiles/researcher/cache/
+profiles/researcher/logs/
+profiles/researcher/state.db*
+profiles/researcher/.env
+profiles/researcher/.skills_prompt_snapshot.json
+profiles/researcher/.update_check
+profiles/researcher/state-snapshots/
+profiles/researcher/sessions/
+profiles/researcher/runtime/
+profiles/researcher/sandboxes/
+profiles/researcher/cron/executions.db
+profiles/researcher/cron/output/
+profiles/researcher/memories/
+profiles/researcher/skills/
+profiles/researcher/image_cache/
+profiles/researcher/audio_cache/
+profiles/researcher/pairing/
+profiles/researcher/hooks/
+profiles/researcher/bin/
+profiles/researcher/auth.lock
+profiles/researcher/.backup.lock
+profiles/researcher/state.db.fts_rebuild.lock
+
+# Per-profile runtime state, for every profile, including ones added later.
+# ~/.hermes/profiles/<name> is symlinked into the repo, so the cron ticker and
+# session store write straight into the working tree. The per-profile rules
+# below only cover the profiles that existed when they were written; this
+# catches new ones (locks, heartbeat files, execution dbs, job output) so a
+# fresh profile cannot leak runtime state into a commit.
+profiles/*/cron/
+profiles/*/sessions/
+profiles/*/logs/
+profiles/*/cache/
+profiles/*/runtime/
+profiles/*/state-snapshots/
+profiles/*/sandboxes/
+profiles/*/memories/
+profiles/*/image_cache/
+profiles/*/audio_cache/
+profiles/*/pairing/
+profiles/*/auth.lock
+profiles/*/.backup.lock
+
+# Oracle researcher profile (renamed from research)
+profiles/oracle-researcher/cache/
+profiles/oracle-researcher/logs/
+profiles/oracle-researcher/state.db*
+profiles/oracle-researcher/.env
+profiles/oracle-researcher/.skills_prompt_snapshot.json
+profiles/oracle-researcher/.update_check
+profiles/oracle-researcher/state-snapshots/
+profiles/oracle-researcher/sessions/
+profiles/oracle-researcher/runtime/
+profiles/oracle-researcher/sandboxes/
+profiles/oracle-researcher/cron/executions.db
+profiles/oracle-researcher/cron/output/
+profiles/oracle-researcher/memories/
+profiles/oracle-researcher/skills/
+profiles/oracle-researcher/image_cache/
+profiles/oracle-researcher/audio_cache/
+profiles/oracle-researcher/pairing/
+profiles/oracle-researcher/hooks/
+profiles/oracle-researcher/bin/
+profiles/oracle-researcher/auth.lock
+profiles/oracle-researcher/.backup.lock
+profiles/oracle-researcher/state.db.fts_rebuild.lock
+
+# ═══════════════════════════════════════════════════════════
+# Environment secrets (real credentials - keep .example templates)
+# ═══════════════════════════════════════════════════════════
+
+# Any .env file with real secrets (docker-compose reads .env.example templates)
+.env
+.env.web-stack
+lightllm/.env
+litellm_proxy/.env
+
+# ═══════════════════════════════════════════════════════════
+# Python / Node build artifacts & downloaded packages
+# ═══════════════════════════════════════════════════════════
+
+__pycache__/
+*.egg-info/
+*.whl
+*.gguf
+*.safetensors
+
+# ═══════════════════════════════════════════════════════════
+# OS & editor junk
+# ═══════════════════════════════════════════════════════════
+
+*.swp
+*.swo
+*~
+
+# ═══════════════════════════════════════════════════════════
+# Research scratch files (not project source)
+# ═══════════════════════════════════════════════════════════
+
+# Research scripts and data
+*_research.json
+*_report.json
+*_report.md
+frontier_ontology_research_2026.md
+kg_research_sept2026.md
+authoring-role-definition-schema_research.md
+autocorrelation-adjusted-geweke-research.md
+hippocampal_indexing_theory_research.md
+synaptic-tagging-capture-sources.md
+taxonomy_ontology_research.md
+theory_of_mind_research_report.md
+fca_research_summary.md
+schema_policy_research.md
+critical_periods_research.json
+neural_oscillations_search_results.json
+linguistic_relativity_extracts.json
+semantic-search-research.json
+research_summary.json
+suite-research-append.md
+appraisal_theory_findings.md
+hermes-config-backup.yaml
+hermes-update.log
+metadata_rs.txt
+
+# Research Python scripts
+research_body_schema.py
+research_extended_mind.py
+research_extended_mind2.py
+research_extended_mind3.py
+research_extended_mind4.py
+research_extended_mind5.py
+research_search2.py
+research_search3.py
+research_search4.py
+research_time_perception.py
+source_monitoring_research.py
+source_monitoring_research2.py
+dump_schemas.py
+dump_sources.py
+extract_wiki.py
+pubmed_details.py
+search_body_models.py
+search_body_models2.py
+search_body_models3.py
+search_body_models4.py
+search_results.py
+
+# Screenshots
+screenshot-bots.png
+screenshot-calendar.png
+screenshot-dark-mode.png
+screenshot-dashboard.png
+screenshot-homelab.png
+screenshot-services.png
+screenshot-tasks.png
+phase2-test.png
+dashboard-index.html
+dashboard-refactor-summary.json
+dashboard-screenshots.js
+
+# Cached web pages
+pages/
+
+# Stress cognition research
+stress_cognition_research/
+
+# TMR research
+tmr_crossref.json
+tmr_crossref_pubmed.py
+tmr_pmc_ids.json
+
+# Temp directories
+tmp/
+tmp_research_content.txt
+tmp_seg_clustering_research.txt
+
+# Test probes
+apps/
+
+# Cargo lock
+Cargo.lock
+
+# ═══════════════════════════════════════════════════════════
+# System junk that should never be committed
+# ═══════════════════════════════════════════════════════════
+
+# .NET runtime
+.dotnet/
+
+# Session logs
+.xorgxrdp.10.log
+.xorgxrdp.10.log.old
+.xsession-errors
+
+# Misc system files
+.echo
+.gnupg/
+.npmrc
+.sudo_as_admin_successful
+.summarize/
+.wget-hsts
+schema_dump.md
+dynamic_ontology_research_2026.json
+engram_research_pubmed.json
+fca_research_output.json
+ontology_alignment_report_2026.json
+upper_ontology_research_2026.json
+dashboard/hermes
+hermes/
+
+# ── Cron runtime (not source) ──
+cron/jobs.json
+cron/output/
+cron/*.lock
+cron/*.db
+cron/notepad.db
+cron/usage_audit.jsonl
+cron/catch_up_occurrences
+cron/ticker_heartbeat
+cron/ticker_last_success
+cron/persisted_error_recoveries.jsonl
+cron/jobs.json.bak-audit
+
+# ── Dashboard runtime ──
+dashboard/dashboard.log
+dashboard/*.log
+
+# ── Editor ──
+.vscode/
+
+# ── Docker / temp ──
+docker_files/
+temp/
+
+# ── Research scratch files (additional) ──
+scratch/
+*_research.json
+*_research.md
+*_research_summary.md
+*_research_results.json
+*_papers_output.json
+ontology*research*.md
+ontology*research*.json
+*_research_*.md
+*_research_*.json
+
+# ── Corpus distillation runtime state (cognition-arena) ────────────────────
+# Templates and the install guide ARE tracked. The filled-in state is not:
+# it holds one row per corpus file, the results of the read, and archives of
+# prior passes — all specific to one machine's corpus.
+# TRACKED as of 2026-09-26 (the operator's call, overriding 7a187e6): the arena is the
+# accumulated output of hundreds of 15-minute runs and had ZERO commit history.
+# One bad rewrite and there was no way back. It is now versioned like any other
+# deliverable. Priors/archives stay ignored — they are superseded snapshots.
+cognition-arena/.prior-run-latest
+cognition-arena/prior-run-*/
+cognition-arena/CP-*.md
+DB-MIGRATION-HANDOFF.md
+IMPLEMENT-HANDOFF.md
+RETRIEVAL-SETUP-HANDOFF.md
+RESEARCH-provenance-of-inference.md
+research-resultideas.md
+
+# Timestamped safety snapshots written by the T2 repair scripts. These
+# are working backups taken immediately before a write, not audit
+# evidence: the audit trail belongs in git history and in the
+# committed docs/audit/*.json reports. One landed here from a test
+# fixture, which is how the pattern was noticed.
+docs/audit/*.bak.json
+
+# ── Owner working documents (tracked nowhere; referenced by path) ──
+# SCRATCHPAD.md is the operator's live scratchpad: append/revise as research lands.
+# It is referenced by absolute path from the wiki-cognition skill, the
+# research-lane cron prompts, and docs/, so it MUST stay at the repo root --
+# it is untracked, not relocated. Backup copies follow it.
+SCRATCHPAD.md
+SCRATCHPAD.md.bak.*
+
+# Generated lint work-queue: a snapshot of okf_lint.py --check output, appended
+# by scripts/okf_repair.py and regenerable by re-running the linter. It is a
+# run artifact, not a schema -- schemas/ holds okf-schema.yaml and friends.
+schemas/okf-queue.jsonl

@@ -1,0 +1,16 @@
+0.9.67
+
+# This project tracks the latest graphify release and deliberately does NOT pin
+# graphify in requirements.txt or anywhere else. Pinning caused silent drift:
+# this file sat at 0.9.46 while 0.9.67 was current, and no code read the file to
+# notice.
+#
+# graphify ships its own copy of this skill and installs it per platform, so
+# after upgrading the CLI run:
+#
+#     uv tool upgrade graphifyy
+#     graphify install --platform hermes
+#
+# and then copy the refreshed skill over this directory so the repo tracks the
+# installed version. `scripts/init_graphify.py` reports the installed version and
+# warns when the skill and the CLI disagree.

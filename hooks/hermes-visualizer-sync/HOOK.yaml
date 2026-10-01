@@ -1,0 +1,11 @@
+name: hermes-visualizer-sync
+description: >
+  Synchronizes Hermes Agent state (listening, thinking, speaking, idle)
+  with Hermes Visualizer (port 8790) and Barehands (port 8794).
+  Provides real-time visual feedback across all living visualizer faces.
+
+events:
+  - agent:start
+  - agent:step
+  - agent:end
+  - session:reset

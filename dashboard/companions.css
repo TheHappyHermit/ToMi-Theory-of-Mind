@@ -1,0 +1,282 @@
+/* ==========================================================================
+   Companions Integration CSS (AI Visualizer & Barehands 3D Stage)
+   ========================================================================== */
+
+/* Companion In-Deck View Panel */
+.companion-view-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--bg-surface, #161922);
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.companion-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.companion-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-primary, #f1f3f9);
+}
+
+.companion-subtext {
+  font-size: 0.8rem;
+  color: var(--text-muted, #8a90a4);
+}
+
+.companion-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.companion-control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar-label {
+  font-size: 0.82rem;
+  color: var(--text-muted, #8a90a4);
+}
+
+.toolbar-select {
+  background: var(--bg-card, #1e2230);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
+  color: var(--text-primary, #f1f3f9);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.toolbar-select:focus {
+  border-color: var(--accent-color, #705df2);
+}
+
+.companion-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Full-Height Frame Wrapper */
+.companion-frame-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 125px);
+  background: #000;
+  overflow: hidden;
+}
+
+.companion-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Status Pulse Dot */
+.status-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6b7280;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.status-pulse-dot.online {
+  background: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+}
+
+.status-pulse-dot.offline {
+  background: #ef4444;
+}
+
+/* Header HUD Chip */
+.companion-hud-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card, #1e2230);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  border-radius: 16px;
+  padding: 4px 12px;
+  color: var(--text-primary, #f1f3f9);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.companion-hud-chip:hover {
+  background: var(--bg-hover, #282d3f);
+  border-color: var(--border-hover, rgba(255, 255, 255, 0.2));
+}
+
+.companion-hud-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hud-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hud-status-dot.online {
+  background: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.8);
+}
+
+.hud-status-dot.offline {
+  background: #64748b;
+}
+
+/* Floating Picture-in-Picture (PiP) Drawer */
+.companion-pip-drawer {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 380px;
+  height: 250px;
+  background: #0d0f17;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.18));
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: pipSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pipSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.pip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(22, 25, 34, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pip-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary, #f1f3f9);
+}
+
+.pip-live-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+.pip-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pip-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted, #8a90a4);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.pip-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary, #fff);
+}
+
+.pip-body {
+  flex: 1;
+  background: #000;
+  position: relative;
+}
+
+.pip-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Chat & Task 3D Board Buttons */
+.btn-msg-present {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn-msg-present:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.btn-stage-tasks {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 6px;
+  background: rgba(112, 93, 242, 0.15);
+  color: #a78bfa;
+  border: 1px solid rgba(112, 93, 242, 0.3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-stage-tasks:hover {
+  background: rgba(112, 93, 242, 0.25);
+  border-color: rgba(112, 93, 242, 0.5);
+  color: #c4b5fd;
+}

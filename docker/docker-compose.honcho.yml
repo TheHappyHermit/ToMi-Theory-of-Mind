@@ -1,0 +1,239 @@
+# SECURITY NOTE: All passwords are set via environment variables.
+# Required .env file with: HONCHO_PG_USER, HONCHO_PG_PASSWORD, HONCHO_PG_DB
+# CHANGE DEFAULT PASSWORDS before production use!
+# Autognosia — Honcho Memory System
+#
+# Provides autobiographical/user-model memory for Hermes Agent.
+# API available at: http://127.0.0.1:8000
+#
+# Usage:
+#   docker compose -f docker/docker-compose.honcho.yml up -d
+#
+# Prerequisites:
+#   - Docker Engine installed
+#   - .env file configured with LLM provider credentials
+#
+# Configuration:
+#   - Copy .env.example to .env and fill in your LLM provider
+#   - Honcho requires an LLM for its deriver (user-model derivation)
+#   - Use a local/private endpoint if possible to keep autobiographical data local
+
+name: honcho
+
+services:
+  api:
+    image: ghcr.io/plastic-labs/honcho:${HONCHO_VERSION:-latest}
+    entrypoint: ["sh", "docker/entrypoint.sh"]
+    depends_on:
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "/app/.venv/bin/python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/openapi.json', timeout=2).read()",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    volumes:
+      - lancedb-data:/app/lancedb_data
+    environment:
+      - DB_CONNECTION_URI=postgresql+psycopg://${HONCHO_PG_USER:-postgres}:${HONCHO_PG_PASSWORD:?set HONCHO_PG_PASSWORD in .env}@database:5432/${HONCHO_PG_DB:-postgres}
+      - CACHE_URL=redis://redis:6379/0?suppress=true
+      - CACHE_ENABLED=true
+      - LLM_EMBEDDING_PROVIDER=openai
+      - LLM_EMBEDDING_MODEL=Qwen3-Embedding-4B-Q8_0.gguf
+      - LLM_EMBEDDING_BASE_URL=http://10.0.0.10:18082/v1
+      - LLM_EMBEDDING_API_KEY=sk-local
+      - EMBEDDING_MODEL_CONFIG__MODEL=Qwen3-Embedding-4B-Q8_0.gguf
+      - EMBEDDING_MODEL_CONFIG__OVERRIDES__BASE_URL=http://10.0.0.10:18082/v1
+      - EMBEDDING_MODEL_CONFIG__OVERRIDES__API_KEY=sk-local
+      - EMBEDDING_MODEL_CONFIG__DIMENSIONS=2560
+      - EMBEDDING_VECTOR_DIMENSIONS=2560
+      - EMBEDDING_MODEL_CONFIG__DIMENSIONS_MODE=always
+    env_file:
+      - path: .env
+        required: true
+    restart: unless-stopped
+    networks:
+      - honcho-net
+
+  deriver:
+    image: ghcr.io/plastic-labs/honcho:${HONCHO_VERSION:-latest}
+    entrypoint: ["/app/.venv/bin/python", "-m", "src.deriver"]
+    depends_on:
+      api:
+        condition: service_healthy
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - lancedb-data:/app/lancedb_data
+    environment:
+      - DB_CONNECTION_URI=postgresql+psycopg://${HONCHO_PG_USER:-postgres}:${HONCHO_PG_PASSWORD:?set HONCHO_PG_PASSWORD in .env}@database:5432/${HONCHO_PG_DB:-postgres}
+      - CACHE_URL=redis://redis:6379/0?suppress=true
+      - CACHE_ENABLED=true
+      - LLM_EMBEDDING_PROVIDER=openai
+      - LLM_EMBEDDING_MODEL=Qwen3-Embedding-4B-Q8_0.gguf
+      - LLM_EMBEDDING_BASE_URL=http://10.0.0.10:18082/v1
+      - LLM_EMBEDDING_API_KEY=sk-local
+      - EMBEDDING_MODEL_CONFIG__MODEL=Qwen3-Embedding-4B-Q8_0.gguf
+      - EMBEDDING_MODEL_CONFIG__OVERRIDES__BASE_URL=http://10.0.0.10:18082/v1
+      - EMBEDDING_MODEL_CONFIG__OVERRIDES__API_KEY=sk-local
+      - EMBEDDING_MODEL_CONFIG__DIMENSIONS=2560
+      - EMBEDDING_VECTOR_DIMENSIONS=2560
+      - EMBEDDING_MODEL_CONFIG__DIMENSIONS_MODE=always
+      # The dialectic -- the LLM that writes peer representations -- is a
+      # SEPARATE config from LLM_* and from the embedding config. Without
+      # these it falls back to transport=openai / model=gpt-5.4-mini with no
+      # api_key and no base_url, so every representation batch fails:
+      #
+      #   ValidationException: Missing API key for openai model config
+      #
+      # and the deriver retries in a hot loop while the container still
+      # reports healthy. LLM_DIALECTIC_MODEL is not read by the per-level
+      # config; the env prefix is DIALECTIC_ with __ nesting.
+      #
+      # Set for all five reasoning levels: each has its own MODEL_CONFIG and
+      # every one of them defaults to gpt-5.4-mini.
+      - DIALECTIC_LEVELS__minimal__MODEL_CONFIG__TRANSPORT=openai
+      - DIALECTIC_LEVELS__minimal__MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DIALECTIC_LEVELS__minimal__MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DIALECTIC_LEVELS__minimal__MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DIALECTIC_LEVELS__minimal__MODEL_CONFIG__THINKING_EFFORT=none
+      - DIALECTIC_LEVELS__low__MODEL_CONFIG__TRANSPORT=openai
+      - DIALECTIC_LEVELS__low__MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DIALECTIC_LEVELS__low__MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DIALECTIC_LEVELS__low__MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DIALECTIC_LEVELS__low__MODEL_CONFIG__THINKING_EFFORT=none
+      - DIALECTIC_LEVELS__medium__MODEL_CONFIG__TRANSPORT=openai
+      - DIALECTIC_LEVELS__medium__MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DIALECTIC_LEVELS__medium__MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DIALECTIC_LEVELS__medium__MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DIALECTIC_LEVELS__medium__MODEL_CONFIG__THINKING_EFFORT=none
+      - DIALECTIC_LEVELS__high__MODEL_CONFIG__TRANSPORT=openai
+      - DIALECTIC_LEVELS__high__MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DIALECTIC_LEVELS__high__MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DIALECTIC_LEVELS__high__MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DIALECTIC_LEVELS__high__MODEL_CONFIG__THINKING_EFFORT=none
+      - DIALECTIC_LEVELS__max__MODEL_CONFIG__TRANSPORT=openai
+      - DIALECTIC_LEVELS__max__MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DIALECTIC_LEVELS__max__MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DIALECTIC_LEVELS__max__MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DIALECTIC_LEVELS__max__MODEL_CONFIG__THINKING_EFFORT=none
+      # THIS is the one that was actually failing. The deriver's representation
+      # task reads DERIVER.MODEL_CONFIG, not the dialectic levels, and it
+      # defaults to model=gpt-5.4-mini with overrides.api_key=None and
+      # overrides.base_url=None. Every representation batch then died on
+      # "Missing API key for openai model config" and was marked processed,
+      # so 2,337 messages sat unembedded while the container reported healthy.
+      #
+      # The other four MODEL_CONFIG defaults in config.py (DIALECTIC per level,
+      # SUMMARY, DREAM deduction + induction) all default to gpt-5.4-mini the
+      # same way, so they are set here too rather than discovered one crash at
+      # a time.
+      - DERIVER_MODEL_CONFIG__TRANSPORT=openai
+      - DERIVER_MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DERIVER_MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DERIVER_MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DERIVER_MODEL_CONFIG__THINKING_EFFORT=none
+      - SUMMARY_MODEL_CONFIG__TRANSPORT=openai
+      - SUMMARY_MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - SUMMARY_MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - SUMMARY_MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - SUMMARY_MODEL_CONFIG__THINKING_EFFORT=none
+      - DREAM_DEDUCTION_MODEL_CONFIG__TRANSPORT=openai
+      - DREAM_DEDUCTION_MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DREAM_DEDUCTION_MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DREAM_DEDUCTION_MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DREAM_DEDUCTION_MODEL_CONFIG__THINKING_EFFORT=none
+      - DREAM_INDUCTION_MODEL_CONFIG__TRANSPORT=openai
+      - DREAM_INDUCTION_MODEL_CONFIG__MODEL=${HONCHO_DERIVATION_MODEL:-/models/Qwen3.5-4B-UD-Q4_K_XL.gguf}
+      - DREAM_INDUCTION_MODEL_CONFIG__OVERRIDES__API_KEY=${HONCHO_DERIVATION_API_KEY:-sk-local}
+      - DREAM_INDUCTION_MODEL_CONFIG__OVERRIDES__BASE_URL=${HONCHO_DERIVATION_BASE_URL:-http://10.0.0.10:18081/v1}
+      - DREAM_INDUCTION_MODEL_CONFIG__THINKING_EFFORT=none
+      # Backfill is ~2,274 messages. At 1 worker it drains far too slowly to
+      # be usable; the local llama.cpp server is the bottleneck, not Postgres.
+      - DERIVER_WORKERS=4
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "/app/.venv/bin/python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://api:8000/openapi.json', timeout=2).read()",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    env_file:
+      - path: .env
+        required: true
+    restart: unless-stopped
+    networks:
+      - honcho-net
+
+  database:
+    image: pgvector/pgvector:${PG_VERSION:-pg15}
+    restart: unless-stopped
+    expose:
+      - "5432"
+    command: ["postgres", "-c", "max_connections=200"]
+    environment:
+      - POSTGRES_DB=${HONCHO_PG_DB:-postgres}
+      - POSTGRES_USER=${HONCHO_PG_USER:-honcho}
+      - POSTGRES_PASSWORD=${HONCHO_PG_PASSWORD:?set HONCHO_PG_PASSWORD in .env}
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - honcho-pgdata:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${HONCHO_PG_USER:-postgres} -d ${HONCHO_PG_DB:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - honcho-net
+
+  redis:
+    image: redis:${REDIS_VERSION:-8.2}
+    restart: unless-stopped
+    expose:
+      - "6379"
+    volumes:
+      - honcho-redis-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - honcho-net
+
+
+volumes:
+  # Pinned to their existing names. Without an explicit `name:` Docker derives
+  # the volume name from the compose project name, so renaming the project
+  # would silently orphan 131 MB of Postgres data and start honcho against an
+  # empty database. The historical prefix stays on the volume name only; the
+  # project, containers, and network are all renamed.
+  honcho-pgdata:
+    name: autognosia-honcho_honcho-pgdata
+  honcho-redis-data:
+    name: autognosia-honcho_honcho-redis-data
+  lancedb-data:
+    name: autognosia-honcho_lancedb-data
+
+networks:
+  honcho-net:
+    driver: bridge

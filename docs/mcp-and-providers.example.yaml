@@ -1,0 +1,32 @@
+fallback_providers:
+- model: /models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+  provider: llamaCPP
+mcp_servers:
+  home-assistant:
+    connect_timeout: 10
+    headers:
+      Authorization: <TOKEN>
+    timeout: 30
+    url: http://<HOME-ASSISTANT-IP>:8123/api/mcp
+  n8n-mcp:
+    connect_timeout: 60
+    headers:
+      Authorization: <TOKEN>
+    timeout: 180
+    url: https://<N8N-MCP-HOST>/mcp-server/http
+memory:
+  memory_char_limit: 2200
+  memory_enabled: true
+  provider: honcho
+  user_char_limit: 1375
+  user_profile_enabled: true
+model:
+  api_mode: chat_completions
+  base_url: https://inference-api.nousresearch.com/v1
+  default: meituan/longcat-2.0:free
+  provider: nous
+providers:
+  llamaCPP:
+    api: http://<LLAMA-CPP-HOST-IP>:8080/v1
+    default_model: /models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+    transport: chat_completions

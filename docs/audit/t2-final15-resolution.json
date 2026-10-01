@@ -1,0 +1,123 @@
+{
+ "Bjork_1992_VERIFIED_AND_STRENGTHENED": {
+  "THE_STRONGER_EVIDENCE_pages_1280_1296_are_occupied_not_empty": {
+   "claim": "The vault's original citation placed a paper at JEP:Learning Memory and Cognition 18(6), 1280-1296.",
+   "finding": "I enumerated every Crossref record Crossref holds for that journal's volume 18 issue 6 (18 records, deduplicated to 11 distinct articles). The claimed range is FULLY OCCUPIED by other papers: Bentin, Moscovitch & Heth at 1270-1283 covers 1280-1283, and Light, LaVoie & Valencia-Laver at 1284-1297 covers 1284-1296. No gap exists, and no Bjork paper appears anywhere in the issue.",
+   "full_issue_contents_for_the_record": [
+    "1155-1172 McKoon & Ratcliff",
+    "1173-1190 McNamara",
+    "1191-1210 Shelton & Martin",
+    "1211-1238 Goldinger, Luce & Pisoni",
+    "1239-1250 Slowiaczek & Hamburger",
+    "1251-1269 Roediger, Weldon & Stadler",
+    "1270-1283 Bentin, Moscovitch & Heth",
+    "1284-1297 Light, LaVoie & Valencia-Laver",
+    "1298-1309 Mantyla & Backman",
+    "1310-1320 Bower & Mann",
+    "1321-1330 Hockley",
+    "1331-1341 Krueger, Stadtlander & Blum",
+    "1342-1365 Laming"
+   ],
+   "why_this_matters": "A 404 alone only shows the identifier is not registered -- it cannot show the claimed ARTICLE never existed. Page occupancy is the same kind of proof that settled the fabricated Anderson 1991 paper: another paper demonstrably sits on the pages the citation claims. This closes the question that a 404 left open."
+  },
+  "no_1991_version_exists": "The '1991' often attached to the two-strength account is a mis-citation of this 1992 chapter. PubMed holds 18 Bjork papers in Memory & Cognition spanning 1973-2026 and none from 1991; the commonly cited location 19(5) 594-605 does not resolve (10.1037/0278-7393.19.5.594 -> 404) and the articles in that volume slot are unrelated.",
+  "no_doi_and_that_is_verified_not_assumed": "Crossref holds no record for this title and OpenAlex returns doi=None. It is a 1992 Erlbaum print chapter, predating widespread DOI registration. The vault now cites it WITHOUT an identifier, stating so explicitly. Attaching a plausible-looking DOI would have recreated the exact error being repaired.",
+  "real_record_no_doi": "Bjork, R. A., & Bjork, E. L. (1992). 'A new theory of disuse and an old theory of stimulus fluctuation.' In A. F. Healy, S. M. Kosslyn & R. M. Shiffrin (Eds.), From Learning Processes to Cognitive Processes: Essays in Honor of William K. Estes (Vol. 2, pp. 35-67). Hillsdale, NJ: Erlbaum.",
+  "status": "RESOLVED AND APPLIED. A researcher subagent independently reached the same record, and supplied a page-occupancy proof stronger than the 404 evidence my repair originally rested on. Verified by me before use.",
+  "subagent_DOIs_all_re_verified_by_me": {
+   "confirmed_404_as_the_subagent_also_found": [
+    "10.1037/0278-7393.19.5.594",
+    "10.1037/0278-7393.18.6.1280"
+   ],
+   "note": "Every identifier the subagent offered was re-probed rather than trusted. This rule has already caught a subagent supplying a DOI that resolved to an entirely unrelated paper earlier in this project.",
+   "real_and_resolving": [
+    "10.1037/0278-7393.29.4.524 (Bjork & Bjork 2003, Intentional forgetting..., JEP:LMC 29(4) 524-531)",
+    "10.1093/clipsy.6.1.80 (Lang, Craske & Bjork 1999, Clinical Psychology: Science and Practice 6(1) 80-94)",
+    "10.7551/mitpress/4561.003.0011 (Bjork 1994, Memory and metamemory considerations..., Metacognition 185-206)",
+    "10.1016/j.jarmac.2020.09.003 (Bjork & Bjork 2020, Desirable difficulties in theory and practice)",
+    "10.1037/0278-7393.20.5.1063 (Anderson, Bjork & Bjork 1994)"
+   ]
+  },
+  "subagent_process_note_worth_keeping": "The subagent reported that it typed a guess at the 2011 'Making things hard on yourself' DOI during testing, found it 404'd, and dropped it rather than reporting it. That is the correct behaviour under the rule that a DOI must come from a record, never from inference -- and it is worth noting because a subagent that had reported the guess would have reintroduced a fabricated identifier into the audit that exists to remove them.",
+  "the_cited_title_does_not_exist": "'New theories of discard and forgetting' appears nowhere in Crossref or OpenAlex under any Bjork author. It appears to be a corruption of the real 1992 chapter title.",
+  "transcription_error_in_the_delegated_report": "The subagent's text rendered one 2003 title with a stray non-Latin character ('...residual influences of the intentional'). The underlying record is clean -- Crossref returns 'Intentional forgetting can increase, not decrease, residual influences of to-be-forgotten information'. Flagged so a later reader does not copy the corrupted form from the delegation log."
+ },
+ "VERIFIER_BUG_FOUND_AND_FIXED": {
+  "fix": "The character class now permits a balanced <...::AID-...> suffix and a trailing ;<digits>-<digits> SICI tail, while still stopping at genuine HTML. Verified against four cases: plain DOI, DOI containing parentheses (10.1016/S0079-7421(08)60536-8), full SICI, and an HTML anchor.",
+  "lesson": "A correct vault entry can be made to look fabricated by a parser bug. Before concluding that an identifier is wrong, check whether the extraction itself is losing characters -- especially for publishers whose identifier syntax uses the delimiters a regex would naturally exclude.",
+  "regression_pinned_by": "tests/test_t2_sici_doi.py (5 tests). The test was written FIRST and confirmed to fail against the old pattern before the fix was applied, so it is a real regression test rather than a description of current behaviour.",
+  "root_cause": "verify_t2_titles.py's DOI and URL regexes excluded '<' and '>' from the identifier body, to avoid swallowing HTML markup. But Wiley SICI DOIs are delimited by exactly those characters: 10.1002/(SICI)1099-0720(1998120)12:6<617::AID-ACP542>3.0.CO;2-5. Cut at the '<', the regex emitted 10.1002/(SICI)1099-0720(1998120)12:6, which cannot resolve in any registry -- a guaranteed 404 indistinguishable from a fabricated citation.",
+  "summary": "The Encoding-Specificity row was NOT a vault defect. The vault was correct in both the frontmatter and the reference entry; the verifier was truncating the identifier."
+ },
+ "applied_repairs": {
+  "Friston_2017_FABRICATED": {
+   "action": "Both claims retained and marked. Real candidates named without being adopted: reference [6] in the same file (Friston & Kiebel 2009) already covers the FEP material, and the FND claim is left explicitly open.",
+   "file": "Predictive-Processing/predictive-processing-and-active-inference.md",
+   "finding": "No 2017 paper in Brain by Friston on active inference and psychopathology exists. The 'awag101' stem matches no Brain volume or issue, and the trailing '/8519179' is an OUP internal advance-article path fragment, not a DOI suffix. A targeted search for that author-topic pairing in that year returned only unrelated preprints.",
+   "why_no_substitute": "Reference [5] supported TWO different claims: the free-energy equation and predictive coding as its algorithmic instantiation (L72, L76), and precision dynamics in functional neurological disorder (L155). One phantom, two claims, so no single replacement can fix it without this becoming a reading of the file rather than a lookup. Per the handoff section 4, no substitute was guessed."
+  },
+  "McCloskey_and_Cohen_1989_REAL_WORK_wrong_identifier": {
+   "file": "Consolidation/Adaptive-Forgetting.md",
+   "now": "10.1016/S0079-7421(08)60536-8 -- 'Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem', Psychology of Learning and Motivation 24, 109-165, 1989",
+   "significance": "The handoff's section 3(b) identified this row as a dead French (1999) TiCS identifier and its reading implied deletion. The work is real and body-cited; following that instruction would have destroyed a genuine source. This is the same trap the handoff's own section 7 warns about.",
+   "verified": "Resolves on Crossref AND doi.org. Confirmed independently twice.",
+   "was": "10.1037/0033-295X.96.2.323, described as Psychological Review 96(2) 323-357"
+  },
+  "Rouder_and_Morey_2005_FABRICATED": {
+   "action": "Reference struck and the real occupant of those pages recorded in its place, so the next reader can see what the identifier actually pointed at. The body claim that rested on it is retained and marked unverified.",
+   "file": "Consolidation/Adaptive-Forgetting.md",
+   "finding": "No such paper exists. The pages the file claimed -- Psychological Review 112(4) 842-855 -- are actually 841-861, occupied by Johnson, M.R. & Busemeyer, J.R., 'A dynamic, stochastic, computational model of preference reversal phenomena', 10.1037/0033-295x.112.4.841, which RESOLVES. The file's '...842' is the neighbouring article, which is why it never returned anything. Two targeted Crossref searches for a Rouder & Morey paper of that title, and for any signal-detection decomposition of the picture-superiority effect, returned no such work."
+  },
+  "the_nine_uncited_dead_sources_REMOVED": {
+   "files_and_counts": {
+    "Belief-Revision/Belief-Revision-Safe-Belief-Updating.md": 1,
+    "Cellular-Neuroscience/Pyramidal-Neuron-Apical-Dendrite-Computations.md": 1,
+    "Executive-Control/Habit-Formation.md": 2,
+    "Knowledge-Representation/Cognitive-Maps-Beyond-Space.md": 1,
+    "Learning/Desirable-Difficulties-Bjork.md": 3,
+    "Social-Cognition/Cognitive-Dissonance-and-Self-Justification.md": 1
+   },
+   "identifiers": [
+    "10.1016/j.artint.2014.01.1475",
+    "10.1038/nn1199_989",
+    "10.1037/a0046060",
+    "10.1146/annurev-psych-010418-103041",
+    "10.1177/0956797615621371",
+    "10.1016/S0010-0277(85)80010-3",
+    "10.1016/j.memco.2008.10.002",
+    "10.1037/0096-3445.137.4.595",
+    "10.1177/1754073917724993"
+   ],
+   "no_substitutes_invented": "Bibliographic searches were run per topic, but a bare DOI with no title does not record what was meant, so no attribution was guessed. This matches the standing instruction that unresolved disagreement is acceptable but fabrication is not.",
+   "safety": "A pre-flight check confirmed each had body=0 and frontmatter=1 BEFORE any write, and the script aborts if that is ever untrue. Every removal is annotated in-file with a dated HTML comment naming the count, the reason, and this file."
+  }
+ },
+ "current_state": {
+  "committed": "No. The earlier commit 0519903 covers the first phase only. These 13 vault edits and the verifier regex fix are on disk and uncommitted.",
+  "confidence": "NOT written. The gate still fails and grade_all.py --with-t2 has not been run with --apply, deliberately: the user lost uncommitted work to that script's unconditional report write earlier in this session.",
+  "expected_after_rerun": "The 9 removed uncited sources and the Friston phantom disappear from the table as expected. McCloskey and the Johnson/Busemeyer replacement should re-derive as 'match'. The SICI row should now resolve, which it never could before the regex fix.",
+  "tests": "738 pass, 2 skipped (733 before the 5 new SICI regression tests). No failures.",
+  "verdict_progression": "938 match / 1 untitled / 19 unresolvable  ->  942 match / 0 untitled / 15 unresolvable at the start of this phase; the 13 edits above are applied to the vault and a verifier re-run is in progress."
+ },
+ "measured": "2026-09-30T02:40:00Z",
+ "method_and_why_the_first_answers_were_void": {
+  "structural_finding_about_the_nine": "All 9 unattributable DOIs appear ZERO times outside the frontmatter: no title, no author, no reference-list entry, and no body sentence depends on any of them. They are uncited scaffolding, not mis-citations, which is why removing them orphans nothing -- unlike McCloskey, which WAS body-cited and had to be repaired.",
+  "the_method_that_actually_resolved_things": "Stop probing identifiers and search for the PAPER. A file can hold a real work under a wrong identifier -- the McCloskey row is exactly that case -- so deletion-by-404 would have destroyed genuine sources. Searching for the work found two real papers the 404s had hidden.",
+  "the_verifier_defines_the_verdict": "verify_t2_titles.py's own docstring: 'unresolvable -- could not check. Stays medium. NOT counted as match.' A 404 is therefore a COVERAGE verdict, never a nonexistence verdict. Every row here was re-adjudicated on that basis.",
+  "three_routes_each_proved_live_first": "Crossref, OpenAlex and doi.org (CSL content negotiation) were each probed against two known-good control DOIs -- 10.1037/0278-7393.20.5.1063 and 10.1038/35066572 -- and all three returned 200 on both before any target was read. Only then were the 15 tested. Result: 0 of 15 resolved on any route.",
+  "two_instruments_failed_and_were_discarded": [
+   "A first multiroute script reported '0 of 15 resolved' with EMPTY route dicts, which is indistinguishable from the script aborting. Re-probing the routes by hand showed three of them live at HTTP 200, so that run was a broken instrument and its result was void, not a finding.",
+   "A bibliographic sweep crashed on a Crossref record with a null author (TypeError in a str.join), and its PubMed control returned 0 for the query 'Anderson BJ[au] AND Bjork RA[au]' -- 'BJ' is not a PubMed initials form, so the control was malformed. Both the crash and the control were fixed and the sweep re-run; it then returned the real Anderson 1994 record as its own control."
+  ]
+ },
+ "scope": "The 15 remaining T2 'unresolvable' rows. Method, per-row verdict, and what was applied.",
+ "still_open": {
+  "Bjork_1992_two_strength_in_Desirable-Difficulties-Bjork.md": {
+   "contradiction": "The citation says JEP:Learning Memory and Cognition 18(6) 1280-1296, dated 1992, but the DOI's stem (0033-2909) is JEP:GENERAL and volume 124 corresponds to 2017. Stem and citation contradict each other, and the identifier 404s.",
+   "searched_so_far": "PubMed holds 11 papers by an author named Bjork in Memory & Cognition and NONE from 1991 or 1992. Crossref bibliographic search for the stated title returns only unrelated PsycEXTRA/PsycTESTS dataset records plus Anderson, Bjork & Bjork 1994 (10.1037/0278-7393.20.5.1063, real, already cited elsewhere in the file). A 'disuse' / 'stimulus fluctuation' title search returns 0. Note two malformed queries of mine initially returned 0 because PubMed's abbreviation for the journal is 'Mem Cognit', not 'Mem Cogn' -- a query defect, not an absence.",
+   "state": "Reference [2] is LOAD-BEARING: it supports the two-strength (storage/retrieval) account at body lines 53, 63 and 105. It is NOT a bare source, so it cannot simply be removed.",
+   "status": "Delegated to a researcher subagent for independent identification, with an explicit instruction not to infer a DOI and to report 'no DOI found' rather than a plausible-looking one. Result pending; not applied.",
+   "will_not_be_resolved_by_guessing": "The canonical disuse/two-strength work is commonly cited as Bjork & Bjork (1991), Memory & Cognition 19(5), 594-605, but that record has NOT been confirmed here and its DOI must not be inferred. The commonly cited location may also be wrong -- what article actually occupies those pages is unverified."
+  }
+ }
+}

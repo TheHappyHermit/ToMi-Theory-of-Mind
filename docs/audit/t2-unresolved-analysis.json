@@ -1,0 +1,252 @@
+{
+ "stamp": "2026-09-29T21:32:24Z",
+ "unresolvable_rows": 19,
+ "normalisation_hypothesis": {
+  "claim": "several identifiers are mangled rather than dead, and a normalised form will resolve",
+  "result": "REFUTED",
+  "detail": "13 normalising variants resolved (underscore-to-dot, PII-to-DOI, last-digit edits) but all fell into 3 vault identifiers, and every one resolved to a paper the file explicitly does NOT cite. 10.1037/0033-295X.112.4.842 -> ...841 is Johnson 2005 preference reversal; the file cites Rouder & Morey 2005 picture-superiority. 10.1037/xlm0000908 -> ...900 is Strickland 2022 target learning; the file cites Huettl 2021 retrieval-induced forgetting. 10.1146/annurev-psych-010418-103041 -> ...103043 is Heckhausen 2019; the file has no matching body reference at all.",
+  "conclusion": "A resolving identifier is worthless unless the resolved work is the work the file means. These rows stay unresolvable."
+ },
+ "identifier_shapes": {
+  "doi_shaped_404": 15,
+  "pubmed_pii_not_a_doi": [
+   "10.1038/379232a0"
+  ],
+  "url_path_in_doi": [
+   "10.1093/brain/awag101/8519179"
+  ],
+  "sici_truncated": [
+   "10.1002/(SICI)1099-0720(199812)12:6"
+  ],
+  "apa_elocator": [
+   "10.1037/xlm0000908"
+  ]
+ },
+ "verified_findings": [
+  {
+   "claim": "10.1038/379232a0 and 10.1017/CBO9780511628136.006 are one reference entered twice",
+   "evidence": "The file Consolidation/Adaptive-Forgetting.md has two numbered references with the IDENTICAL title Suppressing unwanted memories by executive control: ref 1 Anderson M.C. (1996) Nature 379(6565) 232-236, ref 2 Anderson M.C. & Green C. (2001) Nature 410(6828) 366-369. The PII 379232a0 encodes journal 379 start page 232, which is ref 1. The sources entry 10.1038/35066572 resolves to Nature 410, which is ref 2. So one citation, two identifier schemes, and a title that cannot distinguish them.",
+   "status": "diagnosed, NOT repaired - resolving it needs a decision about which of the two references the file means, or a correction to the body list."
+  },
+  {
+   "claim": "positional pairing of sources entries to reference-list entries is unsafe in this file",
+   "evidence": "ref 1 and ref 2 share a title, and ref 7 (Anderson & Lebiere 1998, a book) and ref 8 (Anderson & Neely 1996, a book chapter) have no DOI-bearing sources entry while three sources entries in the same file are PII or Cambridge locators. The sources list has 17 entries; the reference list has 16 numbered entries.",
+   "status": "means the pairing must be read, not inferred"
+  }
+ ],
+ "not_resolved": "The 19 remain unresolvable. Confidence is not written. doi:10.1142/10269 in AI-Architecture/Neuromorphic-Computing.md resolves to a finance paper and needs an owner decision on what the file meant to cite.",
+ "probe_errors": [
+  {
+   "error": "transposed two digits in a DOI used as a probe input",
+   "typed": "10.1177/1754073917723993",
+   "actual": "10.1177/1754073917724993",
+   "consequence": "the probe reported the row as not in the table and never tested it. The not-in-table line was my typo, not a data problem.",
+   "retested": true
+  },
+  {
+   "error": "wrong directory in a body-matching pass",
+   "typed": "Cognitive-Dissonance/Cognitive-Dissonance-and-Self-Justification.md",
+   "actual": "Social-Cognition/Cognitive-Dissonance-and-Self-Justification.md",
+   "consequence": "that pass reported the file MISSING",
+   "retested": true
+  }
+ ],
+ "sage_digit_probe": {
+  "identifiers": [
+   "10.1177/1754073917724993",
+   "10.1177/0956797615621371",
+   "10.1177/2515245920933748"
+  ],
+  "variants_tried": "every single-digit edit in the final four characters of the article id, for all three",
+  "result": "zero HTTP 200. All variants 404.",
+  "conclusion": "SAGE uses the ISSN stem plus a bare 10-digit article id, so there is nothing to complete and a single wrong digit anywhere is fatal. These three are genuinely dead identifiers, not mistyped ones, and unlike the 0033-295X and xlm cases there is no near-miss to tempt a wrong repair."
+ },
+ "fabrication_findings": {
+  "verified_independently": "2026-09-29T21:44:12Z",
+  "method": "Each claim re-checked by me against Crossref by a route independent of the subagent that reported it. A subagent assertion about the state of the vault is not evidence about the vault.",
+  "confirmed": [
+   {
+    "claim": "Anderson (1996) Nature 379:232-236 does not exist",
+    "vault_cites": "Consolidation/Adaptive-Forgetting.md ref 1, and sources entry 10.1038/379232a0",
+    "my_check": "Queried Crossref for journal ISSN 0028-0836, Jan-Mar 1996: 25 items in volume 379, NONE at page 232.",
+    "verdict": "CONFIRMED - the paper is not in Nature 379. The entry is a phantom back-dating of the 2001 Anderson and Green paper, which the file also cites separately at 10.1038/35066572 (Nature 410). This is what I earlier diagnosed as one reference entered twice; the deeper truth is that the 1996 half is fabricated."
+   },
+   {
+    "claim": "Huettl, Hutter and Wozniak (2021) large-scale preregistered replication of retrieval-induced forgetting does not exist",
+    "vault_cites": "Consolidation/Adaptive-Forgetting.md ref 13, sources entry 10.1037/xlm0000908",
+    "my_check": "Title search returned 4 candidates; 0 with a Huettl first author. Nearest RIF replication literature is unrelated.",
+    "verdict": "CONFIRMED - no such paper."
+   },
+   {
+    "claim": "Basden, Basden and Hatfield (2014) failed replication of RIF in a large sample does not exist",
+    "vault_cites": "Consolidation/Adaptive-Forgetting.md ref 14, sources entry 10.3758/s13421-014-0408-9",
+    "my_check": "Title search returned 5 candidates; 2 with a Basden first author, both from 1994 and 2003 and both about DIRECTED forgetting, not RIF.",
+    "verdict": "CONFIRMED - the 2014 Memory and Cognition paper is not in Crossref."
+   },
+   {
+    "claim": "Depret, Erlbaum and Eerland (2020) publication bias in the RIF literature does not exist",
+    "vault_cites": "Consolidation/Adaptive-Forgetting.md ref 12, sources entry 10.1177/2515245920933748",
+    "my_check": "Title search returned 5 candidates; 0 with a Depret first author.",
+    "verdict": "CONFIRMED - no such paper."
+   },
+   {
+    "claim": "Friston (2017) active inference and psychopathology, Brain, does not exist",
+    "vault_cites": "Predictive-Processing/predictive-processing-and-active-inference.md ref 5, sources entry 10.1093/brain/awag101/8519179",
+    "my_check": "Title search returned 4 candidates; 0 with a Friston first author.",
+    "verdict": "CONFIRMED - no such paper."
+   },
+   {
+    "claim": "The 1985 Bjork Cognition paper at 10.1016/S0010-0277(85)80010-3 does not exist",
+    "vault_cites": "Learning/Desirable-Difficulties-Bjork.md",
+    "my_check": "DOI 404 at Crossref and doi.org. Title search for the disuse/stimulus-fluctuation paper returned 5 candidates, none of it the cited work.",
+    "verdict": "CONFIRMED - identifier dead AND no paper under that description."
+   }
+  ],
+  "consequence": "These are not mistyped identifiers. Repairing them is impossible because there is nothing to repair TO. Six of the 19 unresolved rows cite papers that appear never to have existed. They are a content problem, and the remaining 13 need the same treatment before confidence is written.",
+  "not_actioned": "Nothing was written. Deleting or rewriting a source entry requires knowing what the file was trying to cite, and two of these files draw on the same body text for several citations at once."
+ },
+ "bare_url_match_rows": {
+  "measured": "2026-09-29T21:44:42Z",
+  "why_it_matters": "A source entry that is a bare URL states nothing about what the file meant to cite, so a match on it means only that the resolver returned SOME title. A wrong-but-live paper would score match here, invisibly. This is the one place a match can still hide a wrong citation.",
+  "counts": {
+   "match_rows_examined": 896,
+   "title_in_the_entry": 864,
+   "bare_url_no_title": 32
+  },
+  "spot_check": "Spot-checked Developmental-Cognition/Developmental-Origins-of-Cognition.md. 10.1037/0012-1649.23.5.655 resolves to Baillargeon 1987 object permanence, and the body cites that paper at reference [3] and discusses her 1987 study by name. 10.7554/eLife.101802 resolves to Gennari et al 2025 statistical learning in neonates, cited at body reference [8] with the same title. Both correct.",
+  "conclusion": "The two spot-checked bare-URL matches are corroborated by the file body independently, so bare-URL match is untitled rather than wrong. The remaining 30 are not individually verified and are the right target for a future semantic pass. This is a KNOWN GAP, not a cleared one: 32 rows carry no in-file statement of intent, so no check built so far can confirm them.",
+  "corroboration_pass": {
+   "measured": "2026-09-29T21:46:00Z",
+   "method": "For each of the 32 bare-URL match rows, check whether the FILE BODY independently witnesses what the identifier resolved to: the identifier appearing in a body reference entry, the resolved title appearing in the body, or the resolved author being discussed. A bare-URL match means only that the resolver returned a title, so the body is the only independent witness available.",
+   "result": "32 of 32 SUPPORTED. 0 uncorroborated, 0 contradicted.",
+   "strongest": "Spelke cited 13 times in Developmental-Origins-of-Cognition.md (Principles of Object Perception); Baillargeon 9 times (Object permanence 1987); Smith 6 times (A-not-B error); Howard 5 times (A Distributed Representation of Temporal Context); Bassett 4 times (Small-World Brain Networks).",
+   "two_weakest_checked_by_hand": "10.1073/pnas.1820836117 and 10.7554/eLife.101802 passed on title words with zero author mentions, because Crossref returned a different author than the file cites. Both verified by reading the body reference list: ref [11] Morishita et al 2020 PNAS 117(38) 23242-23251 Critical period regulation across multiple timescales, and ref [8] Gennari et al 2025 eLife 14:e101802 Statistical learning beyond words in human neonates. Both exact title matches. The zero-author-mention result was my check reading the wrong Crossref author slot, not a gap in the evidence.",
+   "conclusion": "The 32 bare-URL match rows are corroborated by their files own text. The gap is CLOSED for these 32, not merely sampled. They remain untitled in the frontmatter, which is a presentation defect, but no match among them is hiding a wrong citation."
+  }
+ },
+ "load_bearing_analysis": {
+  "measured": "2026-09-29T22:04:54Z",
+  "question": "Do the fabricated citations support claims the files actually make, or sit unused? The answer decides between replacing them and dropping them.",
+  "method": "For each fabricated work, locate every sentence in the file body that names it, and report the file confidence field.",
+  "result": "ALL SIX ARE LOAD-BEARING. None is a dangling reference. The bodies argue from them, in several cases with specific numbers.",
+  "detail": [
+   {
+    "work": "Depret, Erlbaum and Eerland (2020) publication bias in RIF",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "confidence": "medium",
+    "load": "The file asserts a QUANTITATIVE result from this paper: overall RIF effect size d = 0.31 with significant publication bias, effect size dropping to about 0.20 after correction, and uses it to argue that published RIF effects are inflated. It is cited in a numbered claim, a methodological-disputes section, and reference [12]. Dropping the citation would leave a specific empirical claim with no source.",
+    "implication": "A number this specific is checkable by a reader. This is the most exposed of the six."
+   },
+   {
+    "work": "Huettl, Hutter and Wozniak (2021) large-scale preregistered RIF replication",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "confidence": "medium",
+    "load": "Four body sentences, including a design description (N = 630; preregistered; multiple labs) and a finding (small but reliable RIF effect, d = 0.15-0.20). The file uses it as the small-effect anchor of its whole argument about replication.",
+    "implication": "N = 630 and d = 0.15-0.20 are exactly the kind of detail a reader would look up."
+   },
+   {
+    "work": "Basden, Basden and Hatfield (2014) failed RIF replication",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "confidence": "medium",
+    "load": "Two body sentences, in a replication-status table and the reference list.",
+    "implication": "moderate"
+   },
+   {
+    "work": "Anderson (1996) Nature 379:232-236",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "confidence": "medium",
+    "load": "The identifier appears twice in the body and the file describes it as the ORIGINAL demonstration that active retrieval suppresses related memories -- a load-bearing historical claim the whole file rests on. The paper does not exist; the 2001 Anderson and Green paper is real and covers the same ground.",
+    "implication": "Most consequential of the six. The claim is true, but it is attributed to a phantom 1996 paper rather than the real 2001 one, and the file cites both."
+   },
+   {
+    "work": "Friston (2017) active inference and psychopathology, Brain",
+    "file": "Predictive-Processing/predictive-processing-and-active-inference.md",
+    "confidence": "medium",
+    "load": "Seven body sentences; the identifier appears once. The file uses it to distinguish active inference from passive inference and to ground a psychopathology section.",
+    "implication": "Note Friston and Kiebel 2009 and Rao and Ballard 1999 in the same file are REAL. The 2017 Brain paper is the odd one out."
+   },
+   {
+    "work": "Bjork 1985 Cognition, new theory of disuse",
+    "file": "Learning/Desirable-Difficulties-Bjork.md",
+    "confidence": "medium",
+    "load": "The identifier appears 0 times in the body and only one body sentence mentions a Bjork work, and it is a different paper (Anderson and Bjork 1994). This one is close to dangling.",
+    "implication": "The only one of the six that could be dropped with little loss."
+   }
+  ],
+  "both_files_are_confidence_medium": "Every affected file is marked confidence: medium, not high. So the vault is not currently over-claiming on the strength of these -- but the claims are specific enough that a reader would check them.",
+  "recommendation": "Not a bulk decision. The six differ sharply. Anderson 1996 and Depret 2020 carry specific falsifiable claims and need a real source or withdrawal. Bjork 1985 is nearly dangling and could go. Friston 2017 needs a real replacement from the same literature. Nothing should be dropped in bulk, because dropping a citation does not withdraw the sentence citing it -- the file would keep asserting a number with no source at all, which is worse than a dead DOI."
+ },
+ "anderson_1996_confirmed_absent": {
+  "measured": "2026-09-29T22:06:54Z",
+  "why_rechecked": "My original evidence was one Crossref query returning 25 of volume 379 items with none at page 232. That is absence of evidence, not evidence of absence, and old Nature DOIs are PII-style (10.1038/379232a0), so Crossref coverage was the weak link. This is a famous paper and I had asserted twice that it does not exist, so the claim needed a route that does not depend on Crossref at all.",
+  "independent_route": "PubMed, which indexes Nature independently of Crossref.",
+  "results": {
+   "doi.org/10.1038/379232a0": "404",
+   "api.crossref.org/works/10.1038/379232a0": "404",
+   "pubmed title search Suppressing unwanted memories by executive control": "21 records, ALL 2002 or later, none Anderson 1996",
+   "pubmed Anderson MC[au] AND 1996[dp] AND Nature[jour]": "0 records",
+   "pubmed Anderson MC[au] AND Green C[au] AND 2001[dp]": "exactly 1 record, PMID 11268212, Nature, pp 366-9"
+  },
+  "conclusion": "CONFIRMED ABSENT, on stronger evidence than before. The 2001 Anderson and Green paper is real, is at Nature pp 366-369 as the file itself states, and covers the same ground. So the file cites a phantom 1996 paper alongside the real 2001 one, and attributes the original-demonstration claim to the phantom.",
+  "a_mistake_i_made_in_the_verification": "My first PubMed query used field tags (Anderson+MC[au]+AND+1996[dp]) with spaces instead of the colon syntax, and returned count=0 for a query that has an answer. Taken at face value that would have been taken as a further confirmation of absence, when it was my own query being malformed. Detected only by running a control query that had to return results. Worth recording: a zero from a search API is evidence about the query until a positive control says otherwise."
+ },
+ "fabrication_audit_complete": {
+  "measured": "2026-09-29T22:11:41Z",
+  "why": "Every statement so far had to say AT LEAST six, because only six of the 19 had been examined for fabrication. A replace-or-withdraw decision needs the full count.",
+  "instrument_checked_first": "Before trusting a negative from PubMed, checked that the journals in question are actually indexed: J Exp Psychol Learn Mem Cogn 4064 records, Psychol Rev 2649, J Exp Psychol Gen 3021, Nature 143217, Cogn Sci 2024. A zero is therefore about the paper, not about coverage. This is the check whose absence made my first PubMed query meaningless.",
+  "newly_confirmed_absent": [
+   {
+    "work": "Anderson (2010) The encoding and retrieval of memory",
+    "identifier": "10.1017/CBO9780511628136.006",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "evidence": "The file cites it as a Cambridge book chapter. PubMed exact-title search returns 6171 records, none by Anderson in 2010. Crossref carries no record of the 1996 Attribution of Memory volume. The parent book DOI 10.1017/CBO9780511628136 is itself unregistered.",
+    "note": "My own title-quoting was rejected by PubMed, which returned thousands of loose matches; the signal is that none matched author AND year, not the raw count."
+   },
+   {
+    "work": "Anderson (1998) Memory and Forgetting",
+    "identifier": "10.1037/0033-295X.112.4.842",
+    "file": "Consolidation/Adaptive-Forgetting.md",
+    "evidence": "PubMed returns 58 loose records for the title terms, none by Anderson in 1998. Crossref returns six RIF-related works, none of them this paper. Independently, the subagent enumerated Psychological Review vol 112(4) and reported no article at p 842."
+   },
+   {
+    "work": "Bjork and Bjork (1992) New theories of discard and forgetting",
+    "identifier": "10.1037/0033-2909.124.4.421",
+    "file": "Learning/Desirable-Difficulties-Bjork.md",
+    "evidence": "PubMed: 0 records for Bjork RA[au] AND Bjork EL[au] AND 1992[dp], with JEP:LMC confirmed indexed at 4064 records. Crossref: six RIF works returned, none of them this paper. The subagent separately enumerated JEP:LMC 18(6) pp 1155-1365 and found nothing at pp 1280-1296, and the Bjork Lab own publication list uses the chapter form rather than this article."
+   }
+  ],
+  "matched_claims": "10.1037/0033-295X.96.2.323 resolves to a real paper consistent with what the file says (French 1999 catastrophic forgetting), so that row is a dead identifier for a REAL work rather than a fabricated one. That distinction matters: one is repairable, the other is not.",
+  "total_fabricated": 9,
+  "breakdown": "9 of the 19 unresolvable rows name publications that appear never to have existed. 6 confirmed in earlier work, 3 here. The remaining 10 are dead or unlocatable identifiers whose works may or may not exist; they were not all testable because 11 of the 13 new rows sit in files whose reference lists do not identify the work at the identifier.",
+  "not_written": "Nothing was changed. The count is the input to a decision, not the decision."
+ },
+ "substitute_research": {
+  "measured": "2026-09-29T22:17:01Z",
+  "scope": "Research only. Nothing written. Two of the nine fabrications were investigated because real literature plainly exists for each.",
+  "controls": "Positive control retrieval induced forgetting returned 437 at the start and 437 at the end, so the zeros in between are attributable.",
+  "anderson": {
+   "verdict": "DEFINITIVE, and the fix is a re-attribution rather than a new citation.",
+   "finding": "The claim the file makes is TRUE and the real paper is ALREADY CITED IN THE SAME FILE at 10.1038/35066572. The only defect is that the file also invents a 1996 precursor and attributes the original-demonstration claim to it.",
+   "the_real_paper": {
+    "pmid": "11268212",
+    "authors": "Anderson MC, Green C",
+    "year": "2001",
+    "journal": "Nature",
+    "volume": "410",
+    "pages": "366-369",
+    "doi": "10.1038/35066572",
+    "title": "Suppressing unwanted memories by executive control"
+   },
+   "corroborating_literature": "PubMed returns 8 papers on suppression of unwanted memories. Several are Anderson co-authored, and all are 2015 or later, which is consistent with there being no 1996 paper: PMID 28559378 (2017, Gagnepain, Hulbert, Anderson), PMID 30522403 (2019, Taubenfeld, Anderson, Levy), PMID 36156067 (2023). The Anderson line of work on suppression begins with the 2001 paper.",
+   "proposed_change": "Delete the phantom 1996 entry and date the original-demonstration claim to Anderson and Green 2001, already cited in the file. No new citation is needed, and no sentence needs rewriting beyond the date.",
+   "confidence": "high. Three independent routes agree: PubMed author-year search returns exactly one Anderson-Green 2001 Nature paper at the pages the file states; the title search returns 21 records all 2002 or later; Crossref and doi.org both 404 the PII-style DOI."
+  },
+  "friston": {
+   "verdict": "INCONCLUSIVE, and deliberately left open.",
+   "finding": "The literature is a CLUSTER, not one paper. Friston has 71 PubMed papers with active inference in the title and 58 with schizophrenia and 16 with psychopathology. There is no single 2017 Brain paper of this name to substitute for.",
+   "why_not_picking": "Choosing one would repeat the original error. The file uses this citation to distinguish active inference from passive inference AND to ground a psychopathology section. Those are two different claims needing two different papers, and which papers those are is a reading of the file, not a lookup. A real paper that does not support the sentence in front of it is a wrong citation with correct metadata, which is worse than an obviously dead DOI because it does not announce itself.",
+   "data_gathered": "Candidate clusters exist and are real: active inference and mental disorder work spans Behav Brain Res (2020, active inference stressors and psychological trauma), Neuropharmacology (2023, canalization and plasticity in psychopathology), Front Psychol (2024, narrative as active inference), plus the papers the same file already cites correctly, Friston and Kiebel 2009 and Friston 2010. No selection made.",
+   "corrective_note": "My first query here returned 0, which read as no Friston paper existing. It was too narrow, not the literature being empty: requiring active inference AND a psychopathology term in the title excluded almost everything. 71 exist. Another instance of a zero meaning something about the query."
+  }
+ }
+}

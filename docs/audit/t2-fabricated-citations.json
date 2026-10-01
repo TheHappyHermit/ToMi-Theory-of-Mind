@@ -1,0 +1,84 @@
+{
+ "finding": "fabricated citation: a source attributed to a paper that does not exist in the arXiv corpus",
+ "phantom_title": "Redefining Linguistic Categories Through Network Theory",
+ "phantom_identifier": "arXiv:2505.10468",
+ "identifier_actually_resolves_to": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+ "why_not_replaced": "the real typology is Lakoff's, but no DOI could be confirmed from Crossref, and an unverified identifier is the failure being fixed here; the source was removed and the gap left for a human to fill from a readable source",
+ "actions": [
+  {
+   "path": "research/frontier-research-taxonomy-metadata-categorization-linguistic-philosophical-2026-09-10.md",
+   "kind": "removed_source",
+   "line": "  - \"Language and Cognition 2025 \u2014 Redefining Linguistic Categories Through Network Theory (arXiv:2505.10468)\""
+  },
+  {
+   "path": "research/frontier-research-taxonomy-september-2026-supplement-v3.md",
+   "kind": "removed_source",
+   "line": "  - \"Language and Cognition 2025 \u2014 Redefining Linguistic Categories Through Network Theory (arXiv:2505.10468)\""
+  },
+  {
+   "path": "research/frontier-research-taxonomy-comprehensive-2026-09-10.md",
+   "kind": "deattributed_heading",
+   "old": "### 2.1 Four Types of Linguistic Categories (Redefining Linguistic Categories Through Network Theory, arXiv:2505.10468, Language and Cognition 2025)",
+   "new": "### 2.1 Four Types of Linguistic Categories"
+  },
+  {
+   "path": "research/frontier-research-taxonomy-comprehensive-2026-09-10-v2.md",
+   "kind": "deattributed_heading",
+   "old": "### 2.1 Four Types of Linguistic Categories (Redefining Linguistic Categories Through Network Theory, arXiv:2505.10468, Language and Cognition 2025)",
+   "new": "### 2.1 Four Types of Linguistic Categories"
+  }
+ ],
+ "left_alone": [],
+ "correct_use_kept": "research/frontier-research-taxonomy-comprehensive-2026-09-11.md",
+ "correction": {
+  "superseded_finding": "the source was removed as fabricated. That was wrong: only the arXiv identifier was fabricated.",
+  "the_paper_is_real": {
+   "doi": "10.1017/langcog.2025.10",
+   "title": "Redefining linguistic categories through network theory",
+   "venue": "Language and Cognition, vol 17, 2025",
+   "authors": [
+    "Hernandez Munoz",
+    "Tome Cornejo",
+    "Lopez"
+   ],
+   "how_found": "Crossref lookup of the DOI that two other vault files already cited for this same title"
+  },
+  "what_was_fabricated": "the arXiv:2505.10468 identifier. That arXiv id belongs to \"AI Agents vs. Agentic AI\", an unrelated agentic-AI survey.",
+  "correct_repair": "substitute the authoritative DOI, do not delete the source",
+  "restored": [
+   {
+    "path": "research/frontier-research-taxonomy-metadata-categorization-linguistic-philosophical-2026-09-10.md",
+    "kind": "restored_source",
+    "text": "  - \"Redefining Linguistic Categories Through Network Theory (https://doi.org/10.1017/langcog.2025.10)\""
+   },
+   {
+    "path": "research/frontier-research-taxonomy-september-2026-supplement-v3.md",
+    "kind": "restored_source",
+    "text": "  - \"Redefining Linguistic Categories Through Network Theory (https://doi.org/10.1017/langcog.2025.10)\""
+   },
+   {
+    "path": "research/frontier-research-taxonomy-comprehensive-2026-09-10.md",
+    "kind": "restored_attribution",
+    "text": "### 2.1 Four Types of Linguistic Categories (Redefining Linguistic Categories Through Network Theory, Language and Cognition 2025, doi:10.1017/langcog.2025.10)"
+   },
+   {
+    "path": "research/frontier-research-taxonomy-comprehensive-2026-09-10-v2.md",
+    "kind": "restored_attribution",
+    "text": "### 2.1 Four Types of Linguistic Categories (Redefining Linguistic Categories Through Network Theory, Language and Cognition 2025, doi:10.1017/langcog.2025.10)"
+   }
+  ]
+ },
+ "later_findings": [
+  {
+   "found_during": "T2 final repair, while resolving the last mismatch",
+   "file": "research/frontier-research-ontology-worlddb-goi-alignment-2026-09-03.md",
+   "identifier": "doi:10.1177/22104968261431521",
+   "fabricated": "schema-miner pro: Agentic AI for Ontology Grounding Over Heterogeneous Enterprise Data",
+   "authoritative": "schema-miner pro: Agentic AI for Ontology Grounding Over LLM-Discovered Scientific Schemas in a Human-in-the-Loop Workflow",
+   "source": "Crossref 10.1177/22104968261431521; Sadruddin S et al. 2026, Semantic Web",
+   "cause": "I wrote the subtitle from the truncated Crossref title visible in the verdict table (which ended mid-word at \"LLM-Discover\") instead of fetching the record. The words after the truncation were invented.",
+   "lesson": "a truncated title in the evidence table is not a title. Fetch the authoritative record before writing any part of it.",
+   "status": "corrected on disk, backup at pre-schemaminer-backup"
+  }
+ ]
+}

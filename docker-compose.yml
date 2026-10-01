@@ -1,0 +1,108 @@
+services:
+  brain-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hermes-brain-dashboard
+    restart: unless-stopped
+    ports:
+      - '8088:8088'
+    volumes:
+      - brain-data:/data
+      - brain-config:/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - HERMES_DATA_DIR=/data
+      - HERMES_HOME=/data
+      - BRAIN_DB_PATH=/data/brain/brain.db
+      - ORGANIZER_DB_PATH=/data/personal-organizer/data/organizer.db
+      - EXPERIENCE_DB_PATH=/data/experience.db
+      - CONFIG_PATH=/config/services.yaml
+      # The SearXNG container is a separate compose project (see the note at the
+      # bottom of this file), so it is not reachable as a `searxng` hostname on
+      # this stack's network. It publishes on the host loopback, which is where
+      # the companion stack binds it, and the default in auto_discover_env.py and
+      # SETUP_ENV.md is the same address.
+      - SEARXNG_URL=http://host.docker.internal:8080
+      - POSTGRES_HOST=brain-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=${POSTGRES_USER:-brain}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-brain}
+      - POSTGRES_DB=${POSTGRES_DB:-brain}
+    # brain-db is no longer defined in this file (see the note below), so
+    # it cannot appear here: compose rejects a depends_on naming an
+    # undefined service, which would have turned the port fix into a hard
+    # failure at `docker compose up`.
+    #
+    # Ordering is now the operator's job, and the dashboard is written to
+    # tolerate a database that is not up yet -- it retries rather than
+    # requiring a healthy start order. To start both in the right order:
+    #     docker compose -f docker/docker-compose.brain.yml up -d   # db
+    #     docker compose up -d                                    # dashboard
+    #
+    # host.docker.internal is not in Docker's default DNS on Linux, so the
+    # SearXNG address above needs this mapping to resolve from inside the
+    # container. Harmless on macOS/Windows, where the name already exists.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8088/api/health']
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+  # brain-db REMOVED from this file on 2026-09-29.
+  #
+  # It bound host ${POSTGRES_PORT:-5433}, and
+  # docker/docker-compose.brain.yml already binds 127.0.0.1:5433 for the
+  # same database. Two definitions, one port: whichever started second
+  # died with "port is already allocated". Anyone following INSTALL.md's
+  # simple `docker compose up` hit a failure with no obvious cause,
+  # because the colliding service was in a file they were not reading.
+  #
+  # The companion file is canonical for the same reason the SearXNG note
+  # below gives: it is the one that matches the live server.
+  # docker/docker-compose.brain.yml runs paradedb/paradedb, which ships
+  # pg_search (BM25) alongside the vector extension. This file's
+  # pgvector/pgvector:pg16 has NO pg_search, so BM25 retrieval silently
+  # does not work against it. Choosing the pgvector image here would
+  # have meant "resolving" the collision by shipping a database that
+  # cannot serve one of the two retrieval paths the brain depends on.
+  #
+  # So the duplicate is deleted, not renumbered. Moving it to another
+  # port would have created a second, subtly-incompatible database and
+  # a second set of credentials for no benefit.
+  #
+  # Start the database with:
+  #     docker compose -f docker/docker-compose.brain.yml up -d
+  #
+  # The dashboard below reads POSTGRES_HOST/POSTGRES_PORT from the
+  # environment (default brain-db:5432 on the shared compose network).
+  # When the database runs from the companion file, set
+  # POSTGRES_HOST=127.0.0.1 so the dashboard reaches it on the published
+  # port instead of a container name that only exists in the other
+  # file's network.
+
+  # SearXNG deliberately does NOT live here.
+  #
+  # This file bound host 8080 for a bare `searxng:latest` container while
+  # docker/docker-compose.searxng.yml -- the stack install.py actually starts --
+  # binds 127.0.0.1:8080 for a container with a healthcheck, a Valkey cache and
+  # a real settings.yml. Two definitions, one port: whichever started second
+  # died with "port is already allocated".
+  #
+  # The companion stack is canonical because it is the one that works. Run:
+  #     docker compose -f docker/docker-compose.searxng.yml up -d
+
+volumes:
+  brain-data:
+  brain-config:
+  # brain-pgdata removed 2026-09-29 along with the brain-db service that
+  # was its only consumer. Declaring an unused volume makes `docker
+  # compose up` create it, so leaving it would silently allocate a fresh
+  # empty volume that looks like data loss if anything later points at
+  # it. The live database's volume is declared in
+  # docker/docker-compose.brain.yml (hermes-brain_brain-pgdata) and the
+  # pre-migration one (autognosia-brain_brain-pgdata) is deliberately
+  # retained as a rollback -- do not delete either.
