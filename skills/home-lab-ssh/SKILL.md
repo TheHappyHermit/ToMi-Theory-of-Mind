@@ -75,7 +75,7 @@ ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no {USER}@{LAN_IP} "docker logs qw
 - **Config:** `/etc/netbird/config.yaml` managed by NetBird
 
 ### Gateway Server (203.0.113.11)
-- **Alias:** `Gateway-server` (also accessible as `website-server` legacy alias at 129.146.44.143)
+- **Alias:** `Gateway-server` (also accessible as `website-server` legacy alias at 203.0.113.13)
 - **Username:** ubuntu
 - **SSH key:** `~/.ssh/hermes_key`
 - **Role:** Hosts n8n (https://n8n.example.com), DeerFlow, website

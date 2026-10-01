@@ -797,7 +797,7 @@ check is insufficient* finding biting the distillation itself.
 
 **B-9 · PII at a second surface: public cloud IPs and SSH key paths in an entity
 page.** `entities/oracle-cloud-skill.md` records four public Oracle Cloud IPs
-(`203.0.113.10`, `203.0.113.11`, `203.0.113.12`, `129.146.44.143`), usernames,
+(`203.0.113.10`, `203.0.113.11`, `203.0.113.12`, `203.0.113.13`), usernames,
 **SSH private-key file paths** (`~/.ssh/hermes_key`, `~/.ssh/oracle_cloud_key`),
 and the full contents of a credentials file (`~/.env.oracle`) with variable names
 and their values. Same class as B-2, different surface: these are *public* addresses
